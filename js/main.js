@@ -19,7 +19,13 @@ var labour_force = new Map(); // The Map object holds key-value pairs and rememb
 // Load external data 
 var promises = [
     d3.json("data/world.geojson"),
-    d3.csv("data/labour_force.csv", function(d) { labour_force.set(d.country_code, {1990:+d.YR1990, 2000:+d.YR2000, 2011:+d.YR2011, 2012:+d.YR2012, 2013:+d.YR2013, 2014:+d.YR2014, 2015:+d.YR2015, 2016:+d.YR2016, 2017:+d.YR2017, 2018:+d.YR2018, 2019:+d.YR2019, 2020:+d.YR2020}); })
+    d3.csv("data/labour.csv", function(d) { 
+        if (labour_force.get(d.country_code)) {
+            labour_force.get(d.country_code).push({"year": +d.year, "female_labour_force": +d.female_labour_force, "total": +d.total})
+        } else {
+            labour_force.set(d.country_code, [{"year": +d.year, "female_labour_force": +d.female_labour_force, "total": +d.total}]); 
+        }
+    })
 ]
 
 Promise.all(promises).then(function(data){
@@ -28,7 +34,7 @@ Promise.all(promises).then(function(data){
     console.log(error);
 });
 
-function ready(world) {    
+function ready(world) { 
     var colorScale = d3.scaleThreshold()
         .domain([0, 10, 20, 30, 40, 50, 60]) 
         .range(d3.schemeBlues[7]);
@@ -52,7 +58,13 @@ function ready(world) {
         tip.transition()
           .duration(200)
           .style("opacity", .9);
-        tip.html(d.properties.name + "<br/>" + (Math.round(d.labour_force[selectedYear]) || "No") + "%")
+        tip.html(function(){
+            if (d[selectedYear]) {
+                return d.properties.name + "<br/>" + Math.round(d[selectedYear]["female_labour_force"] * 100) / 100 + "%"
+            } else {
+                return "No data"
+            }
+        })
             .style("left", (event.pageX) + "px")
             .style("top", (event.pageY - 28) + "px");
     }
@@ -86,7 +98,11 @@ function ready(world) {
         )
         // set the color of each country
         .attr("fill", function (d) {
-            d.labour_force = labour_force.get(d.id) || 0;
+            if (labour_force.get(d.id)) {
+                for (let [i, value] of labour_force.get(d.id).entries()) {
+                    d[value["year"]] = {"female_labour_force": value["female_labour_force"] || 0, "total": value["total"]}
+                }
+            }
         })
         .style("stroke", "black")
         .attr("class", function(d){ return "Country" } )
@@ -134,7 +150,9 @@ function ready(world) {
         d3.select(".year").text(year);
         d3.selectAll(".Country")
             .style("fill", function(d) {
-                return colorScale(d.labour_force[year]);
+                if (d[year]) {
+                    return colorScale(d[year]["female_labour_force"]);
+                }
             });
 
         selectedYear = year;
