@@ -8,7 +8,7 @@ var svg = d3.select("svg"),
 
 var selectedYear = 2011;
 var selectedTopic = "female_labour_force"
-
+var ranges = {"country_name": [], "country_code": [], "year": [], "female_labour_force": [], "total": [], "single": [], "married": [], "union_cohabiting": [], "widowed": [], "divorced": [], "single_widowed_divorced": [], "married_union_cohabiting": [], "not_elsewhere_classified":[]}
 // Map and projection
 var path = d3.geoPath(); // Maps GeoJSON features to SVG
 var projection = d3.geoEckert6()
@@ -26,17 +26,11 @@ var promises = [
         } else {
             labour_force.set(d.country_code, [{"year": +d.year, "female_labour_force": +d.female_labour_force, "total": +d.total, "single": +d.single, "married": +d.married, "union_cohabiting": +d.union_cohabiting, "widowed": +d.widowed, "divorced": +d.divorced, "single_widowed_divorced": +d.single_widowed_divorced, "married_union_cohabiting": +d.married_union_cohabiting, "not_elsewhere_classified": +d.not_elsewhere_classified}]); 
         }
+        for (value in d) {
+            ranges[value].push(+d[value])
+        }
     })
 ]
-
-var colorScale = d3.scaleThreshold()
-.domain([0, 10, 20, 30, 40, 50, 60]) 
-.range(d3.schemeBlues[7]);
-
-// Legend scale
-var x = d3.scaleLinear()
-.domain([0, 60])
-.rangeRound([700, 990]);
 
 let mouseOver = function(event, d) {
     d3.selectAll(".Country")
@@ -99,42 +93,17 @@ for (var i = 0; i < fields.length; i++) {
     .text(fields[i]);
 }
 
-// Legend 
-var legend = svg.append("g")
-    .attr("class", "key")
-    .attr("transform", "translate(0,15)");
-
-legend.selectAll("rect")
-    .data(colorScale.range().map(function(d) {
-        d = colorScale.invertExtent(d);
-        if (d[0] == null) d[0] = x.domain()[0];
-        if (d[1] == null) d[1] = x.domain()[1];
-        return d;
-    }))
-    .enter().append("rect")
-        .attr("height", 8)
-        .attr("x", function(d) { return x(d[0]); })
-        .attr("width", function(d) { return x(d[1]) - x(d[0]); })
-        .attr("fill", function(d) { return colorScale(d[0]); });
-
-legend.append("text")
-    .attr("class", "caption")
-    .attr("x", x.range()[0])
-    .attr("y", -6)
-    .attr("fill", "#000")
-    .attr("text-anchor", "start")
-    .attr("font-weight", "bold")
-    .text("Female labor force rate");
-
-legend.call(d3.axisBottom(x)
-    .tickSize(13)
-    .tickFormat(function(x, i) { return i ? x : x + "%"; })
-    .tickValues(colorScale.domain()))
-    .select(".domain")
-    .remove();
-
 // Slider
 function update(year){
+    // Legend scale
+    var x = d3.scaleLinear()
+    .domain(d3.extent(ranges[selectedTopic]))
+    .rangeRound([700, 980]);
+
+    colorScale = d3.scaleThreshold()
+        .domain([0, d3.max(ranges[selectedTopic])/4, d3.max(ranges[selectedTopic])/2,  d3.max(ranges[selectedTopic])/1.32, d3.max(ranges[selectedTopic])]) 
+        .range(d3.schemeBlues[5]);
+    
     slider.property("value", year);
     d3.select(".year").text(year);
     d3.selectAll(".Country")
@@ -144,6 +113,41 @@ function update(year){
             }
         });    
     selectedYear = year;
+
+    // Legend 
+    d3.select("g.key").remove()
+    var legend = svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(0,15)");
+
+    legend.selectAll("rect")
+        .data(colorScale.range().map(function(d) {
+            d = colorScale.invertExtent(d);
+            if (d[0] == null) d[0] = x.domain()[0];
+            if (d[1] == null) d[1] = x.domain()[1];
+            return d;
+        }))
+        .enter().append("rect")
+            .attr("height", 8)
+            .attr("x", function(d) { return x(d[0]); })
+            .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+            .attr("fill", function(d) { return colorScale(d[0]); });
+
+    legend.append("text")
+        .attr("class", "caption")
+        .attr("x", x.range()[0])
+        .attr("y", -6)
+        .attr("fill", "#000")
+        .attr("text-anchor", "start")
+        .attr("font-weight", "bold")
+        .text(selectedTopic);
+
+    legend.call(d3.axisBottom(x)
+        .tickSize(13)
+        .tickFormat(function(x, i) { return Math.round(x) })
+        .tickValues(colorScale.domain()))
+        .select(".domain")
+        .remove();
 }
 
 var slider = d3.select(".slider")
