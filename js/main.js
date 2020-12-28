@@ -48,20 +48,25 @@ let mouseOver = function(event, d) {
         .style("opacity", .9);
     tip.html(function(){
         if (d[selectedYear]) {
-            return "<strong>" + d.properties.name + "</strong><br/>" 
-                + "<strong>Female labour force (%)</strong>: " + Math.round(d[selectedYear]["female_labour_force"] * 100) / 100 + "%" + "<br/>"
-                + "<strong>Female labour force (k)</strong>: " + Math.round(d[selectedYear]["total"] * 100) / 100 + "<br/>"
-                + "<strong>Single (k)</strong>: " + Math.round(d[selectedYear]["single"] * 100) / 100 + "<br/>"
-                + "<strong>Married (k)</strong>: " + Math.round(d[selectedYear]["married"] * 100) / 100 + "<br/>"
-                + "<strong>Union / Cohabiting (k)</strong>: " + Math.round(d[selectedYear]["union_cohabiting"] * 100) / 100 + "<br/>"
-                + "<strong>Widowed (k)</strong>: " + Math.round(d[selectedYear]["widowed"] * 100) / 100 + "<br/>"
-                + "<strong>Divorced (k)</strong>: " + Math.round(d[selectedYear]["divorced"] * 100) / 100 + "<br/>"
-                + "<strong>Single / Widowed / Divorced (k)</strong>: " + Math.round(d[selectedYear]["single_widowed_divorced"] * 100) / 100 + "<br/>"
-                + "<strong>Married / Union / Cohabiting (k)</strong>: " + Math.round(d[selectedYear]["married_union_cohabiting"] * 100) / 100 + "<br/>"
-                + "<strong>Not elsewhere classified (k)</strong>: " + Math.round(d[selectedYear]["not_elsewhere_classified"] * 100) / 100 + "<br/>"
-
+            if (d[selectedYear][selectedTopic]) {
+                return "<strong>" + d.properties.name + "</strong><br/>"
+                + "<strong>" + selectedTopicBeautiful + "</strong>: " + Math.round(d[selectedYear][selectedTopic] * 100) / 100 + "<br/>"
+                // return "<strong>" + d.properties.name + "</strong><br/>" 
+                //     + "<strong>Female labour force (%)</strong>: " + Math.round(d[selectedYear]["female_labour_force"] * 100) / 100 + "%" + "<br/>"
+                //     + "<strong>Female labour force (k)</strong>: " + Math.round(d[selectedYear]["total"] * 100) / 100 + "<br/>"
+                //     + "<strong>Single (k)</strong>: " + Math.round(d[selectedYear]["single"] * 100) / 100 + "<br/>"
+                //     + "<strong>Married (k)</strong>: " + Math.round(d[selectedYear]["married"] * 100) / 100 + "<br/>"
+                //     + "<strong>Union / Cohabiting (k)</strong>: " + Math.round(d[selectedYear]["union_cohabiting"] * 100) / 100 + "<br/>"
+                //     + "<strong>Widowed (k)</strong>: " + Math.round(d[selectedYear]["widowed"] * 100) / 100 + "<br/>"
+                //     + "<strong>Divorced (k)</strong>: " + Math.round(d[selectedYear]["divorced"] * 100) / 100 + "<br/>"
+                //     + "<strong>Single / Widowed / Divorced (k)</strong>: " + Math.round(d[selectedYear]["single_widowed_divorced"] * 100) / 100 + "<br/>"
+                //     + "<strong>Married / Union / Cohabiting (k)</strong>: " + Math.round(d[selectedYear]["married_union_cohabiting"] * 100) / 100 + "<br/>"
+                //     + "<strong>Not elsewhere classified (k)</strong>: " + Math.round(d[selectedYear]["not_elsewhere_classified"] * 100) / 100 + "<br/>"
+            } else {
+                return "<strong>" + d.properties.name + "</strong><br/>" + "No data"
+            }
         } else {
-            return "No data"
+            return "<strong>" + d.properties.name + "</strong><br/>" + "No data"
         }
     })
         .style("left", (event.pageX) + "px")
@@ -90,11 +95,16 @@ var option_select = d3.select('#selectors').append("select")
 for (var i = 0; i < fields.length; i++) {
     option_select.append("option")
     .attr("value", fields[i])
-    .text(fields[i]);
+    .text(beautify(fields[i]));
+}
+
+function beautify(str) {
+    return (str.charAt(0).toUpperCase() + str.slice(1)).replaceAll("_", " ")
 }
 
 // Slider
-function update(year){
+function update(year, map){
+    selectedTopicBeautiful = beautify(selectedTopic)
     // Legend scale
     var x = d3.scaleLinear()
     .domain(d3.extent(ranges[selectedTopic]))
@@ -109,7 +119,7 @@ function update(year){
     d3.selectAll(".Country")
         .style("fill", function(d) {
             if (d[year]) {
-                return colorScale(d[year][selectedTopic]);
+                return colorScale(d[year][selectedTopic] || undefined);
             }
         });    
     selectedYear = year;
@@ -140,7 +150,7 @@ function update(year){
         .attr("fill", "#000")
         .attr("text-anchor", "start")
         .attr("font-weight", "bold")
-        .text(selectedTopic);
+        .text(selectedTopicBeautiful);
 
     legend.call(d3.axisBottom(x)
         .tickSize(13)
@@ -148,6 +158,9 @@ function update(year){
         .tickValues(colorScale.domain()))
         .select(".domain")
         .remove();
+    
+    map
+        .on("mouseover", mouseOver)
 }
 
 var slider = d3.select(".slider")
@@ -158,7 +171,7 @@ var slider = d3.select(".slider")
         .attr("step", 1)
         .on("input", function() {
             var year = this.value;
-            update(year);
+            update(year, mapLabourForce);
         });
 
 Promise.all(promises).then(function(data){
@@ -169,7 +182,7 @@ Promise.all(promises).then(function(data){
 
 function ready(world) { 
     // Draw the map
-    svg.append("g")
+    mapLabourForce = svg.append("g")
         .selectAll("path")
         .data(world[0].features)
         // .enter returns an enter selection which basically represents the elements that need to be added. 
@@ -194,12 +207,12 @@ function ready(world) {
         .on("mouseover", mouseOver )
         .on("mouseleave", mouseLeave )
 
-    update(selectedYear);
+    update(selectedYear, mapLabourForce);
 }
 
 option_select.on("change", function() {
     selectedTopic = $("#selectors").find(".option-select").val()
-    update(selectedYear);
+    update(selectedYear, mapLabourForce);
 });
 
 
