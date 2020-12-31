@@ -1,0 +1,63 @@
+﻿SERIES,CATEGORY,CODE,VALUE,NOTE,FLAG
+"Females, 16 to 74 years old",Denmark,DK,90.2023,,
+"Females, 16 to 74 years old",Finland,FI,90.0743,,
+"Females, 16 to 74 years old",Netherlands,NL,88.1152,,
+"Females, 16 to 74 years old",Sweden,SE,87.6549,,
+"Females, 16 to 74 years old",Germany,DE,83.782,,
+"Females, 16 to 74 years old",United Kingdom,UK,82.3589,,
+"Females, 16 to 74 years old",Estonia,EE,81.4797,,
+"Females, 16 to 74 years old",Czechia,CZ,77.4348,Break in series due to changes in the national questionnaire,b (break in series)
+"Females, 16 to 74 years old",Ireland,IE,77.058,,
+"Females, 16 to 74 years old",Malta,MT,73.7625,,
+"Females, 16 to 74 years old",Spain,ES,73.7181,,
+"Females, 16 to 74 years old",Cyprus,CY,73.3129,,
+"Females, 16 to 74 years old",Belgium,BE,73.1026,,
+"Females, 16 to 74 years old",Lithuania,LT,72.985,,
+"Females, 16 to 74 years old",Austria,AT,71.8773,,
+"Females, 16 to 74 years old",Luxembourg,LU,71.0339,Break in series due to a change in the survey methodology,b (break in series)
+"Females, 16 to 74 years old",European Union,EU,70.9771,"CZ: Break in series due to changes in the national questionnaire
+LU: Break in series due to a change in the survey methodology
+LV: Change in the national questionnaire",
+"Females, 16 to 74 years old",Hungary,HU,70.3818,,
+"Females, 16 to 74 years old",France,FR,70.1013,,
+"Females, 16 to 74 years old",Croatia,HR,69.8863,,
+"Females, 16 to 74 years old",Latvia,LV,69.8809,Change in the national questionnaire,b (break in series)
+"Females, 16 to 74 years old",Slovakia,SK,69.3435,,
+"Females, 16 to 74 years old",Slovenia,SI,69.0836,,
+"Females, 16 to 74 years old",Greece,EL,65.9206,,
+"Females, 16 to 74 years old",Poland,PL,63.5895,,
+"Females, 16 to 74 years old",Portugal,PT,61.0389,,
+"Females, 16 to 74 years old",Romania,RO,49.4957,,
+"Females, 16 to 74 years old",Bulgaria,BG,47.1089,,
+"Females, 16 to 74 years old",Italy,IT,44.4951,,
+"Males, 16 to 74 years old",Denmark,DK,90.5331,,
+"Males, 16 to 74 years old",Finland,FI,87.3007,,
+"Males, 16 to 74 years old",Netherlands,NL,90.8259,,
+"Males, 16 to 74 years old",Sweden,SE,85.8268,,
+"Males, 16 to 74 years old",Germany,DE,83.4862,,
+"Males, 16 to 74 years old",United Kingdom,UK,82.4169,,
+"Males, 16 to 74 years old",Estonia,EE,79.2343,,
+"Males, 16 to 74 years old",Czechia,CZ,72.9131,Break in series due to changes in the national questionnaire,b (break in series)
+"Males, 16 to 74 years old",Ireland,IE,72.6044,,
+"Males, 16 to 74 years old",Malta,MT,68.1582,,
+"Males, 16 to 74 years old",Spain,ES,73.4985,,
+"Males, 16 to 74 years old",Cyprus,CY,71.584,,
+"Males, 16 to 74 years old",Belgium,BE,73.9729,,
+"Males, 16 to 74 years old",Lithuania,LT,70.4495,,
+"Males, 16 to 74 years old",Austria,AT,75.4428,,
+"Males, 16 to 74 years old",Luxembourg,LU,75.92,Break in series due to a change in the survey methodology,b (break in series)
+"Males, 16 to 74 years old",European Union,EU,71.0078,"CZ: Break in series due to changes in the national questionnaire
+LU: Break in series due to a change in the survey methodology
+LV: Change in the national questionnaire",
+"Males, 16 to 74 years old",Hungary,HU,70.3591,,
+"Males, 16 to 74 years old",France,FR,67.4959,,
+"Males, 16 to 74 years old",Croatia,HR,74.3881,,
+"Males, 16 to 74 years old",Latvia,LV,66.4915,Change in the national questionnaire,b (break in series)
+"Males, 16 to 74 years old",Slovakia,SK,70.5919,,
+"Males, 16 to 74 years old",Slovenia,SI,69.0147,,
+"Males, 16 to 74 years old",Greece,EL,68.5275,,
+"Males, 16 to 74 years old",Poland,PL,60.5695,,
+"Males, 16 to 74 years old",Portugal,PT,63.4518,,
+"Males, 16 to 74 years old",Romania,RO,48.6022,,
+"Males, 16 to 74 years old",Bulgaria,BG,42.5805,,
+"Males, 16 to 74 years old",Italy,IT,48.8823,,
