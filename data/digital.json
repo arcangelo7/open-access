@@ -1,0 +1,524 @@
+[
+    {
+        "category": "Denmark",
+        "code": "DK",
+        "values": [
+            {
+                "country": "Denmark",
+                "series": "Females, 16 to 74 years old",
+                "value": 90.2023,
+                "note": ""
+            },
+            {
+                "country": "Denmark",
+                "series": "Males, 16 to 74 years old",
+                "value": 90.5331,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Finland",
+        "code": "FI",
+        "values": [
+            {
+                "country": "Finland",
+                "series": "Females, 16 to 74 years old",
+                "value": 90.0743,
+                "note": ""
+            },
+            {
+                "country": "Finland",
+                "series": "Males, 16 to 74 years old",
+                "value": 87.3007,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Netherlands",
+        "code": "NL",
+        "values": [
+            {
+                "country": "Netherlands",
+                "series": "Females, 16 to 74 years old",
+                "value": 88.1152,
+                "note": ""
+            },
+            {
+                "country": "Netherlands",
+                "series": "Males, 16 to 74 years old",
+                "value": 90.8259,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Sweden",
+        "code": "SE",
+        "values": [
+            {
+                "country": "Sweden",
+                "series": "Females, 16 to 74 years old",
+                "value": 87.6549,
+                "note": ""
+            },
+            {
+                "country": "Sweden",
+                "series": "Males, 16 to 74 years old",
+                "value": 85.8268,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Germany",
+        "code": "DE",
+        "values": [
+            {
+                "country": "Germany",
+                "series": "Females, 16 to 74 years old",
+                "value": 83.782,
+                "note": ""
+            },
+            {
+                "country": "Germany",
+                "series": "Males, 16 to 74 years old",
+                "value": 83.4862,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "United Kingdom",
+        "code": "UK",
+        "values": [
+            {
+                "country": "United Kingdom",
+                "series": "Females, 16 to 74 years old",
+                "value": 82.3589,
+                "note": ""
+            },
+            {
+                "country": "United Kingdom",
+                "series": "Males, 16 to 74 years old",
+                "value": 82.4169,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Estonia",
+        "code": "EE",
+        "values": [
+            {
+                "country": "Estonia",
+                "series": "Females, 16 to 74 years old",
+                "value": 81.4797,
+                "note": ""
+            },
+            {
+                "country": "Estonia",
+                "series": "Males, 16 to 74 years old",
+                "value": 79.2343,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Czechia",
+        "code": "CZ",
+        "values": [
+            {
+                "country": "Czechia",
+                "series": "Females, 16 to 74 years old",
+                "value": 77.4348,
+                "note": "Break in series due to changes in the national questionnaire"
+            },
+            {
+                "country": "Czechia",
+                "series": "Males, 16 to 74 years old",
+                "value": 72.9131,
+                "note": "Break in series due to changes in the national questionnaire"
+            }
+        ]
+    },
+    {
+        "category": "Ireland",
+        "code": "IE",
+        "values": [
+            {
+                "country": "Ireland",
+                "series": "Females, 16 to 74 years old",
+                "value": 77.058,
+                "note": ""
+            },
+            {
+                "country": "Ireland",
+                "series": "Males, 16 to 74 years old",
+                "value": 72.6044,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Malta",
+        "code": "MT",
+        "values": [
+            {
+                "country": "Malta",
+                "series": "Females, 16 to 74 years old",
+                "value": 73.7625,
+                "note": ""
+            },
+            {
+                "country": "Malta",
+                "series": "Males, 16 to 74 years old",
+                "value": 68.1582,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Spain",
+        "code": "ES",
+        "values": [
+            {
+                "country": "Spain",
+                "series": "Females, 16 to 74 years old",
+                "value": 73.7181,
+                "note": ""
+            },
+            {
+                "country": "Spain",
+                "series": "Males, 16 to 74 years old",
+                "value": 73.4985,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Cyprus",
+        "code": "CY",
+        "values": [
+            {
+                "country": "Cyprus",
+                "series": "Females, 16 to 74 years old",
+                "value": 73.3129,
+                "note": ""
+            },
+            {
+                "country": "Cyprus",
+                "series": "Males, 16 to 74 years old",
+                "value": 71.584,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Belgium",
+        "code": "BE",
+        "values": [
+            {
+                "country": "Belgium",
+                "series": "Females, 16 to 74 years old",
+                "value": 73.1026,
+                "note": ""
+            },
+            {
+                "country": "Belgium",
+                "series": "Males, 16 to 74 years old",
+                "value": 73.9729,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Lithuania",
+        "code": "LT",
+        "values": [
+            {
+                "country": "Lithuania",
+                "series": "Females, 16 to 74 years old",
+                "value": 72.985,
+                "note": ""
+            },
+            {
+                "country": "Lithuania",
+                "series": "Males, 16 to 74 years old",
+                "value": 70.4495,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Austria",
+        "code": "AT",
+        "values": [
+            {
+                "country": "Austria",
+                "series": "Females, 16 to 74 years old",
+                "value": 71.8773,
+                "note": ""
+            },
+            {
+                "country": "Austria",
+                "series": "Males, 16 to 74 years old",
+                "value": 75.4428,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Luxembourg",
+        "code": "LU",
+        "values": [
+            {
+                "country": "Luxembourg",
+                "series": "Females, 16 to 74 years old",
+                "value": 71.0339,
+                "note": "Break in series due to a change in the survey methodology"
+            },
+            {
+                "country": "Luxembourg",
+                "series": "Males, 16 to 74 years old",
+                "value": 75.92,
+                "note": "Break in series due to a change in the survey methodology"
+            }
+        ]
+    },
+    {
+        "category": "European Union",
+        "code": "EU",
+        "values": [
+            {
+                "country": "European Union",
+                "series": "Females, 16 to 74 years old",
+                "value": 70.9771,
+                "note": "CZ: Break in series due to changes in the national questionnaire\nLU: Break in series due to a change in the survey methodology\nLV: Change in the national questionnaire"
+            },
+            {
+                "country": "European Union",
+                "series": "Males, 16 to 74 years old",
+                "value": 71.0078,
+                "note": "CZ: Break in series due to changes in the national questionnaire\nLU: Break in series due to a change in the survey methodology\nLV: Change in the national questionnaire"
+            }
+        ]
+    },
+    {
+        "category": "Hungary",
+        "code": "HU",
+        "values": [
+            {
+                "country": "Hungary",
+                "series": "Females, 16 to 74 years old",
+                "value": 70.3818,
+                "note": ""
+            },
+            {
+                "country": "Hungary",
+                "series": "Males, 16 to 74 years old",
+                "value": 70.3591,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "France",
+        "code": "FR",
+        "values": [
+            {
+                "country": "France",
+                "series": "Females, 16 to 74 years old",
+                "value": 70.1013,
+                "note": ""
+            },
+            {
+                "country": "France",
+                "series": "Males, 16 to 74 years old",
+                "value": 67.4959,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Croatia",
+        "code": "HR",
+        "values": [
+            {
+                "country": "Croatia",
+                "series": "Females, 16 to 74 years old",
+                "value": 69.8863,
+                "note": ""
+            },
+            {
+                "country": "Croatia",
+                "series": "Males, 16 to 74 years old",
+                "value": 74.3881,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Latvia",
+        "code": "LV",
+        "values": [
+            {
+                "country": "Latvia",
+                "series": "Females, 16 to 74 years old",
+                "value": 69.8809,
+                "note": "Change in the national questionnaire"
+            },
+            {
+                "country": "Latvia",
+                "series": "Males, 16 to 74 years old",
+                "value": 66.4915,
+                "note": "Change in the national questionnaire"
+            }
+        ]
+    },
+    {
+        "category": "Slovakia",
+        "code": "SK",
+        "values": [
+            {
+                "country": "Slovakia",
+                "series": "Females, 16 to 74 years old",
+                "value": 69.3435,
+                "note": ""
+            },
+            {
+                "country": "Slovakia",
+                "series": "Males, 16 to 74 years old",
+                "value": 70.5919,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Slovenia",
+        "code": "SI",
+        "values": [
+            {
+                "country": "Slovenia",
+                "series": "Females, 16 to 74 years old",
+                "value": 69.0836,
+                "note": ""
+            },
+            {
+                "country": "Slovenia",
+                "series": "Males, 16 to 74 years old",
+                "value": 69.0147,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Greece",
+        "code": "EL",
+        "values": [
+            {
+                "country": "Greece",
+                "series": "Females, 16 to 74 years old",
+                "value": 65.9206,
+                "note": ""
+            },
+            {
+                "country": "Greece",
+                "series": "Males, 16 to 74 years old",
+                "value": 68.5275,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Poland",
+        "code": "PL",
+        "values": [
+            {
+                "country": "Poland",
+                "series": "Females, 16 to 74 years old",
+                "value": 63.5895,
+                "note": ""
+            },
+            {
+                "country": "Poland",
+                "series": "Males, 16 to 74 years old",
+                "value": 60.5695,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Portugal",
+        "code": "PT",
+        "values": [
+            {
+                "country": "Portugal",
+                "series": "Females, 16 to 74 years old",
+                "value": 61.0389,
+                "note": ""
+            },
+            {
+                "country": "Portugal",
+                "series": "Males, 16 to 74 years old",
+                "value": 63.4518,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Romania",
+        "code": "RO",
+        "values": [
+            {
+                "country": "Romania",
+                "series": "Females, 16 to 74 years old",
+                "value": 49.4957,
+                "note": ""
+            },
+            {
+                "country": "Romania",
+                "series": "Males, 16 to 74 years old",
+                "value": 48.6022,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Bulgaria",
+        "code": "BG",
+        "values": [
+            {
+                "country": "Bulgaria",
+                "series": "Females, 16 to 74 years old",
+                "value": 47.1089,
+                "note": ""
+            },
+            {
+                "country": "Bulgaria",
+                "series": "Males, 16 to 74 years old",
+                "value": 42.5805,
+                "note": ""
+            }
+        ]
+    },
+    {
+        "category": "Italy",
+        "code": "IT",
+        "values": [
+            {
+                "country": "Italy",
+                "series": "Females, 16 to 74 years old",
+                "value": 44.4951,
+                "note": ""
+            },
+            {
+                "country": "Italy",
+                "series": "Males, 16 to 74 years old",
+                "value": 48.8823,
+                "note": ""
+            }
+        ]
+    }
+]
