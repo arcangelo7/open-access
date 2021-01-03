@@ -4,14 +4,15 @@ var childcareSvg = d3.select("svg#childcare"),
 
 var euProjection = d3.geoConicConformal()
     .center([ 13, 52 ])
-    .scale(width / 1.5)
+    .scale(width / 1.6)
     .translate([width / 2, height / 2]);
 
 var childcare_map = new Map();
 var childcareRange = []
+var yearChildcare = 2005;
 
-let childCareMouseOver = function(event, d) {
-    d3.selectAll(".Country")
+let mouseOverChildcare = function(event, d) {
+    d3.selectAll(".CountryChildcare")
         .transition()
         .duration(200)
         .style("opacity", .5)
@@ -24,14 +25,32 @@ let childCareMouseOver = function(event, d) {
         .duration(200)
         .style("opacity", .9);
     tip.html(function(){
-        return "<strong>" + d.properties.name + "</strong><br/>"
-            + "Rate: " + d.childcare + "%"
+        if (d[yearChildcare]) {
+            return "<strong>" + d.properties.name + "</strong><br/>"
+                + "Rate: " + d[yearChildcare] + "%"
+        } else {
+            return "<strong>" + d.properties.name + "</strong><br/>"
+                + "No data"
+        }
     })
     .style("left", (event.pageX) + "px")
     .style("top", (event.pageY - 28) + "px");
 }
 
-var yearChildcare = 2005;
+let mouseLeaveChildcare = function(d) {
+    d3.selectAll(".CountryChildcare")
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+    d3.select(this)
+        .transition()
+        .duration(200)
+        .style("stroke", "black")
+    
+    tip.transition()
+        .duration(500)
+        .style("opacity", 0);
+}
 
 var sliderChildcare = d3.select(".sliderChildcare")
     .append("input")
@@ -47,18 +66,25 @@ var sliderChildcare = d3.select(".sliderChildcare")
 function updateChildcare(year, map){
     sliderChildcare.property("value", year);
     d3.select(".yearChildcare").text(year);
+    d3.selectAll(".CountryChildcare")
+        .style("fill", function(d) {
+            return colorScaleChildcare(d[year])
+        });
+    yearChildcare = year;
 }
 
 // Load external data 
 var promises = [
     d3.json("data/world.geojson"),
     d3.csv("data/childcare.csv", function(d) {
-        childcare_map.set(d.Alpha3Code, +d.Value)
+        if (childcare_map.get(d.Alpha3Code)) {
+            childcare_map.get(d.Alpha3Code).push({"year": +d.PeriodCode, "value": +d.Value})
+        } else {
+            childcare_map.set(d.Alpha3Code, [{"year": +d.PeriodCode, "value": +d.Value}])
+        }
         childcareRange.push(+d.Value)
     })
 ]
-
-
 
 Promise.all(promises).then(function(data){
     childcareReady(data);
@@ -84,12 +110,18 @@ function childcareReady(europe) {
             .projection(euProjection)
         )
         .attr("fill", function(d){
-            d.childcare = childcare_map.get(d.id) || 0;
-            return colorScaleChildcare(d.childcare);
+            if (childcare_map.get(d.id)) {
+                for (let [i, value] of childcare_map.get(d.id).entries()) {
+                    d[value.year] = value.value
+                }
+            }
+            // return colorScaleChildcare(d.childcare);
         })
-        .attr("class", function(d){ return "Country" } )
-        .on("mouseover", childCareMouseOver )
-        .on("mouseleave", mouseLeave );
+        .attr("class", function(d){ return "CountryChildcare" } )
+        .style("stroke", "black")
+        .style("opacity", 1)
+        .on("mouseover", mouseOverChildcare )
+        .on("mouseleave", mouseLeaveChildcare );
 
     // Legend scale
     var x = d3.scaleLinear()

@@ -56,17 +56,6 @@ let mouseOver = function(event, d) {
             if (d[selectedYear][selectedTopic]) {
                 return "<strong>" + d.properties.name + "</strong><br/>"
                 + "<strong>" + selectedTopicBeautiful + "</strong>: " + Math.round(d[selectedYear][selectedTopic] * 100) / 100 + "<br/>"
-                // return "<strong>" + d.properties.name + "</strong><br/>" 
-                //     + "<strong>Female labour force (%)</strong>: " + Math.round(d[selectedYear]["female_labour_force"] * 100) / 100 + "%" + "<br/>"
-                //     + "<strong>Female labour force (k)</strong>: " + Math.round(d[selectedYear]["total"] * 100) / 100 + "<br/>"
-                //     + "<strong>Single (k)</strong>: " + Math.round(d[selectedYear]["single"] * 100) / 100 + "<br/>"
-                //     + "<strong>Married (k)</strong>: " + Math.round(d[selectedYear]["married"] * 100) / 100 + "<br/>"
-                //     + "<strong>Union / Cohabiting (k)</strong>: " + Math.round(d[selectedYear]["union_cohabiting"] * 100) / 100 + "<br/>"
-                //     + "<strong>Widowed (k)</strong>: " + Math.round(d[selectedYear]["widowed"] * 100) / 100 + "<br/>"
-                //     + "<strong>Divorced (k)</strong>: " + Math.round(d[selectedYear]["divorced"] * 100) / 100 + "<br/>"
-                //     + "<strong>Single / Widowed / Divorced (k)</strong>: " + Math.round(d[selectedYear]["single_widowed_divorced"] * 100) / 100 + "<br/>"
-                //     + "<strong>Married / Union / Cohabiting (k)</strong>: " + Math.round(d[selectedYear]["married_union_cohabiting"] * 100) / 100 + "<br/>"
-                //     + "<strong>Not elsewhere classified (k)</strong>: " + Math.round(d[selectedYear]["not_elsewhere_classified"] * 100) / 100 + "<br/>"
             } else {
                 return "<strong>" + d.properties.name + "</strong><br/>" + "No data"
             }
