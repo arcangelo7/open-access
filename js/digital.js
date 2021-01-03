@@ -3,6 +3,14 @@ var width = 1000 - margin.left - margin.right
 var height = 700 - margin.top - margin.bottom
 
 let histoMouseOver = function(event, d) {
+    d3.selectAll("rect")
+        .transition()
+        .duration(200)
+        .style("opacity", .5)
+    d3.select(this)
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
     tip.transition()
         .duration(200)
         .style("opacity", .9)
@@ -23,6 +31,10 @@ let histoMouseOver = function(event, d) {
 }
 
 let histoMouseLeave = function(event, d) {
+    d3.selectAll("rect")
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
     tip.transition()
         .duration(500)
         .style("opacity", 0);
