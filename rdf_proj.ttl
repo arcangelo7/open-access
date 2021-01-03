@@ -7,64 +7,64 @@
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
-dcat:Catalog  dct:title       "*nomeprogetto* catalogue";
+dcat:Catalog  dct:title       	"*nomeprogetto* catalogue";
               dct:description	"The catalogue of the *nomeprogetto* datasets.";
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-	            dct:publisher   foaf:Person;
-              dct:modified	  "inserire data ultima modifica - yyyy/mm/dd";
-              dcat:dataset	  dcat:Dataset;
-              dcat:dataset    dcat:Dataset;
-		          dcat:dataset    dcat:Dataset;
-              dcat:dataset    dcat:Dataset;
-              dcat:dataset    dcat:Dataset;
-              dcat:dataset    dcat:Dataset;
-		          foaf:homepage	  *url nostro sito*;
-		          dct:language    <http://publications.europa.eu/resource/authority/language/ENG>;
-		          dct:issued      "inserire data di pubblicazione - yyyy/mm/dd";
-              dct:spatial     <http://dbpedia.org/ontology/world>;
-		          dct:license     <https://creativecommons.org/licenses/by-sa/4.0/>;
-		          dct:rights      "Under this licence you may copy, distribute, display and perform the work and make derivative works and remixes based on it, even for commercial purposes, only if you give the author or licensor the credits (attribution) in the manner specified by the license, and indicating if changes were made.You may distribute derivative works only under a licence identical to the licence that governs the original work.".
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+	      dct:publisher   	foaf:Person;
+              dct:modified	"inserire data ultima modifica - yyyy/mm/dd";
+              dcat:dataset	dcat:Dataset;
+              dcat:dataset    	dcat:Dataset;
+	      dcat:dataset  	dcat:Dataset;
+              dcat:dataset    	dcat:Dataset;
+              dcat:dataset    	dcat:Dataset;
+              dcat:dataset    	dcat:Dataset;
+	      foaf:homepage	*url nostro sito*;
+	      dct:language      <http://publications.europa.eu/resource/authority/language/ENG>;
+	      dct:issued      	"inserire data di pubblicazione - yyyy/mm/dd";
+              dct:spatial    	<http://dbpedia.org/ontology/world>;
+	      dct:license     	<https://creativecommons.org/licenses/by-sa/4.0/>;
+	      dct:rights      	"Under this licence you may copy, distribute, display and perform the work and make derivative works and remixes based on it, even for commercial purposes, only if you give the author or licensor the credits (attribution) in the manner specified by the license, and indicating if changes were made.You may distribute derivative works only under a licence identical to the licence that governs the original work.".
 
-dcat:Dataset  dct:identifier  *da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
-              dct:title       "*nomeprogetto - Labour Market";
-              dct:description "This dataset contains data from two different organization: ILOSTAT and The World Bank. The dataset is focused on gender equality in the labour market, in particular on the female's employment. For both datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset goes from 1983 to 2019, the data collected in the second dataset goes from 2014 to 2020.";
-              dct:modified    "inserire data ultima modifica - yyyy/mm/dd";
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/ECON>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/JUST>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
+              dct:title       	"*nomeprogetto - Labour Market";
+              dct:description 	"This dataset contains data from two different organization: ILOSTAT and The World Bank. The dataset is focused on gender equality in the labour market, in particular on the female's employment. For both datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset goes from 1983 to 2019, the data collected in the second dataset goes from 2014 to 2020.";
+              dct:modified    	"inserire data ultima modifica - yyyy/mm/dd";
+              dcat:theme     	<http://publications.europa.eu/resource/authority/data-theme/ECON>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/JUST>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
               dct:rightsHolder  <https://ilostat.ilo.org/data/>; *non sono sicura vada indicato così*
               dct:rightsHolder  <https://www.worldbank.org/>; *non sono sicura vada indicato così*
               dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
               dcat:distribution	dcat:Distribution;
-              dct:subject     <http://eurovoc.europa.eu/100232> , <http://eurovoc.europa.eu/100233> ,  <http://eurovoc.europa.eu/100184> , <http://eurovoc.europa.eu/3913> , <http://eurovoc.europa.eu/81>;
+              dct:subject     	<http://eurovoc.europa.eu/100232> , <http://eurovoc.europa.eu/100233> ,  <http://eurovoc.europa.eu/100184> , <http://eurovoc.europa.eu/3913> , <http://eurovoc.europa.eu/81>;
               dcat:contactPoint	vcard:Group;
-              dct:publisher	  foaf:Person;
-          		dct:publisher	  foaf:Person;
-          		dct:publisher	  foaf:Person;
-              dct:creator     foaf:Person;
-          		dct:creator     foaf:Person;
-          		dct:creator     foaf:Person;
-              dct:issued      "inserire data di pubblicazione - yyyy/mm/dd";
-              dct:language	  <http://publications.europa.eu/resource/authority/language/ENG>;
-              dcat:keyword	  "gender equality";
-          		dcat:keyword	  "labour market";
-          		dcat:keyword	  "employment";
-              dcat:keyword    "social Protection";
-              dct:source      <https://www.ilo.org/shinyapps/bulkexplorer19/?lang=en&segment=indicator&id=EAP_TEAP_SEX_AGE_MTS_NB_A>;
-              dct:source      <https://databank.worldbank.org/reports.aspx?source=2&series=SL.TLF.TOTL.FE.ZS&country=#>;
-              dct:temporal    dct:PeriodOfTime;
-              dct:spatial	    <http://dbpedia.org/ontology/world>.
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:creator       foaf:Person;
+              dct:creator       foaf:Person;
+              dct:creator       foaf:Person;
+              dct:issued      	"inserire data di pubblicazione - yyyy/mm/dd";
+              dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+              dcat:keyword	"gender equality";
+              dcat:keyword	"labour market";
+              dcat:keyword	"employment";
+              dcat:keyword    	"social Protection";
+              dct:source      	<https://www.ilo.org/shinyapps/bulkexplorer19/?lang=en&segment=indicator&id=EAP_TEAP_SEX_AGE_MTS_NB_A>;
+              dct:source      	<https://databank.worldbank.org/reports.aspx?source=2&series=SL.TLF.TOTL.FE.ZS&country=#>;
+              dct:temporal    	dct:PeriodOfTime;
+              dct:spatial	<http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format      <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
-                  dcat:accessURL	*url nostro sito*;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dcat:accessURL    *url nostro sito*;
                   dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
-                  dcat:byteSize	  "xx,xx MB";
-                  adms:status     <http://purl.org/adms/status/Completed>.
+                  dcat:byteSize	    "xx,xx MB";
+                  adms:status       <http://purl.org/adms/status/Completed>.
 
 dct:PeriodOfTime	dcat:startDate	"1983";
-                  dcat:endDate	  "2020".
+                  	dcat:endDate	"2020".
 
 dcat:Dataset  dct:identifier  *da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
               dct:title       "*nomeprogetto - Health";
