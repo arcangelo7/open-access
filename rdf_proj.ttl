@@ -66,203 +66,203 @@ dcat:Distribution dct:format        <http://publications.europa.eu/resource/auth
 dct:PeriodOfTime	dcat:startDate	"1983";
                   	dcat:endDate	"2020".
 
-dcat:Dataset  dct:identifier  *da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
-              dct:title       "*nomeprogetto - Health";
-              dct:description "This dataset contains data from two different organization: OECD.Stat and Eurostat. The dataset is focused on life expectancy and causes of mortality, trying to focus on the difference between male and female. For both datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset goes from 2000 to 2018, the data collected in the second dataset goes from 2014 to 2018.";
-              dct:modified    "inserire data ultima modifica - yyyy/mm/dd";
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
+              dct:title       	"*nomeprogetto - Health";
+              dct:description 	"This dataset contains data from two different organization: OECD.Stat and Eurostat. The dataset is focused on life expectancy and causes of mortality, trying to focus on the difference between male and female. For both datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset goes from 2000 to 2018, the data collected in the second dataset goes from 2014 to 2018.";
+              dct:modified    	"inserire data ultima modifica - yyyy/mm/dd";
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
               dct:rightsHolder  <http://www.oecd.org/>; *non sono sicura vada indicato così*
               dct:rightsHolder  <https://ec.europa.eu/eurostat/>; *non sono sicura vada indicato così*
               dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
               dcat:distribution	dcat:Distribution;
-              dct:subject     <http://eurovoc.europa.eu/100210> , <http://eurovoc.europa.eu/100215> , <http://eurovoc.europa.eu/1991> , <http://eurovoc.europa.eu/589>;
+              dct:subject     	<http://eurovoc.europa.eu/100210> , <http://eurovoc.europa.eu/100215> , <http://eurovoc.europa.eu/1991> , <http://eurovoc.europa.eu/589>;
               dcat:contactPoint	vcard:Group;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:issued      "inserire data di pubblicazione - yyyy/mm/dd";
-              dct:language	  <http://publications.europa.eu/resource/authority/language/ENG>;
-              dcat:keyword	  "health";
-              dcat:keyword	  "population";
-              dcat:keyword	  "life expectancy";
-              dcat:keyword    "mortality";
-              dct:source      <https://stats.oecd.org/Index.aspx?QueryId=30115>;
-              dct:source      <https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec$DV_291/default/table?lang=en>;
-              dct:temporal    dct:PeriodOfTime;
-              dct:spatial	    <http://dbpedia.org/ontology/world>.
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:issued      	"inserire data di pubblicazione - yyyy/mm/dd";
+              dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+              dcat:keyword	"health";
+              dcat:keyword	"population";
+              dcat:keyword	"life expectancy";
+              dcat:keyword    	"mortality";
+              dct:source      	<https://stats.oecd.org/Index.aspx?QueryId=30115>;
+              dct:source      	<https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec$DV_291/default/table?lang=en>;
+              dct:temporal    	dct:PeriodOfTime;
+              dct:spatial	<http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format      <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
-                  dcat:accessURL	*url nostro sito*;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dcat:accessURL    *url nostro sito*;
                   dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
-                  dcat:byteSize	  "xx,xx MB";
-                  adms:status     <http://purl.org/adms/status/Completed>.
+                  dcat:byteSize	    "xx,xx MB";
+                  adms:status       <http://purl.org/adms/status/Completed>.
 
 dct:PeriodOfTime	dcat:startDate	"2000";
-                  dcat:endDate	  "2018".
+                  	dcat:endDate	"2018".
 
-dcat:Dataset  dct:identifier  *da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
-              dct:title       "*nomeprogetto - Earnings and Social inclusion ";
-              dct:description "This dataset contains data from two different organization: OECD.Stat and Eurostat. The dataset is focused on the gender pay gap, the wage gap between male and female. For both datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset cover the year 2000, 2005 and then goes without interruptions from 2010 to 2019, the data collected in the second dataset goes from 1994 to 2005.";
-              dct:modified    "inserire data ultima modifica - yyyy/mm/dd";
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/ECON>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/JUST>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
+              dct:title       	"*nomeprogetto - Earnings and Social inclusion ";
+              dct:description 	"This dataset contains data from two different organization: OECD.Stat and Eurostat. The dataset is focused on the gender pay gap, the wage gap between male and female. For both datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset cover the year 2000, 2005 and then goes without interruptions from 2010 to 2019, the data collected in the second dataset goes from 1994 to 2005.";
+              dct:modified    	"inserire data ultima modifica - yyyy/mm/dd";
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/ECON>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/JUST>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
               dct:rightsHolder  <http://www.oecd.org/>; *non sono sicura vada indicato così*
               dct:rightsHolder  <https://ec.europa.eu/eurostat/>; *non sono sicura vada indicato così*
               dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
               dcat:distribution	dcat:Distribution;
-              dct:subject     <http://eurovoc.europa.eu/100153> , <http://eurovoc.europa.eu/688> , <http://eurovoc.europa.eu/687> , <http://eurovoc.europa.eu/3913> , <http://eurovoc.europa.eu/455>;
+              dct:subject     	<http://eurovoc.europa.eu/100153> , <http://eurovoc.europa.eu/688> , <http://eurovoc.europa.eu/687> , <http://eurovoc.europa.eu/3913> , <http://eurovoc.europa.eu/455>;
               dcat:contactPoint	vcard:Group;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:issued      "inserire data di pubblicazione - yyyy/mm/dd";
-              dct:language	  <http://publications.europa.eu/resource/authority/language/ENG>;
-              dcat:keyword	  "earnings";
-              dcat:keyword	  "social inclusion";
-              dcat:keyword	  "gender pay gap";
-              dcat:keyword    "gender wage gap";
-              dcat:keyword    "economic discrimination";
-              dct:source      <https://stats.oecd.org/index.aspx?queryid=54751>;
-              dct:source      <https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=earn_gr_hgpg&lang=en>;
-              dct:temporal    dct:PeriodOfTime;
-              dct:spatial	    <http://dbpedia.org/ontology/world>.
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:issued      	"inserire data di pubblicazione - yyyy/mm/dd";
+              dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+              dcat:keyword	"earnings";
+              dcat:keyword	"social inclusion";
+              dcat:keyword	"gender pay gap";
+              dcat:keyword    	"gender wage gap";
+              dcat:keyword    	"economic discrimination";
+              dct:source      	<https://stats.oecd.org/index.aspx?queryid=54751>;
+              dct:source      	<https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=earn_gr_hgpg&lang=en>;
+              dct:temporal    	dct:PeriodOfTime;
+              dct:spatial	<http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format      <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
-                  dcat:accessURL	*url nostro sito*;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dcat:accessURL    *url nostro sito*;
                   dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
-                  dcat:byteSize	  "xx,xx MB";
-                  adms:status     <http://purl.org/adms/status/Completed>.
+                  dcat:byteSize	    "xx,xx MB";
+                  adms:status       <http://purl.org/adms/status/Completed>.
 
 dct:PeriodOfTime	dcat:startDate	"1994";
-                  dcat:endDate	  "2019".
+                  	dcat:endDate	"2019".
 
-dcat:Dataset  dct:identifier  *da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
-              dct:title       "*nomeprogetto - Childcare ";
-              dct:description "This dataset contains data from UNECE organization. The dataset is focused on the enrollment rate of children in child care centers. Data are divided by country and they cover almost all the existing states. The temporal coverages goes rom 2005 to 2017.";
-              dct:modified    "inserire data ultima modifica - yyyy/mm/dd";
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/EDUC>;
+dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
+              dct:title       	"*nomeprogetto - Childcare ";
+              dct:description 	"This dataset contains data from UNECE organization. The dataset is focused on the enrollment rate of children in child care centers. Data are divided by country and they cover almost all the existing states. The temporal coverages goes rom 2005 to 2017.";
+              dct:modified    	"inserire data ultima modifica - yyyy/mm/dd";
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/EDUC>;
               dct:rightsHolder  <https://w3.unece.org/PXWeb/en>; *non sono sicura vada indicato così*
               dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
               dcat:distribution	dcat:Distribution;
-              dct:subject     <http://eurovoc.europa.eu/100217> , <http://eurovoc.europa.eu/1098>;
+              dct:subject     	<http://eurovoc.europa.eu/100217> , <http://eurovoc.europa.eu/1098>;
               dcat:contactPoint	vcard:Group;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:issued      "inserire data di pubblicazione - yyyy/mm/dd";
-              dct:language	  <http://publications.europa.eu/resource/authority/language/ENG>;
-              dcat:keyword	  "children";
-              dcat:keyword	  "childcare";
-              dcat:keyword	  "education";
-              dcat:keyword    "enrollment rate";
-              dct:source      <https://w3.unece.org/PXWeb/en/Table?IndicatorCode=304>;
-              dct:temporal    dct:PeriodOfTime;
-              dct:spatial	    <http://dbpedia.org/ontology/world>.
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator    	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:issued      	"inserire data di pubblicazione - yyyy/mm/dd";
+              dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+              dcat:keyword	"children";
+              dcat:keyword	"childcare";
+              dcat:keyword	"education";
+              dcat:keyword    	"enrollment rate";
+              dct:source      	<https://w3.unece.org/PXWeb/en/Table?IndicatorCode=304>;
+              dct:temporal    	dct:PeriodOfTime;
+              dct:spatial	<http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format      <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
-                  dcat:accessURL	*url nostro sito*;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dcat:accessURL    *url nostro sito*;
                   dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
-                  dcat:byteSize	  "xx,xx MB";
-                  adms:status     <http://purl.org/adms/status/Completed>.
+                  dcat:byteSize	    "xx,xx MB";
+                  adms:status       <http://purl.org/adms/status/Completed>.
 
 dct:PeriodOfTime	dcat:startDate	"2005";
-                  dcat:endDate	  "2017".
+                  	dcat:endDate	"2017".
 
-dcat:Dataset  dct:identifier  *da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
-              dct:title       "*nomeprogetto - Digital Economy";
-              dct:description "This dataset contains data from Eurostat organization. The dataset is focused on Individuals' level of digital skills of female and male from 16 to 74 years old. Data are divided by country and they cover almost all the existing states. The temporal coverages goes rom 2015 to 2019, excluding 2018 data.";
-              dct:modified    "inserire data ultima modifica - yyyy/mm/dd";
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/TECH>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/EDUC>;
+dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
+              dct:title       	"*nomeprogetto - Digital Economy";
+              dct:description 	"This dataset contains data from Eurostat organization. The dataset is focused on Individuals' level of digital skills of female and male from 16 to 74 years old. Data are divided by country and they cover almost all the existing states. The temporal coverages goes rom 2015 to 2019, excluding 2018 data.";
+              dct:modified    	"inserire data ultima modifica - yyyy/mm/dd";
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/TECH>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/EDUC>;
               dct:rightsHolder  <https://ec.europa.eu/eurostat/>; *non sono sicura vada indicato così*
               dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
               dcat:distribution	dcat:Distribution;
-              dct:subject     *non trovati*;
+              dct:subject     	*non trovati*;
               dcat:contactPoint	vcard:Group;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:publisher	  foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:creator     foaf:Person;
-              dct:issued      "inserire data di pubblicazione - yyyy/mm/dd";
-              dct:language	  <http://publications.europa.eu/resource/authority/language/ENG>;
-              dcat:keyword	  "digital economy";
-              dcat:keyword	  "digital skills";
-              dcat:keyword	  "individual digital skills";
-              dcat:keyword    "digital competences";
-              dct:source      <https://ec.europa.eu/eurostat/databrowser/view/isoc_sk_dskl_i/default/bar?lang=en >;
-              dct:temporal    dct:PeriodOfTime;
-              dct:spatial	    <http://dbpedia.org/ontology/world>.
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:issued      	"inserire data di pubblicazione - yyyy/mm/dd";
+              dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+              dcat:keyword	"digital economy";
+              dcat:keyword	"digital skills";
+              dcat:keyword	"individual digital skills";
+              dcat:keyword    	"digital competences";
+              dct:source      	<https://ec.europa.eu/eurostat/databrowser/view/isoc_sk_dskl_i/default/bar?lang=en >;
+              dct:temporal    	dct:PeriodOfTime;
+              dct:spatial	<http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format      <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
-                  dcat:accessURL	*url nostro sito*;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dcat:accessURL    *url nostro sito*;
                   dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
-                  dcat:byteSize	  "xx,xx MB";
-                  adms:status     <http://purl.org/adms/status/Completed>.
+                  dcat:byteSize	    "xx,xx MB";
+                  adms:status       <http://purl.org/adms/status/Completed>.
 
 dct:PeriodOfTime	dcat:startDate	"2015";
-                  dcat:endDate	  "2019".
+                  	dcat:endDate	"2019".
 
-dcat:Dataset  dct:identifier  *da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
-              dct:title       "*nomeprogetto - Education ";
-              dct:description "This dataset contains data from two different organization: the UNICEF Data Warehouse and the project “Our World in Data” of the Global Change Data Lab. The dataset is focused on educational attainment, divided by level of education, age and gender. In particular, the first dataset refers especially on the upper secondary education, the second dataset deals with primary education and gender inequality in education. For all datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset goes from 1970 to 2020, the data collected in the second dataset, for the first theme goes from 1970 to 2020, meanwhile the second theme goes from 1870 to 2010.";
-              dct:modified    "inserire data ultima modifica - yyyy/mm/dd";
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
-              dcat:theme      <http://publications.europa.eu/resource/authority/data-theme/EDUC>;
+dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
+              dct:title       	"*nomeprogetto - Education ";
+              dct:description 	"This dataset contains data from two different organization: the UNICEF Data Warehouse and the project “Our World in Data” of the Global Change Data Lab. The dataset is focused on educational attainment, divided by level of education, age and gender. In particular, the first dataset refers especially on the upper secondary education, the second dataset deals with primary education and gender inequality in education. For all datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset goes from 1970 to 2020, the data collected in the second dataset, for the first theme goes from 1970 to 2020, meanwhile the second theme goes from 1870 to 2010.";
+              dct:modified    	"inserire data ultima modifica - yyyy/mm/dd";
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/EDUC>;
               dct:rightsHolder  <http://uis.unesco.org/>; *non sono sicura vada indicato così*
               dct:rightsHolder  <https://global-change-data-lab.org/>; *non sono sicura vada indicato così*
               dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
               dcat:distribution	dcat:Distribution;
-              dct:subject     <http://eurovoc.europa.eu/100150> , <http://eurovoc.europa.eu/100217> , <http://eurovoc.europa.eu/280> , <http://eurovoc.europa.eu/1419> , <http://eurovoc.europa.eu/784> , <http://eurovoc.europa.eu/789> , <http://eurovoc.europa.eu/3968>;
+              dct:subject     	<http://eurovoc.europa.eu/100150> , <http://eurovoc.europa.eu/100217> , <http://eurovoc.europa.eu/280> , <http://eurovoc.europa.eu/1419> , <http://eurovoc.europa.eu/784> , <http://eurovoc.europa.eu/789> , <http://eurovoc.europa.eu/3968>;
               dcat:contactPoint	vcard:Group;
-              dct:publisher	  foaf:Person;
-          		dct:publisher	  foaf:Person;
-          		dct:publisher	  foaf:Person;
-              dct:creator     foaf:Person;
-          		dct:creator     foaf:Person;
-          		dct:creator     foaf:Person;
-              dct:issued      "inserire data di pubblicazione - yyyy/mm/dd";
-              dct:language	  <http://publications.europa.eu/resource/authority/language/ENG>;
-              dcat:keyword	  "education";
-          		dcat:keyword	  "educational attainment";
-              dcat:keyword    "compulsory education";
-          		dcat:keyword	  "inequality in education";
-              dcat:keyword    "primary school";
-              dcat:keyword    "secondary School";
-              dcat:keyword    "gender gap in education";
-              dct:source      <https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019>;
-              dct:source      <https://ourworldindata.org/educational-mobility-inequality#in-primary-education>;
-              dct:source      <https://ourworldindata.org/grapher/gender-ratios-for-mean-years-of-schooling>;
-              dct:temporal    dct:PeriodOfTime;
-              dct:spatial	    <http://dbpedia.org/ontology/world>.
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:publisher	foaf:Person;
+              dct:creator       foaf:Person;
+              dct:creator       foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:issued      	"inserire data di pubblicazione - yyyy/mm/dd";
+              dct:language	<http://publications.europa.eu/resource/authority/language/ENG>;
+              dcat:keyword	"education";
+              dcat:keyword	"educational attainment";
+              dcat:keyword    	"compulsory education";
+              dcat:keyword	"inequality in education";
+              dcat:keyword    	"primary school";
+              dcat:keyword    	"secondary School";
+              dcat:keyword    	"gender gap in education";
+              dct:source      	<https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019>;
+              dct:source      	<https://ourworldindata.org/educational-mobility-inequality#in-primary-education>;
+              dct:source      	<https://ourworldindata.org/grapher/gender-ratios-for-mean-years-of-schooling>;
+              dct:temporal    	dct:PeriodOfTime;
+              dct:spatial	<http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format      <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
-                  dcat:accessURL	*url nostro sito*;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dcat:accessURL    *url nostro sito*;
                   dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
-                  dcat:byteSize	  "xx,xx MB";
-                  adms:status     <http://purl.org/adms/status/Completed>.
+                  dcat:byteSize	    "xx,xx MB";
+                  adms:status       <http://purl.org/adms/status/Completed>.
 
 dct:PeriodOfTime	dcat:startDate	"1870";
-                  dcat:endDate	  "2020".
+                  	dcat:endDate	"2020".
 
 
 foaf:Person	foaf:name	"Arcangelo Massari".
@@ -275,13 +275,12 @@ vcard:Group	vcard:hasEmail	*una email di riferimento per contatto*.
 
 <http://purl.org/adms/status/Completed>	skos:prefLabel	"Completed".
 
-
 <http://publications.europa.eu/resource/authority/data-theme/ECON>	skos:prefLabel	"Economy and finances".
 
-<http://publications.europa.eu/resource/authority/data-theme/JUST>  skos:prefLabel  "Justice, legal system and public safety".
+<http://publications.europa.eu/resource/authority/data-theme/JUST>	skos:prefLabel	"Justice, legal system and public safety".
 
-<http://publications.europa.eu/resource/authority/data-theme/HEAL> skos:prefLabel   "Health".
+<http://publications.europa.eu/resource/authority/data-theme/HEAL>	skos:prefLabel	"Health".
 
-<http://publications.europa.eu/resource/authority/data-theme/EDUC> skos:prefLabel   "Education, culture and sport".
+<http://publications.europa.eu/resource/authority/data-theme/EDUC>	skos:prefLabel	"Education, culture and sport".
 
 <http://publications.europa.eu/resource/authority/data-theme/SOCI>	skos:prefLabel	"Population and society".
