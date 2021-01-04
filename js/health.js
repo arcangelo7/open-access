@@ -1,7 +1,7 @@
 ///////////////////////////////////////////// Life expectancy 
-var margin_le = { left:80, right:80, top:50, bottom:100 }
+var margin_le = { left:250, right:250, top:100, bottom:100 }
 var width_le = $(window).width() - margin_le.left - margin_le.right
-var height = 800 - margin_le.top - margin_le.bottom
+var height = 3000 - margin_le.top - margin_le.bottom
 
 var g_le = d3.select("#healthLifeExpectancy")
     .append("svg")
@@ -12,12 +12,11 @@ var g_le = d3.select("#healthLifeExpectancy")
 
 // Y Label
 g_le.append("text")
-    .attr("class", "y-axis label")
-    .attr("x", - (height / 2))
-    .attr("y", -60)
+    .attr("class", "x-axis label")
+    .attr("x", (width_le / 2))
+    .attr("y", -40)
     .attr("font-size", "20px")
     .attr("text-anchor", "middle")
-    .attr("transform", "rotate(-90)")
     .text("Life expectancy (years)")
 
 // Hover info
@@ -61,73 +60,75 @@ let leMouseLeave = function(event, d) {
 }
 
 d3.json("data/health_life_expectancy.json").then(data => {
-    var x0 = d3.scaleBand()
+    var y0 = d3.scaleBand()
         .domain(data.map(d => {
             return d.country
         }))
-        .range([0, width_le])
-        .padding(0.3);
+        .range([0, height*4])
+        .padding(.3);
     
-    var x1  = d3.scaleBand()
+    var y1  = d3.scaleBand()
         .domain(data[0].values.map(function(d){ 
                 return d.sex 
             })
         )
-        .rangeRound([0, x0.bandwidth()])
+        .rangeRound([0, y0.bandwidth()])
     
-    var y = d3.scaleLinear()
+    var x = d3.scaleLinear()
         .domain([0, d3.max(data, d => {
             return d3.max(d.values, function(values){
                 return values.value
             })
         })]).nice()
-        .range([height, 0])
+        .range([0, width_le])
 
     const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-    var xAxisCall = d3.axisBottom(x0);
+    var yAxisCall = d3.axisLeft(y0);
     g_le.append("g")
-        .attr("class", "x-axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxisCall)
+        .attr("class", "y-axis")
+        .style("font-size", "14px")
+        .call(yAxisCall)
     .selectAll("text")
-        .attr("y", "10")
-        .attr("x", "-5")
+        // .attr("y", "10")
+        // .attr("x", "-5")
         .attr("text-anchor", "end")
-        .attr("transform", "rotate(-40)");
+        // .attr("transform", "rotate(-40)");
     
-    var yAxisCall = d3.axisLeft(y)
+    var xAxisCall = d3.axisTop(x)
         .tickFormat(d => {
             return d 
         });
         g_le.append("g")
-        .attr("class", "y-axis")
-        .call(yAxisCall);
+        .attr("class", "x-axis")
+        .style("font-size", "14px")
+        // .attr("transform", "translate(0," + height + ")")
+        .call(xAxisCall);
 
     var slice_le = g_le.selectAll(".slice_le")
         .data(data)
         .enter().append("g")
         .attr("class", "g")
-        .attr("transform",function(d) { return "translate(" + x0(d.country) + ",0)"; });
+        .attr("transform",function(d) { return "translate(0," + y0(d.country) + ")"; });
     
         slice_le.selectAll("rect")
             .data(function(d) { return d.values; })
             .join("rect")
-                .attr("width", x1.bandwidth())
-                .attr("x", function(d) { return x1(d.sex); })
+                .attr("height", y1.bandwidth())
+                .attr("y", function(d) { return y1(d.sex); })
                 .style("fill", function(d) { return color(d.sex) })
-                .attr("y", function(d) { return y(0); })
-                .attr("height", function(d) { return height - y(0); })
+                .attr("x", function(d) { return x(0); })
+                .attr("width", function(d) { return x(0); })
                 .on("mouseover", leMouseOver)
                 .on("mouseout", leMouseLeave);
         slice_le.selectAll("rect")
             .transition()
             .delay(function (d) {return Math.random()*1000;})
             .duration(1000)
-            .attr("y", function(d) { return y(d.value); })
-            .attr("height", function(d) {
+            .attr("x", function(d) { return x(0); })
+            .attr("width", function(d) {
                 if (+d.value) {
-                    return height - y(d.value); 
+                    return x(d.value); 
                 }
             })
 
@@ -141,14 +142,14 @@ d3.json("data/health_life_expectancy.json").then(data => {
 
     legend_le.append("rect")
         .attr("x", width_le - 18)
-        .attr("y", -40)
+        .attr("y", -100)
         .attr("width", 18)
         .attr("height", 18)
         .style("fill", function(d) { return color(d); });
 
     legend_le.append("text")
         .attr("x", width_le - 24)
-        .attr("y", -31)
+        .attr("y", -91)
         .attr("dy", ".35em")
         .style("text-anchor", "end")
         .text(function(d) { 
