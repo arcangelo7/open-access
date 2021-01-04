@@ -51,13 +51,20 @@
             border: 1px solid #ccc;
             border-top: none;
         }
+
+        rect.zoom-panel {
+            cursor: move;
+            fill: #fff;
+            pointer-events: all;
+        }
     </style>
 </head>
 <body>
     <!-- Tab links -->
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'labour')">Labour</button>
-        <button class="tablinks" onclick="openTab(event, 'childcare')" id="defaultOpen">Childcare</button>
+        <button class="tablinks" onclick="openTab(event, 'health')" id="defaultOpen">Health</button>
+        <button class="tablinks" onclick="openTab(event, 'childcare')">Childcare</button>
         <button class="tablinks" onclick="openTab(event, 'digital')">Digital economy</button>
     </div>
 
@@ -68,6 +75,22 @@
         <div class="slider"></div>
         <div id="selectors"></div>
         <svg id="labour_choropleth" width="1000" height="700"></svg>
+    </div>
+
+    <div id="health" class="tabcontent">
+        <h1>Life expectancy (2018) vs. Causes of mortality</h1>
+        <h2 class="yearHealth"></h2>
+        <div class="sliderHealth"></div>
+        <div id="healthLifeExpectancy"></div>
+        <svg id="healthDeathCauses" width="1000" height="700"></svg>
+    </div>
+
+    <div id="paygap" class="tabcontent">
+        <h1>Gender pay gap (1994-2019)</h1>
+        <h2 class="yearPaygap"></h2>
+        <div class="slideryearPaygap"></div>
+        <div id="selectors"></div>
+        <svg id="paygap" width="1000" height="700"></svg>
     </div>
 
     <div id="childcare" class="tabcontent">
@@ -112,6 +135,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="js/labour.js"></script>
+    <script src="js/health.js"></script>
     <script src="js/childcare.js"></script>
     <script src="js/digital.js"></script>
 </body>
