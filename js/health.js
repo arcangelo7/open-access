@@ -174,9 +174,21 @@ var svg_death = d3.select("svg#healthDeathCauses"),
     height = +svg_death.attr("height");
 
 var death_causes = new Map()
+var death_fields = []
+var measure_fields = ["value_f", "value_m"]
 var cur_death_year = 2000;
 var cur_death_cause = "All causes of death"
 var cur_death_sex = "value_f"
+
+var sliderHealth = d3.select(".sliderHealth")
+    .append("input")
+        .attr("type", "range")
+        .attr("min", 2000)
+        .attr("max", 2017)
+        .attr("step", 1);
+
+var selectorsDeath = d3.select('#selectorsDeath').append("select").attr("class", "option-select");
+var selectorsSex = d3.select('#selectorsSex').append("select").attr("class", "option-select");
 
 var promises_health = [
     d3.json("data/world.geojson"),
@@ -185,6 +197,9 @@ var promises_health = [
             death_causes.get(d.country_code).push({"year": +d.year, "death_cause": d.indicator, "value_f": +d.value_f, "note_f": d.note_f, "value_m": +d.value_m, "note_m": d.note_m})
         } else {
             death_causes.set(d.country_code, [{"year": +d.year, "death_cause": d.indicator, "value_f": +d.value_f, "note_f": d.note_f, "value_m": +d.value_m, "note_m": d.note_m}])
+        }
+        if (!(death_fields.includes(d.indicator))){
+            death_fields.push(d.indicator)
         }
     })
 ]
@@ -198,18 +213,62 @@ Promise.all(promises_health).then(function(data){
     console.log(error);
 });
 
-function ready_health(world){
+function update_death(year, cause, sex, data){
+    // Slider
+    sliderHealth.property("value", year);
+    d3.select(".yearHealth").text(year);
     // the radius of the circle is proportional to the square root of the deaths' number
     var radius = d3.scaleSqrt()
-        .domain(d3.extent(death_causes, function(d){
-            for (let [index, year] of d[1].entries()) {
-                if (year["death_cause"] == cur_death_cause) {
-                    return year[cur_death_sex]
+        .domain(d3.extent(data, function(d){
+            for (let [index, years] of d[1].entries()) {
+                if (years["year"] == year && years["death_cause"] == cause) {
+                    return years[sex]
                 }            
             } 
         }))
-        .range([0, 15]);    // console.log(death_causes)
-    console.log(radius.domain())
+        .range([0, 15]);
+    // Create a color scale
+    // var allContinent = d3.map(data, function(d){return(d.homecontinent)}).keys()
+    // var colorContinent = d3.scaleOrdinal()
+    //     .domain(allContinent)
+    //     .range(d3.schemePaired);
+    d3.selectAll(".bubble")
+        .attr("r", function(d){
+            if (d[year]) {
+                for (let [i, causes] of d[year].entries()) {
+                    if (causes["death_cause"] == cause) {
+                        return radius(causes[cur_death_sex])
+                    }
+                }
+            }
+        });
+}
+
+function beautifyMeasure(measure){
+    switch(measure){
+        case "value_f":
+            return "Number of female deaths"
+        case "value_m":
+            return "Number of male deaths"
+    }
+}
+
+function ready_health(world){
+    // Selectors
+    for (var i = 0; i < death_fields.length; i++) {
+        selectorsDeath.append("option")
+            .attr("value", death_fields[i])
+            .text(death_fields[i]);
+    }
+    for (var i = 0; i < measure_fields.length; i++) {
+        selectorsSex.append("option")
+            .attr("value", measure_fields[i])
+            .text(beautifyMeasure(measure_fields[i]));
+    }
+    sliderHealth.on("input", function() {
+        cur_death_year = this.value;
+        update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
+    });
     // Map
     mapHealth = svg_death.append("g")
         .selectAll("path")
@@ -227,27 +286,78 @@ function ready_health(world){
                     }
                 }
             }
-            return "white"
+            return "#f5e98e"
         })
         .attr("class", function(d){ return "country_health" })
         .style("opacity", 1)
         .style("stroke", "black");
     // Bubbles
     svg_death.append("g")
-        .attr("class", "bubble")
         .selectAll("circle")
         .data(world[0].features)
         .enter().append("circle")
+            .attr("class", "bubble")
             .attr("transform", function(d) { 
                 return "translate(" + path.centroid(d) + ")"; 
             })
-            .attr("r", function(d){
-                if (d[cur_death_year]) {
-                    for (let [i, cause] of d[cur_death_year].entries()) {
-                        if (cause["death_cause"] == cur_death_cause) {
-                            return radius(cause[cur_death_sex])
-                        }
-                    }
+            .style("fill", "red")
+            .attr("stroke", "red")
+            .attr("stroke-width", 3)
+            .attr("fill-opacity", .4)
+            .on("mouseover", mouseOverDeath)
+            .on("mouseleave", mouseLeaveDeath);
+
+    update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
+
+    selectorsDeath.on("change", function() {
+        cur_death_cause = $("#selectorsDeath").find(".option-select").val()
+        update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
+    });
+
+    selectorsSex.on("change", function() {
+        cur_death_sex = $("#selectorsSex").find(".option-select").val()
+        update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
+    });
+}
+
+let mouseOverDeath = function(event, d) {
+    d3.selectAll(".bubble")
+        .transition()
+        .duration(200)
+        .style("opacity", .5)
+    d3.select(this)
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+
+    tip.transition()
+        .duration(200)
+        .style("opacity", .9);
+    tip.html(function(){
+        if (d[cur_death_year]){
+            for (let[i, cause] of d[cur_death_year].entries()){
+                if (cause["death_cause"] == cur_death_cause) {
+                    return "<strong>" + d.properties.name + "</strong><br/>"
+                        + "<strong>Indicator</strong>:" + cur_death_cause + "<br/>"
+                        + "<strong>Measure</strong>:"+ beautifyMeasure(cur_death_sex) + "<br/>"
+                        + "<strong>Value</strong>:" + cause[cur_death_sex].toLocaleString("en-US")
                 }
-            });
+            }
+        }
+    })
+        .style("left", (event.pageX) + "px")
+        .style("top", (event.pageY - 28) + "px");
+}
+
+let mouseLeaveDeath = function(d) {
+    d3.selectAll(".bubble")
+        .transition()
+        .duration(200)
+        .style("opacity", 1)
+    d3.select(this)
+        .transition()
+        .duration(200)
+    tip.transition()
+        .duration(500)
+        .style("opacity", 0);
 }

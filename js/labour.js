@@ -106,8 +106,8 @@ function update(year, map){
 
     // Legend scale
     var x = d3.scaleLinear()
-    .domain(d3.extent(ranges[selectedTopic]))
-    .rangeRound([700, 980]);
+        .domain(d3.extent(ranges[selectedTopic]))
+        .rangeRound([700, 980]);
 
     colorScale = d3.scaleThreshold()
         .domain([0, d3.max(ranges[selectedTopic])/4, d3.max(ranges[selectedTopic])/2,  d3.max(ranges[selectedTopic])/1.32, d3.max(ranges[selectedTopic])]) 
