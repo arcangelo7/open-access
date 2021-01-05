@@ -167,3 +167,87 @@ d3.json("data/health_life_expectancy.json").then(data => {
 }).catch(error => {
     console.log(error);
 });
+
+///////////////////////////////////////////// Causes of mortality
+var svg_death = d3.select("svg#healthDeathCauses"),
+    width = +svg_death.attr("width"),
+    height = +svg_death.attr("height");
+
+var death_causes = new Map()
+var cur_death_year = 2000;
+var cur_death_cause = "All causes of death"
+var cur_death_sex = "value_f"
+
+var promises_health = [
+    d3.json("data/world.geojson"),
+    d3.csv("data/health_death_causes.csv", function(d){
+        if (death_causes.get(d.country_code)) {
+            death_causes.get(d.country_code).push({"year": +d.year, "death_cause": d.indicator, "value_f": +d.value_f, "note_f": d.note_f, "value_m": +d.value_m, "note_m": d.note_m})
+        } else {
+            death_causes.set(d.country_code, [{"year": +d.year, "death_cause": d.indicator, "value_f": +d.value_f, "note_f": d.note_f, "value_m": +d.value_m, "note_m": d.note_m}])
+        }
+    })
+]
+
+var path = d3.geoPath()
+    .projection(projection);
+
+Promise.all(promises_health).then(function(data){
+    ready_health(data);
+}).catch(function(error){
+    console.log(error);
+});
+
+function ready_health(world){
+    // the radius of the circle is proportional to the square root of the deaths' number
+    var radius = d3.scaleSqrt()
+        .domain(d3.extent(death_causes, function(d){
+            for (let [index, year] of d[1].entries()) {
+                if (year["death_cause"] == cur_death_cause) {
+                    return year[cur_death_sex]
+                }            
+            } 
+        }))
+        .range([0, 15]);    // console.log(death_causes)
+    console.log(radius.domain())
+    // Map
+    mapHealth = svg_death.append("g")
+        .selectAll("path")
+        .data(world[0].features)
+        .enter()
+        .append("path")
+        .attr("d", path)
+        .attr("fill", function(d){
+            if (death_causes.get(d.id)) {
+                for (let [i, value] of death_causes.get(d.id).entries()){
+                    if (d[value["year"]]) {
+                        d[value["year"]].push({"death_cause": value.death_cause, "value_f": value.value_f, "note_f": value.note_f, "value_m": value.value_m, "note_m": value.note_m})
+                    } else {
+                        d[value["year"]] = [{"death_cause": value.death_cause, "value_f": value.value_f, "note_f": value.note_f, "value_m": value.value_m, "note_m": value.note_m}]
+                    }
+                }
+            }
+            return "white"
+        })
+        .attr("class", function(d){ return "country_health" })
+        .style("opacity", 1)
+        .style("stroke", "black");
+    // Bubbles
+    svg_death.append("g")
+        .attr("class", "bubble")
+        .selectAll("circle")
+        .data(world[0].features)
+        .enter().append("circle")
+            .attr("transform", function(d) { 
+                return "translate(" + path.centroid(d) + ")"; 
+            })
+            .attr("r", function(d){
+                if (d[cur_death_year]) {
+                    for (let [i, cause] of d[cur_death_year].entries()) {
+                        if (cause["death_cause"] == cur_death_cause) {
+                            return radius(cause[cur_death_sex])
+                        }
+                    }
+                }
+            });
+}
