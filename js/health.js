@@ -226,12 +226,7 @@ function update_death(year, cause, sex, data){
                 }            
             } 
         }))
-        .range([0, 15]);
-    // Create a color scale
-    // var allContinent = d3.map(data, function(d){return(d.homecontinent)}).keys()
-    // var colorContinent = d3.scaleOrdinal()
-    //     .domain(allContinent)
-    //     .range(d3.schemePaired);
+        .range([5, 15]);
     d3.selectAll(".bubble")
         .attr("r", function(d){
             if (d[year]) {
@@ -242,6 +237,48 @@ function update_death(year, cause, sex, data){
                 }
             }
         });
+    // Legend
+    var valuesToShow = [radius.domain()[0], radius.domain()[1]]
+    var xCircle = 100
+    var xLabel = 150
+    var yCircle = height
+    d3.selectAll(".bubbleLegend").remove()
+    svg_death
+        .selectAll("legend")
+        .data(valuesToShow)
+        .enter()
+        .append("circle")
+        .attr("class", "bubbleLegend")
+        .attr("cx", xCircle)
+        .attr("cy", function(d){ return yCircle - radius(d) } )
+        .attr("r", function(d){ return radius(d) })
+        .style("fill", "none")
+        .attr("stroke", "black")
+    // Add legend: segments
+    svg_death
+        .selectAll("legend")
+        .data(valuesToShow)
+        .enter()
+        .append("line")
+            .attr('x1', function(d){ return xCircle + radius(d) } )
+            .attr('x2', xLabel)
+            .attr('y1', function(d){ return yCircle - radius(d) } )
+            .attr('y2', function(d){ return yCircle - radius(d) } )
+            .attr('stroke', 'black')
+            .attr("class", "bubbleLegend")
+            .style('stroke-dasharray', ('2,2'))
+    // Add legend: labels
+    svg_death
+        .selectAll("legend")
+        .data(valuesToShow)
+        .enter()
+        .append("text")
+            .attr("class", "bubbleLegend")
+            .attr('x', xLabel)
+            .attr('y', function(d){ return yCircle - radius(d) } )
+            .text( function(d){ return d.toLocaleString("en-US") } )
+            .style("font-size", 10)
+            .attr('alignment-baseline', 'middle')
 }
 
 function beautifyMeasure(measure){
