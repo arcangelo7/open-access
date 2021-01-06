@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Access</title>
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
     <style>
         div.tooltip {
             position: absolute;
@@ -51,21 +55,16 @@
             border: 1px solid #ccc;
             border-top: none;
         }
-
-        rect.zoom-panel {
-            cursor: move;
-            fill: #fff;
-            pointer-events: all;
-        }
     </style>
 </head>
 <body>
     <!-- Tab links -->
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'labour')">Labour</button>
-        <button class="tablinks" onclick="openTab(event, 'health')" id="defaultOpen">Health</button>
+        <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
         <button class="tablinks" onclick="openTab(event, 'childcare')">Childcare</button>
         <button class="tablinks" onclick="openTab(event, 'digital')">Digital economy</button>
+        <button class="tablinks" onclick="openTab(event, 'education')" id="defaultOpen">Education</button>
     </div>
 
     <!-- Tab content -->
@@ -108,6 +107,20 @@
         <div id="digital_hysthogram"></div>
     </div>
 
+    <div id="education" class="tabcontent">
+        <h1>Education Californication</h1>
+        <div id="slider-div">
+            <label>Date: <span id="dateLabel1">1970</span> - <span id="dateLabel2">2016</span></label>
+            <div id="sliderEdu"></div>
+        </div>        
+        <select name="" id="eduMeasure">
+            <option selected value="primary">Primary school</option>
+            <option value="secondary">Secondary school</option>
+            <option value="ratio">Ratio</option>
+        </select>
+        <svg id="eduChart"></svg>
+    </div>
+
     <script>
         function openTab(evt, viz) {
             var i, tabcontent, tablinks;
@@ -135,10 +148,12 @@
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="js/labour.js"></script>
     <script src="js/health.js"></script>
     <script src="js/childcare.js"></script>
     <script src="js/digital.js"></script>
+    <script src="js/education.js"></script>
 </body>
 </html>
