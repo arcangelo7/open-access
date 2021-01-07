@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var marginEdu = { left:80, right:100, top:50, bottom:100 },
+var marginEdu = { left:80, right:250, top:50, bottom:100 },
     widthEdu = 1000 - marginEdu.left - marginEdu.right,
     heightEdu = 500 - marginEdu.top - marginEdu.bottom;
 
@@ -15,13 +15,6 @@ var parseTimeEdu = d3.timeParse("%Y");
 var formatTime = d3.timeFormat("%Y");
 // For tooltip
 var bisectDate = d3.bisector(function(d) { return d.year; }).left;
-
-// Add the line for the first time
-gEdu.append("path")
-    .attr("class", "line")
-    .attr("fill", "none")
-    .attr("stroke", "grey")
-    .attr("stroke-width", "3px");
 
 // Scales
 var xEdu = d3.scaleTime().range([0, widthEdu]);
@@ -58,7 +51,10 @@ var lineEdu = d3.line()
     .y(function(d) { return yEdu(d.value); });
 
 // Event listeners
-$("#eduMeasure").on("change", updateEdu)
+$("#eduMeasure").on("change", function(){
+    updateEdu();
+    addCheckboxes();
+})
 // Add jQuery UI slider
 $("#sliderEdu").slider({
     range: true,
@@ -70,19 +66,21 @@ $("#sliderEdu").slider({
         $("#dateLabel1").text(formatTime(new Date(ui.values[0])));
         $("#dateLabel2").text(formatTime(new Date(ui.values[1])));
         updateEdu();
+        addCheckboxes();
     }
 });
 
 // Read in data
 d3.json("data/edu.json").then(function(data) {
-    // Prepare and clean data
+    dataEdu = data;
     filteredData = {};
+    // Prepare and clean data
     for (var measure in data) {
         if (!data.hasOwnProperty(measure)) {
             continue;
         }
         filteredData[measure] = data[measure].filter(function(d){
-            return !(d["value"] == null)
+            return (!(d["value"] == null))
         })
         filteredData[measure].forEach(function(d){
             d["country"] = d["country"];
@@ -91,81 +89,235 @@ d3.json("data/edu.json").then(function(data) {
         });
     }
     // Run the visualization for the first time
-    updateEdu()
+    updateEdu();
+    addCheckboxes();
+    // $(countriesSelectedDefault).each(function(index, value){
+    //     $(`#${value}`).prop("checked", true).trigger("click");
+    // });
 });
 
 var t = function(){ return d3.transition().duration(1000); }
 
 function updateEdu(){
     // Filter data based on selections
-    var curEduMeasure = $("#eduMeasure").val(),
+    curEduMeasure = $("#eduMeasure").val(),
         sliderValues = $("#sliderEdu").slider("values");
     var dataTimeFiltered = filteredData[curEduMeasure].filter(function(d){
-        return ((d.year >= sliderValues[0]) && (d.year <= sliderValues[1]))
+        return ((d.year >= sliderValues[0]) && (d.year <= sliderValues[1]) && countriesSelected.includes(d["country"]))
     });
     // Update scales
     xEdu.domain(d3.extent(dataTimeFiltered, function(d){ return d.year; }));
     yEdu.domain([d3.min(dataTimeFiltered, function(d){ return d.value; }), 
         d3.max(dataTimeFiltered, function(d){ return d.value; })]);
+    colorEdu.domain(dataTimeFiltered.map(function(d){ return d.country }));
+      
     // Update axes
     xAxisCallEdu.scale(xEdu);
     xAxisEdu.transition(t()).call(xAxisCallEdu);
     yAxisCallEdu.scale(yEdu);
     yAxisEdu.transition(t()).call(yAxisCallEdu);
 
+    var countriesSelectedData = colorEdu.domain().map(function(name) {
+        return {
+            country: name,
+            values: dataEdu[curEduMeasure].filter(function(d,i){
+                return d.country == name
+            }).map(function(d, i){
+                if (d.country == name){
+                    return {
+                        year: d.year,
+                        value: d.value
+                    }
+                }
+            })
+        }
+    });
+
     // Path generator
     lineEdu = d3.line()
         .x(function(d){ return xEdu(d.year); })
         .y(function(d){ return yEdu(d.value); });
+
     // Update our line path
-    gEdu.select(".line")
-        .transition(t)
-        .attr("d", lineEdu(dataTimeFiltered));
-
-    // Clear old tooltips
-    d3.select(".focus").remove();
-    d3.select(".overlay").remove();
-    
-    // Tooltip code
-    var focus = gEdu.append("g")
-        .attr("class", "focus")
-        .style("display", "none");
-    focus.append("line")
-        .attr("class", "x-hover-line hover-line")
-        .attr("y1", 0)
-        .attr("y2", heightEdu);
-    focus.append("line")
-        .attr("class", "y-hover-line hover-line")
-        .attr("x1", 0)
-        .attr("x2", widthEdu);
-    focus.append("circle")
-        .attr("r", 5);
-    focus.append("text")
-        .attr("x", 15)
-        .attr("dy", ".31em");
-    svgEdu.append("rect")
-        .attr("transform", "translate(" + marginEdu.left + "," + marginEdu.top + ")")
-        .attr("class", "overlay")
-        .attr("width", widthEdu)
-        .attr("height", heightEdu)
-        .on("mouseover", function() { focus.style("display", null); })
-        .on("mouseout", function() { focus.style("display", "none"); })
-        .on("mousemove", mousemoveEdu);
-
-    function mousemoveEdu(event) {
-        var x0edu = xEdu.invert(d3.pointer(event)[0]),
-            i = bisectDate(dataTimeFiltered, x0edu, 1),
-            d0 = dataTimeFiltered[i - 1],
-            d1 = dataTimeFiltered[i],
-            d = (d1 && d0) ? (x0edu - d0.date > d1.date - x0edu ? d1 : d0) : 0;
-        focus.attr("transform", "translate(" + xEdu(d.year) + "," + yEdu(d.value) + ")");
-        focus.select("text").text(function() { 
-            return Math.round(d.value) + "%"; 
+    d3.selectAll(".countryLine").remove();
+    var countryLines = gEdu.selectAll(".countryLine")
+      .data(countriesSelectedData)
+      .enter().append("g")
+      .attr("class", "countryLine");
+    countryLines.append("path")
+        .attr("class", "line")
+        .attr("d", function(d) {
+            return lineEdu(d.values);
+        })
+        .style("stroke", function(d) {
+            return colorEdu(d.country);
         });
-        focus.select(".x-hover-line").attr("y2", heightEdu - yEdu(d.value));
-        focus.select(".y-hover-line").attr("x2", -xEdu(d.year));
-    }
+
+    // Legend
+    d3.selectAll(".legendEdu").remove();
+    var legendEdu = svgEdu.selectAll(".legendEdu")
+        .data(countriesSelectedData)
+        .enter().append("g")
+            .attr("class", "legendEdu")
+            .attr("transform", function(d,i) { return "translate(0," + i * 20 + ")"; })
+            .style("opacity","0");
+
+    legendEdu.append("rect")
+        .attr("x", widthEdu+250)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", function(d) { 
+            return colorEdu(d.country); 
+        });
+
+    legendEdu.append("text")
+        .attr("x", widthEdu+240)
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "end")
+        .text(function(d) {return d.country; });
+
+    legendEdu.transition().duration(500).delay(function(d,i){ return 1300 + 100 * i; }).style("opacity","1");
+
+    // Tooltip
+    var linesEdu = document.getElementsByClassName('line');
+    d3.selectAll(".mouse-over-effects").remove();
+    var mouseG = gEdu.append("g")
+        .attr("class", "mouse-over-effects");
+    mouseG.append("path") // this is the black vertical line to follow mouse
+      .attr("class", "mouse-line")
+      .style("stroke", "black")
+      .style("stroke-width", "1px")
+      .style("opacity", "0");
+    var mousePerLine = mouseG.selectAll('.mouse-per-line')
+        .data(countriesSelectedData)
+        .enter()
+        .append("g")
+        .attr("class", "mouse-per-line");
+    mousePerLine.append("circle")
+        .attr("r", 7)
+        .style("stroke", function(d) {
+            return colorEdu(d.country);
+        })
+        .style("fill", "none")
+        .style("stroke-width", "1px")
+        .style("opacity", "0");
+    mousePerLine.append("text")
+        .attr("transform", "translate(10,3)");
+    mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
+        .attr('width', widthEdu) // can't catch mouse events on a g element
+        .attr('height', heightEdu)
+        .attr('fill', 'none')
+        .attr('pointer-events', 'all')
+        .on('mouseout', function() { // on mouse out hide line, circles and text
+            d3.select(".mouse-line")
+                .style("opacity", "0");
+            d3.selectAll(".mouse-per-line circle")
+                .style("opacity", "0");
+            d3.selectAll(".mouse-per-line text")
+                .style("opacity", "0");
+        })
+        .on('mouseover', function() { // on mouse in show line, circles and text
+            d3.select(".mouse-line")
+                .style("opacity", "1");
+            d3.selectAll(".mouse-per-line circle")
+                .style("opacity", "1");
+            d3.selectAll(".mouse-per-line text")
+                .style("opacity", "1");
+        })
+        .on('mousemove', function(event) { // mouse moving over canvas
+            var mouse = d3.pointer(event);
+            d3.select(".mouse-line")
+            .attr("d", function() {
+                var d = "M" + mouse[0] + "," + heightEdu;
+                d += " " + mouse[0] + "," + 0;
+                return d;
+            });
+            d3.selectAll(".mouse-per-line")
+                .attr("transform", function(d, i) {
+                var xDate = xEdu.invert(mouse[0]),
+                    bisect = d3.bisector(function(d) { return d.year; }).right;
+                    idx = bisect(d.values, xDate);
+                var beginning = 0,
+                    end = linesEdu[i].getTotalLength(),
+                    target = null;
+  
+                while (true){
+                    target = Math.floor((beginning + end) / 2);
+                    pos = linesEdu[i].getPointAtLength(target);
+                    if ((target === end || target === beginning) && pos.x !== mouse[0]) {
+                        break;
+                    }
+                    if (pos.x > mouse[0]) end = target;
+                    else if (pos.x < mouse[0]) beginning = target;
+                    else break; //position found
+                }
+              
+                d3.select(this).select('text')
+                    .text(yEdu.invert(pos.y).toFixed(2) + "%");
+                
+                return "translate(" + mouse[0] + "," + pos.y +")";
+            }); 
+        });
 }
+
+function addCheckboxes(){
+    // Add checkboxes to modal
+    $("#modalEduCountriesContent").html("");
+    $("#modalEduCountriesContent").html('<span class="close">&times;</span>');
+    var relevantCountries = []
+    $(dataEdu[curEduMeasure]).each(function(i, d){
+        if (!relevantCountries.includes(d["country"])){
+            relevantCountries.push(d["country"])
+            if (countriesSelectedDefault.includes(d["country"])){
+                $("#modalEduCountriesContent").append(
+                    `<input type="checkbox" class="eduCountryCheckbox" id="${d["country"]}" name="${d["country"]}" value="${d["country"]}" checked>
+                    <label for="${d["country"]}">${d["country"]}</label><br>`); 
+            } else {
+                $("#modalEduCountriesContent").append(
+                    `<input type="checkbox" class="eduCountryCheckbox" id="${d["country"]}" name="${d["country"]}" value="${d["country"]}">
+                    <label for="${d["country"]}">${d["country"]}</label><br>`);    
+            }
+        }
+    });
+}
+
+$(document).ready(function() {
+    countriesSelected = ["European Union", "Advanced Economies", "Sub-Saharan Africa"]
+    countriesSelectedDefault = ["European Union", "Advanced Economies", "Sub-Saharan Africa"]
+    // Get the modal
+    var modalEduCountries = document.getElementById("modalEduCountries");
+    // Get the button that opens the modal
+    var btnModalEduCountries = document.getElementById("btnModalEduCountries");
+    // When the user clicks on the button, open the modal
+    btnModalEduCountries.onclick = function() {
+        modalEduCountries.style.display = "block";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modalEduCountries) {
+        modalEduCountries.style.display = "none";
+    }
+    // Get the <span> element that closes the modal
+    var spanModalEduCountries = document.getElementsByClassName("close")[0];
+    // When the user clicks on <span> (x), close the modal
+    spanModalEduCountries.onclick = function() {
+        modalEduCountries.style.display = "none";
+    }
+    // Update chart when checkbox selected
+    $(".eduCountryCheckbox").change(function() {
+        if ($(this).is(":checked")){
+            countriesSelected.push($(this).val());
+        } else {
+            var eduCountryIndex = countriesSelected.indexOf($(this).val());
+            if (eduCountryIndex > -1) {
+                countriesSelected.splice(eduCountryIndex, 1);
+              }
+        }
+        updateEdu();
+    });
+}});
+
 
 
 
