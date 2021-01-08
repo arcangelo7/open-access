@@ -143,6 +143,13 @@ figure {
   transition: background 0.2s ease-in-out;
 }
 
+#backtotop span.ion-arrow-up-c {
+	position: fixed;
+	font-size: 30px;
+	right: 42px;
+  bottom: 25px;
+}
+
 /**
  * 3.0 - Site Header
  */
