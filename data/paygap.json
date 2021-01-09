@@ -1,0 +1,2890 @@
+{
+    "paygap": [
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "1994",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "1994",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "1994",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "1994",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "1994",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "1994",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "1994",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "1994",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "1994",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "1994",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "1994",
+            "value": "29",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "1994",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "1994",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "1994",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "1994",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "1994",
+            "value": "8",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "1994",
+            "value": "33",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "1994",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "1994",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "1994",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "1994",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "1994",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "1994",
+            "value": "28",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "1994",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "1994",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "1995",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "1995",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "1995",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "1995",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "1995",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "1995",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "1995",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "1995",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "1995",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "1995",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "1995",
+            "value": "27",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "1995",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "1995",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "1995",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "1995",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "1995",
+            "value": "8",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "1995",
+            "value": "29",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "1995",
+            "value": "27",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "1995",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "1995",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "1995",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "1995",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "1995",
+            "value": "5",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "1995",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "1995",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "1995",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "1995",
+            "value": "26",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "1995",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "1996",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "1996",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "1996",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "1996",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "1996",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "1996",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "1996",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "1996",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "1996",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "1996",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "1996",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "1996",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "1996",
+            "value": "27",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "1996",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "1996",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "1996",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "1996",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "1996",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "1996",
+            "value": "8",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "1996",
+            "value": "28",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "1996",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "1996",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "1996",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "1996",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "1996",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "1996",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "1996",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "1996",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "1996",
+            "value": "6",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "1996",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "1996",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "1996",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "1996",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "1996",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "1996",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "1996",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "1996",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "1997",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "1997",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "1997",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "1997",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "1997",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "1997",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "1997",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "1997",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "1997",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "1997",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "1997",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "1997",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "1997",
+            "value": "28",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "1997",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "1997",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "1997",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "1997",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "1997",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "1997",
+            "value": "7",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "1997",
+            "value": "27",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "1997",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "1997",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "1997",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "1997",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "1997",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "1997",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "1997",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "1997",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "1997",
+            "value": "7",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "1997",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "1997",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "1997",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "1997",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "1997",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "1997",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "1997",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "1997",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "1998",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "1998",
+            "value": "17",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "1998",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "1998",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "1998",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "1998",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "1998",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "1998",
+            "value": "9",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "1998",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "1998",
+            "value": "25",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "1998",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "1998",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "1998",
+            "value": "26",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "1998",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "1998",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "1998",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "1998",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "1998",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "1998",
+            "value": "7",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "1998",
+            "value": "26",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "1998",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "1998",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "1998",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "1998",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "1998",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "1998",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "1998",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "1998",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "1998",
+            "value": "6",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "1998",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "1998",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "1998",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "1998",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "1998",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "1998",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "1998",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "1998",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "1999",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "1999",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "1999",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "1999",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "1999",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "1999",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "1999",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "1999",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "1999",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "1999",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "1999",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "1999",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "1999",
+            "value": "26",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "1999",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "1999",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "1999",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "1999",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "1999",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "1999",
+            "value": "8",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "1999",
+            "value": "27",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "1999",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "1999",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "1999",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "1999",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "1999",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "1999",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "1999",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "1999",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "1999",
+            "value": "5",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "1999",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "1999",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "1999",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "1999",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "1999",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "1999",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "1999",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "1999",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "2000",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "2000",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "2000",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "2000",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "2000",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "2000",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "2000",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "2000",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "2000",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "2000",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "2000",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "2000",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "2000",
+            "value": "25",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "2000",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "2000",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "2000",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "2000",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "2000",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "2000",
+            "value": "6",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "2000",
+            "value": "26",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "2000",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "2000",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "2000",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "2000",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "2000",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "2000",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "2000",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "2000",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "2000",
+            "value": "8",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "2000",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "2000",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "2000",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "2000",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "2000",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "2000",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "2000",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "2000",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "2001",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "2001",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "2001",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "2001",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "2001",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "2001",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "2001",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "2001",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "2001",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "2001",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "2001",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "2001",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "2001",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "2001",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "2001",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "2001",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "2001",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "2001",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "2001",
+            "value": "6",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "2001",
+            "value": "26",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "2001",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "2001",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "2001",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "2001",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "2001",
+            "value": "9",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "2001",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "2001",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "2001",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "2001",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "2001",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "2001",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "2001",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "2001",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "2001",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "2001",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "2001",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "2001",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "2002",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "2002",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "2002",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "2002",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "2002",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "2002",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "2002",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "2002",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "2002",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "2002",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "2002",
+            "value": "18",
+            "note": "b"
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "2002",
+            "value": "22",
+            "note": "b"
+        },
+        {
+            "country": "Estonia",
+            "year": "2002",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "2002",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "2002",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "2002",
+            "value": "21",
+            "note": "b"
+        },
+        {
+            "country": "France",
+            "year": "2002",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "2002",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "2002",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "2002",
+            "value": "25",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "2002",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "2002",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "2002",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "2002",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "2002",
+            "value": "6",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "2002",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "2002",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "2002",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "2002",
+            "value": "8",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "2002",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "2002",
+            "value": "9",
+            "note": ""
+        },
+        {
+            "country": "Slovakia",
+            "year": "2002",
+            "value": "27",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "2002",
+            "value": "20",
+            "note": "b"
+        },
+        {
+            "country": "Sweden",
+            "year": "2002",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "2002",
+            "value": "23",
+            "note": "b"
+        },
+        {
+            "country": "Norway",
+            "year": "2002",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "2002",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "2003",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "2003",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "2003",
+            "value": "16",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "2003",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "2003",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "2003",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "2003",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "2003",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "2003",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "2003",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "2003",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "2003",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "2003",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "2003",
+            "value": "14",
+            "note": "b"
+        },
+        {
+            "country": "Greece",
+            "year": "2003",
+            "value": "11",
+            "note": "b"
+        },
+        {
+            "country": "Spain",
+            "year": "2003",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "2003",
+            "value": "12",
+            "note": "b"
+        },
+        {
+            "country": "Croatia",
+            "year": "2003",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "2003",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "2003",
+            "value": "25",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "2003",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "2003",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "2003",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "2003",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "2003",
+            "value": "4",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "2003",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "2003",
+            "value": "17",
+            "note": "b"
+        },
+        {
+            "country": "Poland",
+            "year": "2003",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "2003",
+            "value": "9",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "2003",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "2003",
+            "value": "7",
+            "note": "p"
+        },
+        {
+            "country": "Slovakia",
+            "year": "2003",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "2003",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "2003",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "2003",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "2003",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "2003",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "2004",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "2004",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "2004",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "2004",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "2004",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "2004",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "2004",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "2004",
+            "value": "6",
+            "note": "b"
+        },
+        {
+            "country": "Bulgaria",
+            "year": "2004",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "2004",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "2004",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "2004",
+            "value": "23",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "2004",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "2004",
+            "value": "11",
+            "note": "p"
+        },
+        {
+            "country": "Greece",
+            "year": "2004",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "2004",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "2004",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "2004",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "2004",
+            "value": "7",
+            "note": "p"
+        },
+        {
+            "country": "Cyprus",
+            "year": "2004",
+            "value": "25",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "2004",
+            "value": "14",
+            "note": "b"
+        },
+        {
+            "country": "Lithuania",
+            "year": "2004",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "2004",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "2004",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "2004",
+            "value": "4",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "2004",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "2004",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "2004",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "2004",
+            "value": "5",
+            "note": "b"
+        },
+        {
+            "country": "Romania",
+            "year": "2004",
+            "value": "14",
+            "note": "b"
+        },
+        {
+            "country": "Slovenia",
+            "year": "2004",
+            "value": "8",
+            "note": "p"
+        },
+        {
+            "country": "Slovakia",
+            "year": "2004",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "2004",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "2004",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "2004",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "2004",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "2004",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "2005",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "2005",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "2005",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "2005",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "2005",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "2005",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "2005",
+            "value": "14",
+            "note": "e"
+        },
+        {
+            "country": "Belgium",
+            "year": "2005",
+            "value": "7",
+            "note": ""
+        },
+        {
+            "country": "Bulgaria",
+            "year": "2005",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "2005",
+            "value": "19",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "2005",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "2005",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "2005",
+            "value": "25",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "2005",
+            "value": "9",
+            "note": "p"
+        },
+        {
+            "country": "Greece",
+            "year": "2005",
+            "value": "9",
+            "note": "p"
+        },
+        {
+            "country": "Spain",
+            "year": "2005",
+            "value": "13",
+            "note": "p"
+        },
+        {
+            "country": "France",
+            "year": "2005",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Croatia",
+            "year": "2005",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "2005",
+            "value": "9",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "2005",
+            "value": "25",
+            "note": ""
+        },
+        {
+            "country": "Latvia",
+            "year": "2005",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "2005",
+            "value": "15",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "2005",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "2005",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "2005",
+            "value": "4",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "2005",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "2005",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "2005",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "2005",
+            "value": "9",
+            "note": ""
+        },
+        {
+            "country": "Romania",
+            "year": "2005",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "2005",
+            "value": "8",
+            "note": "p"
+        },
+        {
+            "country": "Slovakia",
+            "year": "2005",
+            "value": "24",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "2005",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "2005",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "2005",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "2005",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "2005",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "European Union - 27 countries (2007-2013)",
+            "year": "2006",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 25 countries (2004-2006)",
+            "year": "2006",
+            "value": "15",
+            "note": "e"
+        },
+        {
+            "country": "European Union - 15 countries (1995-2004)",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Euro area - 13 countries (2007)",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Euro area - 12 countries (2001-2006)",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Euro area - 11 countries (1999-2000)",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Belgium",
+            "year": "2006",
+            "value": "7",
+            "note": "p"
+        },
+        {
+            "country": "Bulgaria",
+            "year": "2006",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Czechia",
+            "year": "2006",
+            "value": "18",
+            "note": ""
+        },
+        {
+            "country": "Denmark",
+            "year": "2006",
+            "value": "17",
+            "note": ""
+        },
+        {
+            "country": "Germany (until 1990 former territory of the FRG)",
+            "year": "2006",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Estonia",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Ireland",
+            "year": "2006",
+            "value": "9",
+            "note": ""
+        },
+        {
+            "country": "Greece",
+            "year": "2006",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Spain",
+            "year": "2006",
+            "value": "13",
+            "note": ""
+        },
+        {
+            "country": "France",
+            "year": "2006",
+            "value": "11",
+            "note": "p"
+        },
+        {
+            "country": "Croatia",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Italy",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Cyprus",
+            "year": "2006",
+            "value": "24",
+            "note": "p"
+        },
+        {
+            "country": "Latvia",
+            "year": "2006",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Lithuania",
+            "year": "2006",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Luxembourg",
+            "year": "2006",
+            "value": "14",
+            "note": ""
+        },
+        {
+            "country": "Hungary",
+            "year": "2006",
+            "value": "11",
+            "note": ""
+        },
+        {
+            "country": "Malta",
+            "year": "2006",
+            "value": "3",
+            "note": ""
+        },
+        {
+            "country": "Netherlands",
+            "year": "2006",
+            "value": ":",
+            "note": ""
+        },
+        {
+            "country": "Austria",
+            "year": "2006",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Poland",
+            "year": "2006",
+            "value": "12",
+            "note": ""
+        },
+        {
+            "country": "Portugal",
+            "year": "2006",
+            "value": "8",
+            "note": "p"
+        },
+        {
+            "country": "Romania",
+            "year": "2006",
+            "value": "10",
+            "note": ""
+        },
+        {
+            "country": "Slovenia",
+            "year": "2006",
+            "value": "8",
+            "note": "p"
+        },
+        {
+            "country": "Slovakia",
+            "year": "2006",
+            "value": "22",
+            "note": ""
+        },
+        {
+            "country": "Finland",
+            "year": "2006",
+            "value": "20",
+            "note": ""
+        },
+        {
+            "country": "Sweden",
+            "year": "2006",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "United Kingdom",
+            "year": "2006",
+            "value": "21",
+            "note": ""
+        },
+        {
+            "country": "Norway",
+            "year": "2006",
+            "value": "16",
+            "note": ""
+        },
+        {
+            "country": "Switzerland",
+            "year": "2006",
+            "value": "19",
+            "note": ""
+        }
+    ]
+}

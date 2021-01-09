@@ -264,7 +264,7 @@ function updateEdu(){
 function addCheckboxes(){
     // Add checkboxes to modal
     $("#modalEduCountriesContent").html("");
-    $("#modalEduCountriesContent").html('<span class="close">&times;</span>');
+    $("#modalEduCountriesContent").html('<span class="close" id="closeEdu">&times;</span>');
     var relevantCountries = []
     $(dataEdu[curEduMeasure]).each(function(i, d){
         if (!relevantCountries.includes(d["country"])){
@@ -299,7 +299,7 @@ $(document).ready(function() {
         modalEduCountries.style.display = "none";
     }
     // Get the <span> element that closes the modal
-    var spanModalEduCountries = document.getElementsByClassName("close")[0];
+    var spanModalEduCountries = $("#closeEdu")[0];
     // When the user clicks on <span> (x), close the modal
     spanModalEduCountries.onclick = function() {
         modalEduCountries.style.display = "none";

@@ -121,9 +121,10 @@
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'labour')">Labour</button>
         <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
+        <button class="tablinks" onclick="openTab(event, 'paygap')" id="defaultOpen">Gender pay gap</button>
         <button class="tablinks" onclick="openTab(event, 'childcare')">Childcare</button>
         <button class="tablinks" onclick="openTab(event, 'digital')">Digital economy</button>
-        <button class="tablinks" onclick="openTab(event, 'education')" id="defaultOpen">Education</button>
+        <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
     </div>
 
     <!-- Tab content -->
@@ -146,11 +147,22 @@
     </div>
 
     <div id="paygap" class="tabcontent">
-        <h1>Gender pay gap (1994-2019)</h1>
-        <h2 class="yearPaygap"></h2>
-        <div class="slideryearPaygap"></div>
-        <div id="selectors"></div>
-        <svg id="paygap" width="1000" height="700"></svg>
+        <h1>Paygap</h1>
+        <div id="sliderPay-div">
+            <label>Date: <span id="dateLabel1Pay">1994</span> - <span id="dateLabel2Pay">2006</span></label>
+            <div id="sliderPay"></div>
+        </div>        
+        <!-- Trigger/Open The Modal -->
+        <button id="btnModalPayCountries">Choose countries</button>
+
+        <!-- The Modal -->
+        <div id="modalPayCountries" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" id="modalPayCountriesContent">
+                <span class="close" id="closePay">&times;</span>
+            </div>
+        </div>
+        <svg id="payChart"></svg>
     </div>
 
     <div id="childcare" class="tabcontent">
@@ -182,12 +194,10 @@
 
         <!-- The Modal -->
         <div id="modalEduCountries" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content" id="modalEduCountriesContent">
-            <span class="close">&times;</span>
-        </div>
-
+            <!-- Modal content -->
+            <div class="modal-content" id="modalEduCountriesContent">
+                <span class="close" id="closeEdu">&times;</span>
+            </div>
         </div>
         <svg id="eduChart"></svg>
     </div>
@@ -223,6 +233,7 @@
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="js/labour.js"></script>
     <script src="js/health.js"></script>
+    <script src="js/paygap.js"></script>
     <script src="js/childcare.js"></script>
     <script src="js/digital.js"></script>
     <script src="js/education.js"></script>
