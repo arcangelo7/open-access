@@ -1,3 +1,20 @@
+var childcareMap = L.map('childcareMap').setView([54.5260, 15.2551], 4);
+mapLink = 
+    '<a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a>';
+L.tileLayer(
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; ' + mapLink + ' Contributors',
+    maxZoom: 18,
+    clickable: true
+}).addTo(childcareMap);
+// Add an SVG element to Leaflet’s overlay pane
+var svgChildcare = d3.select(childcareMap.getPanes().overlayPane).append("svg").attr("pointer-events", "auto"),
+    gChildcare = svgChildcare.append("g").attr("class", "leaflet-zoom-hide");
+var legendChildcare = d3.select("#childcareMapLegend")
+    .append("g")
+    .style("bottom", function(d){
+        return $("#childcareMap")[0].offsetHeight
+    })
 var childcareSvg = d3.select("svg#childcare"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
@@ -15,11 +32,11 @@ let mouseOverChildcare = function(event, d) {
     d3.selectAll(".CountryChildcare")
         .transition()
         .duration(200)
-        .style("opacity", .5)
+        .style("opacity", .3)
     d3.select(this)
         .transition()
         .duration(200)
-        .style("opacity", 1)
+        .style("opacity", .5)
         .style("stroke", "black")
     tip.transition()
         .duration(200)
@@ -41,7 +58,7 @@ let mouseLeaveChildcare = function(d) {
     d3.selectAll(".CountryChildcare")
         .transition()
         .duration(200)
-        .style("opacity", 1)
+        .style("opacity", .5)
     d3.select(this)
         .transition()
         .duration(200)
@@ -63,7 +80,7 @@ var sliderChildcare = d3.select(".sliderChildcare")
             updateChildcare(year, mapChildcare);
         });
 
-function updateChildcare(year, map){
+function updateChildcare(year){
     sliderChildcare.property("value", year);
     d3.select(".yearChildcare").text(year);
     d3.selectAll(".CountryChildcare")
@@ -71,6 +88,12 @@ function updateChildcare(year, map){
             return colorScaleChildcare(d[year])
         });
     yearChildcare = year;
+}
+
+// Use Leaflet to implement a D3 geometric transformation.
+function projectPoint(x, y) {
+    var point = childcareMap.latLngToLayerPoint(new L.LatLng(y, x));
+    this.stream.point(point.x, point.y);
 }
 
 // Load external data 
@@ -116,12 +139,7 @@ function childcareReady(europe) {
                 }
             }
             // return colorScaleChildcare(d.childcare);
-        })
-        .attr("class", function(d){ return "CountryChildcare" } )
-        .style("stroke", "black")
-        .style("opacity", 1)
-        .on("mouseover", mouseOverChildcare )
-        .on("mouseleave", mouseLeaveChildcare );
+        });
 
     // Legend scale
     var x = d3.scaleLinear()
@@ -129,10 +147,6 @@ function childcareReady(europe) {
         .rangeRound([10, 200]);
 
     // Legend
-    var legendChildcare = childcareSvg.append("g")
-        .attr("class", "key")
-        .attr("transform", "translate(0,550)");
-
     legendChildcare.selectAll("rect")
         .data(colorScaleChildcare.range().map(function(d) {
             d = colorScaleChildcare.invertExtent(d);
@@ -162,7 +176,36 @@ function childcareReady(europe) {
         .select(".domain")
         .remove();
     
-    updateChildcare(yearChildcare, mapChildcare);
+    //  create a d3.geo.path to convert GeoJSON to SVG
+    var transformLeaflet = d3.geoTransform({point: projectPoint}),
+            pathLeaflet = d3.geoPath().projection(transformLeaflet);
+    // create path elements for each of the features
+    d3_features = gChildcare.selectAll("path")
+        .data(europe[0].features)
+        .enter().append("path")
+        .on("mouseover", mouseOverChildcare )
+        .on("mouseleave", mouseLeaveChildcare );
+
+    childcareMap.on("zoom", resetChildcare);
+    resetChildcare();
+    // fit the SVG element to leaflet's map layer
+    function resetChildcare() {
+        bounds = pathLeaflet.bounds(europe[0]);
+        var topLeft = bounds[0],
+            bottomRight = bounds[1];
+        svgChildcare.attr("width", bottomRight[0] - topLeft[0])
+                    .attr("height", bottomRight[1] - topLeft[1])
+                    .style("left", topLeft[0] + "px")
+                    .style("top", topLeft[1] + "px");
+        gChildcare.attr("transform", "translate(" + -topLeft[0] + "," 
+                                        + -topLeft[1] + ")");
+        // initialize the path data	
+        d3_features.attr("d", pathLeaflet)
+            .attr("class", function(d){ return "CountryChildcare" } )
+            .style("stroke", "black")
+            .style("opacity", .5);
+        updateChildcare(yearChildcare);
+    } 
 }
 
 

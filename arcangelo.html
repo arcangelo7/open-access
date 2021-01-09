@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
     <style>
         div.tooltip {
             position: absolute;
@@ -18,6 +19,7 @@
             border: 0px;
             border-radius: 8px;
             pointer-events: none;
+            z-index: 1000;
         }
         div.tipLineChart {
             position: absolute;
@@ -123,6 +125,17 @@
             display: block;
             margin-top: 10px;
         }
+        .leaflet-overlay-pane svg path{
+            pointer-events: auto;
+        }
+        .legendContainer{
+            position: absolute;
+            bottom: 7px;
+            left: 7px;
+            height: 100px;
+            width: 100px;
+            z-Index: 998;
+        }
     </style>
 </head>
 <body>
@@ -130,8 +143,8 @@
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'labour')">Labour</button>
         <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
-        <button class="tablinks" onclick="openTab(event, 'paygap')" id="defaultOpen">Gender pay gap</button>
-        <button class="tablinks" onclick="openTab(event, 'childcare')">Childcare</button>
+        <button class="tablinks" onclick="openTab(event, 'paygap')">Gender pay gap</button>
+        <button class="tablinks" onclick="openTab(event, 'childcare')" id="defaultOpen">Childcare</button>
         <button class="tablinks" onclick="openTab(event, 'digital')">Digital economy</button>
         <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
     </div>
@@ -178,7 +191,12 @@
         <h1>Enrolment rate of children in child care</h1>
         <h2 class="yearChildcare"></h2>
         <div class="sliderChildcare"></div>
-        <svg id="childcare" width="1000" height="700"></svg>
+        <div id="childcareMap" style="width: 1000px; height: 700px">
+            <div class="legendContainer">
+                <svg id="childcareMapLegend"></svg>
+            </div>
+        </div>
+        <svg id="childcare" width="0" height="0"></svg>
     </div>
     
     <div id="digital" class="tabcontent">
@@ -234,6 +252,7 @@
         document.getElementById("defaultOpen").click();
     </script>
 
+    <script src="lib/leaflet/leaflet.js"></script>
     <script src="lib/d3/d3.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
