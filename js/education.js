@@ -214,6 +214,7 @@ function updateEdu(){
                 .style("opacity", "0");
             d3.selectAll(".mouse-per-line text")
                 .style("opacity", "0");
+            tipLineChart.style('opacity', '0');
         })
         .on('mouseover', function() { // on mouse in show line, circles and text
             d3.select(".mouse-line")
@@ -222,6 +223,7 @@ function updateEdu(){
                 .style("opacity", "1");
             d3.selectAll(".mouse-per-line text")
                 .style("opacity", "1");
+            tipLineChart.style('opacity', '.9');
         })
         .on('mousemove', function(event) { // mouse moving over canvas
             var mouse = d3.pointer(event);
@@ -260,7 +262,7 @@ function updateEdu(){
             }).sort(function(a, b){
                 return b.value - a.value
             });       
-            tooltipPay
+            tipLineChart
                 .html(formatTime(xDate))
                 .style('opacity', '.9')
                 .style("left", (event.pageX) + "px")
@@ -272,7 +274,7 @@ function updateEdu(){
                     return colorEdu(d.country)
                 })
                 .html(function(d, i){
-                    return `${cursorEduData[i]["country"] + ": " + cursorEduData[i]["value"]}%<br/>`
+                    return `${cursorEduData[i]["country"] + ": " + Math.round(cursorEduData[i]["value"] * 100) / 100}%<br/>`
                 });
         });
 }

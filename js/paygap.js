@@ -12,8 +12,8 @@ var gPay = svgPay.append("g")
 var parseTimePay = d3.timeParse("%Y");
 var formatTime = d3.timeFormat("%Y");
 // For tooltip
-var tooltipPay = d3.select("body").append("div")
-    .attr("class", "tooltipPay")
+var tipLineChart = d3.select("body").append("div")
+    .attr("class", "tipLineChart")
     .style("opacity", 0);
 // Scales
 var xPay = d3.scaleTime().range([0, widthPay]);
@@ -181,6 +181,7 @@ function updatePay(){
                 .style("opacity", "0");
             d3.selectAll(".mousePay-per-line text")
                 .style("opacity", "0");
+            tipLineChart.style('opacity', '0');
         })
         .on('mouseover', function() { // on mouse in show line, circles and text
             d3.select(".mousePay-line")
@@ -189,6 +190,7 @@ function updatePay(){
                 .style("opacity", "1");
             d3.selectAll(".mousePay-per-line text")
                 .style("opacity", "1");
+            tipLineChart.style('opacity', '.9');
         })
         .on('mousemove', function(event) { // mouse moving over canvas
             var mousePay = d3.pointer(event);
@@ -228,7 +230,7 @@ function updatePay(){
                 return b.value - a.value
             });
                           
-            tooltipPay
+            tipLineChart
                 .html(formatTime(yearPay))
                 .style('opacity', '.9')
                 .style("left", (event.pageX) + "px")
