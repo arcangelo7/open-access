@@ -202,8 +202,6 @@ function updateEdu(){
         .style("fill", "none")
         .style("stroke-width", "1px")
         .style("opacity", "0");
-    mousePerLine.append("text")
-        .attr("transform", "translate(10,3)");
     mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
         .attr('width', widthEdu) // can't catch mouse events on a g element
         .attr('height', heightEdu)
@@ -227,6 +225,7 @@ function updateEdu(){
         })
         .on('mousemove', function(event) { // mouse moving over canvas
             var mouse = d3.pointer(event);
+            var xDate = xEdu.invert(mouse[0]);
             d3.select(".mouse-line")
             .attr("d", function() {
                 var d = "M" + mouse[0] + "," + heightEdu;
@@ -235,8 +234,7 @@ function updateEdu(){
             });
             d3.selectAll(".mouse-per-line")
                 .attr("transform", function(d, i) {
-                var xDate = xEdu.invert(mouse[0]),
-                    bisect = d3.bisector(function(d) { return d.year; }).right;
+                var bisect = d3.bisector(function(d) { return d.year; }).right;
                     idx = bisect(d.values, xDate);
                 var beginning = 0,
                     end = linesEdu[i].getTotalLength(),
@@ -251,13 +249,31 @@ function updateEdu(){
                     if (pos.x > mouse[0]) end = target;
                     else if (pos.x < mouse[0]) beginning = target;
                     else break; //position found
-                }
-              
-                d3.select(this).select('text')
-                    .text(yEdu.invert(pos.y).toFixed(2) + "%");
-                
+                }                
                 return "translate(" + mouse[0] + "," + pos.y +")";
             }); 
+            // Cartiglio
+            var cursorEduData = dataEdu[curEduMeasure].filter(function(d){
+                if (formatTime(d.year) == formatTime(xDate) && countriesSelected.includes(d.country)){
+                    return d
+                }
+            }).sort(function(a, b){
+                return b.value - a.value
+            });       
+            tooltipPay
+                .html(formatTime(xDate))
+                .style('opacity', '.9')
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px")
+                .selectAll()
+                .data(cursorEduData).enter()
+                .append('div')
+                .style("color", function(d){
+                    return colorEdu(d.country)
+                })
+                .html(function(d, i){
+                    return `${cursorEduData[i]["country"] + ": " + cursorEduData[i]["value"]}%<br/>`
+                });
         });
 }
 

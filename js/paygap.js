@@ -12,7 +12,9 @@ var gPay = svgPay.append("g")
 var parseTimePay = d3.timeParse("%Y");
 var formatTime = d3.timeFormat("%Y");
 // For tooltip
-var bisectDate = d3.bisector(function(d) { return d.year; }).left;
+var tooltipPay = d3.select("body").append("div")
+    .attr("class", "tooltipPay")
+    .style("opacity", 0);
 // Scales
 var xPay = d3.scaleTime().range([0, widthPay]);
 var yPay = d3.scaleLinear().range([heightPay, 0]);
@@ -51,7 +53,6 @@ $("#sliderPay").slider({
 
 // Read in data
 d3.json("data/paygap.json").then(function(data) {
-    dataPay = data;
     filteredDataPay = {};
     // // Prepare and clean data
     for (var measure in data) {
@@ -66,6 +67,7 @@ d3.json("data/paygap.json").then(function(data) {
             d["value"] = +d.value;
         });
     }
+    dataPay = filteredDataPay
     // Run the visualization for the first time
     updatePay();
     addCheckboxesPay();
@@ -167,8 +169,6 @@ function updatePay(){
         .style("fill", "none")
         .style("stroke-width", "1px")
         .style("opacity", "0");
-    mousePerLinePay.append("text")
-        .attr("transform", "translate(10,3)");
     mouseGPay.append('svg:rect') // append a rect to catch mouse movements on canvas
         .attr('width', widthPay) // can't catch mouse events on a g element
         .attr('height', heightPay)
@@ -217,10 +217,31 @@ function updatePay(){
                     else if (pos.x < mousePay[0]) beginning = target;
                     else break; //position found
                 }
-                d3.select(this).select('text')
-                    .text(yPay.invert(pos.y).toFixed(2) + "%");
                 return "translate(" + mousePay[0] + "," + pos.y +")";
             }); 
+            const yearPay = xPay.invert(mousePay[0]);
+            var cursorPayData = dataPay["paygap"].filter(function(d){
+                if (formatTime(d.year) == formatTime(yearPay) && countriesPaySelected.includes(d.country)){
+                    return d
+                }
+            }).sort(function(a, b){
+                return b.value - a.value
+            });
+                          
+            tooltipPay
+                .html(formatTime(yearPay))
+                .style('opacity', '.9')
+                .style("left", (event.pageX) + "px")
+                .style("top", (event.pageY - 28) + "px")
+                .selectAll()
+                .data(cursorPayData).enter()
+                .append('div')
+                .style("color", function(d){
+                    return colorPay(d.country)
+                })
+                .html(function(d, i){
+                    return `${cursorPayData[i]["country"] + ": " + cursorPayData[i]["value"]}%<br/>`
+                });
         });
 }
 function addCheckboxesPay(){
@@ -266,7 +287,6 @@ $(document).ready(function() {
     });
     // Update chart when checkbox selected
     $(document).on("change", ".countryPayCheckbox", function() {
-        console.log("ehi")
         if ($(this).is(":checked")){
             countriesPaySelected.push($(this).val());
         } else {
