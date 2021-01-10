@@ -141,10 +141,10 @@
 <body>
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'labour')">Labour</button>
+        <button class="tablinks" onclick="openTab(event, 'labour')" id="defaultOpen">Labour</button>
         <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
         <button class="tablinks" onclick="openTab(event, 'paygap')">Gender pay gap</button>
-        <button class="tablinks" onclick="openTab(event, 'childcare')" id="defaultOpen">Childcare</button>
+        <button class="tablinks" onclick="openTab(event, 'childcare')">Childcare</button>
         <button class="tablinks" onclick="openTab(event, 'digital')">Digital economy</button>
         <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
     </div>
@@ -155,7 +155,12 @@
         <h2 class="year"></h2>
         <div class="slider"></div>
         <div id="selectors"></div>
-        <svg id="labour_choropleth" width="1000" height="700"></svg>
+        <div id="labourMap" style="width: 1000px; height: 700px">
+            <div class="legendContainer">
+                <svg id="labourMapLegend"></svg>
+            </div>
+        </div>
+        <svg id="labour_choropleth" width="0" height="0"></svg>
     </div>
 
     <div id="health" class="tabcontent">

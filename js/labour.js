@@ -1,3 +1,16 @@
+var labourMap = L.map('labourMap').setView([0, 0], 2);
+mapLink = 
+    '<a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a>';
+L.tileLayer(
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; ' + mapLink + ' Contributors',
+    maxZoom: 18,
+    clickable: true
+}).addTo(labourMap);
+// Add an SVG element to Leaflet’s overlay pane
+var svgLabour = d3.select(labourMap.getPanes().overlayPane).append("svg").attr("pointer-events", "auto"),
+    gLabour = svgLabour.append("g").attr("class", "leaflet-zoom-hide");
+
 var tip = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
@@ -41,11 +54,11 @@ let mouseOver = function(event, d) {
     d3.selectAll(".Country")
         .transition()
         .duration(200)
-        .style("opacity", .5)
+        .style("opacity", .3)
     d3.select(this)
         .transition()
         .duration(200)
-        .style("opacity", 1)
+        .style("opacity", .7)
         .style("stroke", "black")
 
     tip.transition()
@@ -71,7 +84,7 @@ let mouseLeave = function(d) {
 d3.selectAll(".Country")
     .transition()
     .duration(200)
-    .style("opacity", 1)
+    .style("opacity", .7)
 d3.select(this)
     .transition()
     .duration(200)
@@ -112,7 +125,6 @@ function update(year, map){
     colorScale = d3.scaleThreshold()
         .domain([0, d3.max(ranges[selectedTopic])/4, d3.max(ranges[selectedTopic])/2,  d3.max(ranges[selectedTopic])/1.32, d3.max(ranges[selectedTopic])]) 
         .range(d3.schemeBlues[5]);
-    
     // Slider
     slider.property("value", year);
     d3.select(".year").text(year);
@@ -126,11 +138,12 @@ function update(year, map){
 
     // Legend 
     d3.select("g.key").remove()
-    var legend = svg.append("g")
+    var legendLabour = d3.select("#labourMapLegend")
+        .append("g")
         .attr("class", "key")
-        .attr("transform", "translate(0,15)");
+        .style("transform", "translate(-697px, 15px)")
 
-    legend.selectAll("rect")
+    legendLabour.selectAll("rect")
         .data(colorScale.range().map(function(d) {
             d = colorScale.invertExtent(d);
             if (d[0] == null) d[0] = x.domain()[0];
@@ -143,7 +156,7 @@ function update(year, map){
             .attr("width", function(d) { return x(d[1]) - x(d[0]); })
             .attr("fill", function(d) { return colorScale(d[0]); });
 
-    legend.append("text")
+    legendLabour.append("text")
         .attr("class", "caption")
         .attr("x", x.range()[0])
         .attr("y", -6)
@@ -152,7 +165,7 @@ function update(year, map){
         .attr("font-weight", "bold")
         .text(selectedTopicBeautiful);
 
-    legend.call(d3.axisBottom(x)
+    legendLabour.call(d3.axisBottom(x)
         .tickSize(13)
         .tickFormat(function(x, i) { return Math.round(x) })
         .tickValues(colorScale.domain()))
@@ -174,6 +187,12 @@ var slider = d3.select(".slider")
             var year = this.value;
             update(year, mapLabourForce);
         });
+    
+// Use Leaflet to implement a D3 geometric transformation.
+function projectPointLabour(x, y) {
+    var point = labourMap.latLngToLayerPoint(new L.LatLng(y, x));
+    this.stream.point(point.x, point.y);
+}
 
 Promise.all(promises).then(function(data){
     ready(data);
@@ -190,10 +209,6 @@ function ready(world) {
         // It’s usually followed by .append which adds elements to the DOM
         .enter()
         .append("path")
-        // draw each country
-        .attr("d", d3.geoPath()
-            .projection(projection)
-        )
         // set the color of each country
         .attr("fill", function (d) {
             if (labour_force.get(d.id)) {
@@ -202,18 +217,47 @@ function ready(world) {
                 }
             }
         })
-        .style("stroke", "black")
-        .attr("class", function(d){ return "Country" } )
-        .style("opacity", 1)
-        .on("mouseover", mouseOver )
-        .on("mouseleave", mouseLeave )
 
-    update(selectedYear, mapLabourForce);
+    //  create a d3.geo.path to convert GeoJSON to SVG
+    var transformLeafletLabour = d3.geoTransform({point: projectPointLabour}),
+            pathLeafletLabour = d3.geoPath().projection(transformLeafletLabour);
+    // create path elements for each of the features
+    d3FeaturesLabour = gLabour.selectAll("path")
+        .data(world[0].features)
+        .enter().append("path")
+        .on("mouseover", mouseOver )
+        .on("mouseleave", mouseLeave );
+
+    labourMap.on("zoom", resetLabour);
+    resetLabour();
+    // fit the SVG element to leaflet's map layer
+    function resetLabour() {
+        bounds = pathLeafletLabour.bounds(world[0]);
+        var topLeft = bounds[0],
+            bottomRight = bounds[1];
+        svgLabour.attr("width", bottomRight[0] - topLeft[0])
+                    .attr("height", bottomRight[1] - topLeft[1])
+                    .style("left", topLeft[0] + "px")
+                    .style("top", topLeft[1] + "px");
+        gLabour.attr("transform", "translate(" + -topLeft[0] + "," 
+                                        + -topLeft[1] + ")");
+        // initialize the path data	
+        d3FeaturesLabour.attr("d", pathLeafletLabour)
+            .attr("class", function(d){ return "Country" } )
+            .style("stroke", "black")
+            .style("opacity", .7);
+        update(selectedYear, mapLabourForce);
+    } 
 }
 
-option_select.on("change", function() {
-    selectedTopic = $("#selectors").find(".option-select").val()
-    update(selectedYear, mapLabourForce);
+$(document).ready(function(){
+    $(document).on("change", option_select, function() {
+        selectedTopic = $("#selectors").find(".option-select").val()
+        update(selectedYear, mapLabourForce);
+    });
+    $(document).on("click", ".tablinks:contains('Labour')", function(e) {
+        labourMap.invalidateSize();
+    });    
 });
 
 

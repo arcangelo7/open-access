@@ -12,17 +12,11 @@ var svgChildcare = d3.select(childcareMap.getPanes().overlayPane).append("svg").
     gChildcare = svgChildcare.append("g").attr("class", "leaflet-zoom-hide");
 var legendChildcare = d3.select("#childcareMapLegend")
     .append("g")
-    .style("bottom", function(d){
-        return $("#childcareMap")[0].offsetHeight
-    })
+    .style("transform", "translate(0, 15px)")
+
 var childcareSvg = d3.select("svg#childcare"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
-
-var euProjection = d3.geoConicConformal()
-    .center([ 13, 52 ])
-    .scale(width / 1.6)
-    .translate([width / 2, height / 2]);
 
 var childcare_map = new Map();
 var childcareRange = []
@@ -124,21 +118,14 @@ function childcareReady(europe) {
     mapChildcare = childcareSvg.append("g")
         .selectAll("path")
         .data(europe[0].features)
-        // .enter returns an enter selection which basically represents the elements that need to be added. 
-        // It’s usually followed by .append which adds elements to the DOM
         .enter()
         .append("path")
-        // draw each country
-        .attr("d", d3.geoPath()
-            .projection(euProjection)
-        )
         .attr("fill", function(d){
             if (childcare_map.get(d.id)) {
                 for (let [i, value] of childcare_map.get(d.id).entries()) {
                     d[value.year] = value.value
                 }
             }
-            // return colorScaleChildcare(d.childcare);
         });
 
     // Legend scale
@@ -171,7 +158,7 @@ function childcareReady(europe) {
 
     legendChildcare.call(d3.axisBottom(x)
         .tickSize(13)
-        .tickFormat(function(x, i) { return Math.round(x) })
+        .tickFormat(function(x, i) { return Math.round(x) + "%"})
         .tickValues(colorScaleChildcare.domain()))
         .select(".domain")
         .remove();
@@ -207,6 +194,11 @@ function childcareReady(europe) {
         updateChildcare(yearChildcare);
     } 
 }
+$(document).ready(function(){
+    $(document).on("click", ".tablinks:contains('Childcare')", function(e) {
+        childcareMap.invalidateSize();
+    });    
+});
 
 
 
