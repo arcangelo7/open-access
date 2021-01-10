@@ -10,6 +10,7 @@ var gPay = svgPay.append("g")
   .attr("transform", "translate(" + marginPay.left + "," + marginPay.top + ")");
 // parse the date / time
 var parseTimePay = d3.timeParse("%Y");
+var parseTimePayFull = d3.timeParse("%d/%m/%Y");
 var formatTime = d3.timeFormat("%Y");
 // For tooltip
 var tipLineChart = d3.select("body").append("div")
@@ -32,20 +33,18 @@ var xAxisPay = gPay
 var yAxisPay = gPay
     .append("g")
     .attr("class", "y-axis")
-// Line path generator
-var linePay = d3.line()
-    .x(function(d) { return xPay(d.year); })
-    .y(function(d) { return yPay(d.value); });
 // Add jQuery UI slider
 $("#sliderPay").slider({
     range: true,
-    max: parseTimePay("2007").getTime(),
     min: parseTimePay("1994").getTime(),
-    step: 86400000*365, // One year
-    values: [parseTimePay("1994").getTime(), parseTimePay("2007").getTime()],
+    max: parseTimePay("2007").getTime(),
+    step: 1, // One year
+    values: [parseTimePay("1994").getTime(), parseTimePay("2006").getTime()],
     slide: function(event, ui){
         $("#dateLabel1Pay").text(formatTime(new Date(ui.values[0])));
         $("#dateLabel2Pay").text(formatTime(new Date(ui.values[1])));
+    },
+    change: function(event, ui){
         updatePay();
         addCheckboxesPay();
     }
@@ -77,7 +76,7 @@ function updatePay(){
     // Filter data based on selections
     sliderPayValues = $("#sliderPay").slider("values");
     var dataPayTimeFiltered = filteredDataPay["paygap"].filter(function(d){
-        return ((d.year >= sliderPayValues[0]) && (d.year <= sliderPayValues[1]) && countriesPaySelected.includes(d["country"]))
+        return ((d.year >= parseTimePay(formatTime(new Date(sliderPayValues[0])))) && (d.year <= parseTimePay(formatTime(new Date(sliderPayValues[1])))) && countriesPaySelected.includes(d["country"]))
     });
     // Update scales
     xPay.domain(d3.extent(dataPayTimeFiltered, function(d){ return d.year; }));
@@ -104,10 +103,13 @@ function updatePay(){
             })
         }
     });
-    // Path generator
-    linePay = d3.line()
-        .x(function(d){ return xPay(d.year); })
-        .y(function(d){ return yPay(d.value); });
+    // Line path generator
+    var linePay = d3.line()
+        .defined(function(d) {
+            return d.year <= xPay.domain()[1] && d.year >= xPay.domain()[0]; 
+        })
+        .x(function(d) { return xPay(d.year); })
+        .y(function(d) { return yPay(d.value); });
     // Update our line path
     d3.selectAll(".countryPayLine").remove();
     var countryPayLines = gPay.selectAll(".countryPayLine")

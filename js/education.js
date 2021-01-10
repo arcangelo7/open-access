@@ -45,11 +45,6 @@ var yAxisEdu = gEdu
 //     .attr("fill", "#5D6971")
 //     .text("Female percentage");
 
-// Line path generator
-var lineEdu = d3.line()
-    .x(function(d) { return xEdu(d.year); })
-    .y(function(d) { return yEdu(d.value); });
-
 // Event listeners
 $("#eduMeasure").on("change", function(){
     updateEdu();
@@ -58,13 +53,15 @@ $("#eduMeasure").on("change", function(){
 // Add jQuery UI slider
 $("#sliderEdu").slider({
     range: true,
-    max: parseTimeEdu("2016").getTime(),
+    max: parseTimeEdu("2017").getTime(),
     min: parseTimeEdu("1970").getTime(),
-    step: 86400000*365, // One year
+    step: 1, // One year
     values: [parseTimeEdu("1970").getTime(), parseTimeEdu("2016").getTime()],
     slide: function(event, ui){
         $("#dateLabel1").text(formatTime(new Date(ui.values[0])));
         $("#dateLabel2").text(formatTime(new Date(ui.values[1])));
+    },
+    change: function(event, ui){
         updateEdu();
         addCheckboxes();
     }
@@ -103,7 +100,7 @@ function updateEdu(){
     curEduMeasure = $("#eduMeasure").val(),
         sliderValues = $("#sliderEdu").slider("values");
     var dataTimeFiltered = filteredData[curEduMeasure].filter(function(d){
-        return ((d.year >= sliderValues[0]) && (d.year <= sliderValues[1]) && countriesSelected.includes(d["country"]))
+        return ((d.year >= parseTimeEdu(formatTime(new Date(sliderValues[0])))) && (d.year <= sliderValues[1]) && countriesSelected.includes(d["country"]))
     });
     // Update scales
     xEdu.domain(d3.extent(dataTimeFiltered, function(d){ return d.year; }));
@@ -135,6 +132,9 @@ function updateEdu(){
 
     // Path generator
     lineEdu = d3.line()
+        .defined(function(d) {
+            return d.year <= xEdu.domain()[1] && d.year >= xEdu.domain()[0]; 
+        })
         .x(function(d){ return xEdu(d.year); })
         .y(function(d){ return yEdu(d.value); });
 
