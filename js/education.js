@@ -152,7 +152,18 @@ function updateEdu(){
         .style("stroke", function(d) {
             return colorEdu(d.country);
         });
-
+    // Add dots
+    var circleArea = countryLines.append("g");
+    circleArea.selectAll('circle').remove(); // this makes sure your out of box dots will be remove.
+    circleArea.selectAll('circle')
+      .data(dataTimeFiltered)
+      .enter()
+           .append('circle')
+           .attr('r',3)  // radius of dots 
+           .attr('fill', function(d, i){ return colorEdu(d.country)}) // color of dots
+           .attr('transform',function(d,i){ 
+               return 'translate('+xEdu(d.year)+','+yEdu(d.value)+')';
+            }); 
     // Legend
     d3.selectAll(".legendEdu").remove();
     var legendEdu = svgEdu.selectAll(".legendEdu")
@@ -301,8 +312,8 @@ function addCheckboxes(){
 }
 
 $(document).ready(function() {
-    countriesSelected = ["European Union", "Advanced Economies", "Sub-Saharan Africa"]
-    countriesSelectedDefault = ["European Union", "Advanced Economies", "Sub-Saharan Africa"]
+    countriesSelected = ["European Union", "Advanced Economies", "Sub-Saharan Africa", "Italy", "Finland"]
+    countriesSelectedDefault = ["European Union", "Advanced Economies", "Sub-Saharan Africa", "Italy", "Finland"]
     // Get the modal
     var modalEduCountries = document.getElementById("modalEduCountries");
     // Get the button that opens the modal
