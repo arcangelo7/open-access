@@ -169,6 +169,19 @@ d3.json("data/health_life_expectancy.json").then(data => {
 });
 
 ///////////////////////////////////////////// Causes of mortality
+var deathMap = L.map('deathMap').setView([0, 0], 2);
+mapLink = 
+    '<a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a>';
+L.tileLayer(
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; ' + mapLink + ' Contributors',
+    maxZoom: 18,
+    clickable: true
+}).addTo(deathMap);
+// Add an SVG element to Leaflet’s overlay pane
+var svgDeath = d3.select(deathMap.getPanes().overlayPane).append("svg").attr("pointer-events", "auto"),
+    gDeath = svgDeath.append("g").attr("class", "leaflet-zoom-hide");
+    
 var svg_death = d3.select("svg#healthDeathCauses"),
     width = +svg_death.attr("width"),
     height = +svg_death.attr("height");
@@ -204,9 +217,6 @@ var promises_health = [
     })
 ]
 
-var path = d3.geoPath()
-    .projection(projection);
-
 Promise.all(promises_health).then(function(data){
     ready_health(data);
 }).catch(function(error){
@@ -241,9 +251,13 @@ function update_death(year, cause, sex, data){
     var valuesToShow = [radius.domain()[0], radius.domain()[1]]
     var xCircle = 100
     var xLabel = 150
-    var yCircle = height
+    var yCircle = 40
     d3.selectAll(".bubbleLegend").remove()
-    svg_death
+    // Legend 
+    var legendDeath = d3.select("#deathMapLegend")
+        .append("g")
+        // .style("transform", "translate(0, -505px)")
+    legendDeath
         .selectAll("legend")
         .data(valuesToShow)
         .enter()
@@ -255,7 +269,7 @@ function update_death(year, cause, sex, data){
         .style("fill", "none")
         .attr("stroke", "black")
     // Add legend: segments
-    svg_death
+    legendDeath
         .selectAll("legend")
         .data(valuesToShow)
         .enter()
@@ -268,7 +282,7 @@ function update_death(year, cause, sex, data){
             .attr("class", "bubbleLegend")
             .style('stroke-dasharray', ('2,2'))
     // Add legend: labels
-    svg_death
+    legendDeath
         .selectAll("legend")
         .data(valuesToShow)
         .enter()
@@ -288,6 +302,12 @@ function beautifyMeasure(measure){
         case "value_m":
             return "Number of male deaths"
     }
+}
+
+// Use Leaflet to implement a D3 geometric transformation.
+function projectPointDeath(x, y) {
+    var point = deathMap.latLngToLayerPoint(new L.LatLng(y, x));
+    this.stream.point(point.x, point.y);
 }
 
 function ready_health(world){
@@ -323,28 +343,7 @@ function ready_health(world){
                     }
                 }
             }
-            return "#f5e98e"
-        })
-        .attr("class", function(d){ return "country_health" })
-        .style("opacity", 1)
-        .style("stroke", "black");
-    // Bubbles
-    svg_death.append("g")
-        .selectAll("circle")
-        .data(world[0].features)
-        .enter().append("circle")
-            .attr("class", "bubble")
-            .attr("transform", function(d) { 
-                return "translate(" + path.centroid(d) + ")"; 
-            })
-            .style("fill", "red")
-            .attr("stroke", "red")
-            .attr("stroke-width", 3)
-            .attr("fill-opacity", .4)
-            .on("mouseover", mouseOverDeath)
-            .on("mouseleave", mouseLeaveDeath);
-
-    update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
+        });
 
     selectorsDeath.on("change", function() {
         cur_death_cause = $("#selectorsDeath").find(".option-select").val()
@@ -355,6 +354,54 @@ function ready_health(world){
         cur_death_sex = $("#selectorsSex").find(".option-select").val()
         update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
     });
+
+    //  create a d3.geo.path to convert GeoJSON to SVG
+    var transformLeafletDeath = d3.geoTransform({point: projectPointDeath}),
+            pathLeafletDeath = d3.geoPath().projection(transformLeafletDeath);
+    // create path elements for each of the features
+    d3featuresDeath = gDeath.selectAll("path")
+        .data(world[0].features)
+        .enter().append("path");
+
+    deathMap.on("zoom", resetDeath);
+    // Bubbles
+    var svgCircles = svgDeath.append("g")
+        .selectAll("circle")
+        .data(world[0].features)
+        .enter().append("circle")
+            .attr("class", "bubble")
+            .style("fill", "red")
+            .attr("stroke", "red")
+            .attr("stroke-width", 3)
+            .attr("fill-opacity", .4)
+            .on("mouseover", mouseOverDeath)
+            .on("mouseleave", mouseLeaveDeath);
+    resetDeath();
+    // fit the SVG element to leaflet's map layer
+    function resetDeath() {
+        bounds = pathLeafletDeath.bounds(world[0]);
+        var topLeft = bounds[0],
+            bottomRight = bounds[1];
+        svgDeath.attr("width", bottomRight[0] - topLeft[0])
+                    .attr("height", bottomRight[1] - topLeft[1])
+                    .style("left", topLeft[0] + "px")
+                    .style("top", topLeft[1] + "px");
+        gDeath.attr("transform", "translate(" + -topLeft[0] + "," 
+                                        + -topLeft[1] + ")");
+        // initialize the path data	
+        d3featuresDeath.attr("d", pathLeafletDeath)
+            .attr("class", function(d){ return "country_health" } )
+            .style("opacity", 0);
+        svgCircles
+            .attr("cx", function(d) { 
+                return pathLeafletDeath.centroid(d)[0];
+            })
+            .attr("cy", function(d) {
+                return pathLeafletDeath.centroid(d)[1];
+            })
+            .attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
+        update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);    
+    }
 }
 
 let mouseOverDeath = function(event, d) {
@@ -398,3 +445,9 @@ let mouseLeaveDeath = function(d) {
         .duration(500)
         .style("opacity", 0);
 }
+
+$(document).ready(function(){
+    $(document).on("click", ".tablinks:contains('Health')", function(e) {
+        deathMap.invalidateSize();
+    });    
+});
