@@ -55,7 +55,7 @@ with open("data/edu.json") as jsonfile:
             ET.SubElement(observation, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=obs["year"])
             ET.SubElement(observation, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsValue", value=obs["value"])
 
-output_dir = "data/xml/edu.xml"
+output_dir = "data/xml/education.xml"
 tree = ET.ElementTree(root_edu)
 tree.write(output_dir, encoding="utf-8", xml_declaration=True, pretty_print=True)
 
@@ -119,7 +119,6 @@ ET.SubElement(header, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/messag
 
 with open("data/childcare.csv") as csvfile:
     data = list(csv.DictReader(csvfile))    
-    print(data[0])
     series = ET.SubElement(dataset, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Series")
     seriesKey = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}SeriesKey")
     ET.SubElement(seriesKey, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value", id="indicator", value=data[0]["IndicatorName"])
@@ -147,20 +146,72 @@ ET.SubElement(header, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/messag
 
 with open("data/health_death_causes.csv") as csvfile:
     data = list(csv.DictReader(csvfile))    
-    print(data[0])
-    series = ET.SubElement(dataset, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Series")
-    seriesKey = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}SeriesKey")
-    ET.SubElement(seriesKey, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value", id="indicator", value=data[0]["IndicatorName"])
-    ET.SubElement(seriesKey, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value", id="IndicatorCode", value=data[0]["IndicatorCode"])
-    ET.SubElement(seriesKey, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value", id="variable", value=data[0]["VariableName"])
-    ET.SubElement(seriesKey, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value", id="unit", value=data[0]["MeasurementName"])
+    indicators = set()
     for row in data:
-        obs = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Obs")
-        ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country_code"])
-        ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country"])
-        ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["year"])
-        ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsValue", value=row["Value"])
+        if row["indicator"] not in indicators:
+            series = ET.SubElement(dataset, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Series")
+            seriesKey = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}SeriesKey")
+            ET.SubElement(seriesKey, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value", id="indicator", value=row["indicator"])
+            indicators.add(row["indicator"])
+            obs = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Obs")
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country_code"])
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country"])
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["year"])
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value="female")
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsValue", value=row["value_f"])
+
+            obs = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Obs")
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country_code"])
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country"])
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["year"])
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value="male")
+            ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsValue", value=row["value_m"])
+        else:
+            try:
+                prev_indicator = root_death.find(".//{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value[@value='%s']/../.."%(row["indicator"]))
+                obs = ET.SubElement(prev_indicator, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Obs")
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country_code"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["year"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value="female")
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsValue", value=row["value_f"])
+                
+                obs = ET.SubElement(prev_indicator, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Obs")
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country_code"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["year"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value="male")
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsValue", value=row["value_m"])
+            except SyntaxError: 
+                pass
 
 output_dir = "data/xml/health_death_causes.xml"
 tree = ET.ElementTree(root_death)
+tree.write(output_dir, encoding="utf-8", xml_declaration=True, pretty_print=True)
+
+# Labour
+root_labour = ET.Element("{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message}GenericData")
+header = ET.SubElement(root_labour, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message}Header")
+dataset = ET.SubElement(root_labour, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message}DataSet")
+
+ET.SubElement(header, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message}Test").text = "false"
+ET.SubElement(header, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message}Prepared").text = datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")
+
+with open("data/labour.csv") as csvfile:
+    data = list(csv.DictReader(csvfile))
+    indicators = {k for k,v in data[0].items() if (k != "country_name" and k != "country_code" and k != "year")}
+    for indicator in indicators:
+        series = ET.SubElement(dataset, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Series")
+        seriesKey = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}SeriesKey")
+        ET.SubElement(seriesKey, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Value", id="indicator", value=indicator)
+        for row in data:
+            if row[indicator] != "":
+                obs = ET.SubElement(series, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}Obs")
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country_code"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["country_name"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsDimension", value=row["year"])
+                ET.SubElement(obs, "{http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic}ObsValue", value=row[indicator])                  
+
+output_dir = "data/xml/labour.xml"
+tree = ET.ElementTree(root_labour)
 tree.write(output_dir, encoding="utf-8", xml_declaration=True, pretty_print=True)

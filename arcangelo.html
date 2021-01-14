@@ -239,6 +239,19 @@
         <svg id="eduChart"></svg>
     </div>
 
+    <script src="lib/leaflet/leaflet.js"></script>
+    <script src="lib/d3/d3.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="js/labour.js"></script>
+    <script src="js/health.js"></script>
+    <script src="js/paygap.js"></script>
+    <script src="js/childcare.js"></script>
+    <script src="js/digital.js"></script>
+    <script src="js/education.js"></script>
     <script>
         function openTab(evt, viz) {
             var i, tabcontent, tablinks;
@@ -260,20 +273,22 @@
             evt.currentTarget.className += " active";
         }
         document.getElementById("defaultOpen").click();
-    </script>
 
-    <script src="lib/leaflet/leaflet.js"></script>
-    <script src="lib/d3/d3.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
-    <script src="lib/jquery-ui.min.js"></script>
-    <script src="http://d3js.org/topojson.v1.min.js"></script>
-    <script src="js/labour.js"></script>
-    <script src="js/health.js"></script>
-    <script src="js/paygap.js"></script>
-    <script src="js/childcare.js"></script>
-    <script src="js/digital.js"></script>
-    <script src="js/education.js"></script>
+        // Download buttons
+        $(document).ready(function(){
+            var formats = ["csv", "json", "xml"]
+            $(".tabcontent").each(function(){
+                var id = $(this).attr("id")
+                for (i = 0; i < formats.length; i++){
+                    if ($(this).attr("id") != "health"){
+                            $(this).append(`<br/><a href="data/${formats[i]}/${id}.${formats[i]}" download="${id}.${formats[i]}">Download ${formats[i]}</a><br/>`)
+                    } else if ($(this).attr("id") == "health"){
+                        $("#healthDeathCauses").after(`<br/><a href="data/${formats[i]}/health_death_causes.${formats[i]}" download="health_death_causes.${formats[i]}">Download ${formats[i]}</a><br/>`)
+                        $("#healthLifeExpectancy").after(`<br/><a href="data/${formats[i]}/health_life_expectancy.${formats[i]}" download="health_life_expectancy.${formats[i]}">Download ${formats[i]}</a><br/>`)
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
