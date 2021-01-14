@@ -1,0 +1,2419 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<m:GenericData xmlns:m="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <m:Header>
+    <m:Test>false</m:Test>
+    <m:Prepared>2021-01-14T12:01:10.774076</m:Prepared>
+  </m:Header>
+  <m:DataSet>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="indicator" value="paygap"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="29"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="33"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="28"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="1994"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="27"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="29"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="27"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value="26"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="1995"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="27"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="28"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="1996"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="28"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="27"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="1997"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="25"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="26"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="26"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="1998"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="26"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="27"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="1999"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="25"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="26"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="2000"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="26"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="2001"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="25"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="27"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="2002"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="25"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="4"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="2003"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="23"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="25"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="4"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="2004"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="25"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="25"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="4"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="2005"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 27 countries (2007-2013)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 25 countries (2004-2006)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="15"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="European Union - 15 countries (1995-2004)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 13 countries (2007)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 12 countries (2001-2006)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Euro area - 11 countries (1999-2000)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Belgium"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Bulgaria"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Czechia"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="18"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Denmark"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="17"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Germany (until 1990 former territory of the FRG)"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Estonia"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Ireland"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Greece"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Spain"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="13"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="France"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Croatia"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Italy"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Cyprus"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="24"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Latvia"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Lithuania"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Luxembourg"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="14"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Hungary"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="11"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Malta"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="3"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Netherlands"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value=":"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Austria"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Poland"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="12"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Portugal"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Romania"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="10"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovenia"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Slovakia"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="22"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Finland"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="20"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Sweden"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="United Kingdom"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="21"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Norway"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="16"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Switzerland"/>
+        <g:ObsDimension value="2006"/>
+        <g:ObsValue value="19"/>
+      </g:Obs>
+    </g:Series>
+  </m:DataSet>
+</m:GenericData>

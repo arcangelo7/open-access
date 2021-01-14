@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<m:GenericData xmlns:m="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <m:Header>
+    <m:Test>false</m:Test>
+    <m:Prepared>2021-01-14T12:01:10.771084</m:Prepared>
+  </m:Header>
+  <m:DataSet>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Denmark"/>
+        <g:Value id="code" value="DK"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="90.2023"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="90.5331"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Finland"/>
+        <g:Value id="code" value="FI"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="90.0743"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="87.3007"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Netherlands"/>
+        <g:Value id="code" value="NL"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="88.1152"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="90.8259"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Sweden"/>
+        <g:Value id="code" value="SE"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="87.6549"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="85.8268"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Germany"/>
+        <g:Value id="code" value="DE"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="83.782"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="83.4862"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="United Kingdom"/>
+        <g:Value id="code" value="UK"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="82.3589"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="82.4169"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Estonia"/>
+        <g:Value id="code" value="EE"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="81.4797"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="79.2343"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Czechia"/>
+        <g:Value id="code" value="CZ"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="77.4348"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="72.9131"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Ireland"/>
+        <g:Value id="code" value="IE"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="77.058"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="72.6044"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Malta"/>
+        <g:Value id="code" value="MT"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="73.7625"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="68.1582"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Spain"/>
+        <g:Value id="code" value="ES"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="73.7181"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="73.4985"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Cyprus"/>
+        <g:Value id="code" value="CY"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="73.3129"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="71.584"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Belgium"/>
+        <g:Value id="code" value="BE"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="73.1026"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="73.9729"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Lithuania"/>
+        <g:Value id="code" value="LT"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="72.985"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="70.4495"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Austria"/>
+        <g:Value id="code" value="AT"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="71.8773"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="75.4428"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Luxembourg"/>
+        <g:Value id="code" value="LU"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="71.0339"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="75.92"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="European Union"/>
+        <g:Value id="code" value="EU"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="70.9771"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="71.0078"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Hungary"/>
+        <g:Value id="code" value="HU"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="70.3818"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="70.3591"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="France"/>
+        <g:Value id="code" value="FR"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="70.1013"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="67.4959"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Croatia"/>
+        <g:Value id="code" value="HR"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="69.8863"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="74.3881"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Latvia"/>
+        <g:Value id="code" value="LV"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="69.8809"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="66.4915"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Slovakia"/>
+        <g:Value id="code" value="SK"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="69.3435"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="70.5919"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Slovenia"/>
+        <g:Value id="code" value="SI"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="69.0836"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="69.0147"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Greece"/>
+        <g:Value id="code" value="EL"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="65.9206"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="68.5275"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Poland"/>
+        <g:Value id="code" value="PL"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="63.5895"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="60.5695"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Portugal"/>
+        <g:Value id="code" value="PT"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="61.0389"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="63.4518"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Romania"/>
+        <g:Value id="code" value="RO"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="49.4957"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="48.6022"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Bulgaria"/>
+        <g:Value id="code" value="BG"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="47.1089"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="42.5805"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="category" value="Italy"/>
+        <g:Value id="code" value="IT"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="Females, 16 to 74 years old"/>
+        <g:ObsValue value="44.4951"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="Males, 16 to 74 years old"/>
+        <g:ObsValue value="48.8823"/>
+      </g:Obs>
+    </g:Series>
+  </m:DataSet>
+</m:GenericData>

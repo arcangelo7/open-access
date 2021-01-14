@@ -1,0 +1,723 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<m:GenericData xmlns:m="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <m:Header>
+    <m:Test>false</m:Test>
+    <m:Prepared>2021-01-14T12:01:10.643426</m:Prepared>
+  </m:Header>
+  <m:DataSet>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="ES"/>
+        <g:Value id="country" value="Spain"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="86.3"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.7"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="FR"/>
+        <g:Value id="country" value="France"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="85.9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.7"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="CH"/>
+        <g:Value id="country" value="Switzerland"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="85.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="81.9"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="IT"/>
+        <g:Value id="country" value="Italy"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="85.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="81.2"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="LI"/>
+        <g:Value id="country" value="Liechtenstein"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="85.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.7"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EFTA"/>
+        <g:Value id="country" value="European Free Trade Association"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="85.2"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="81.6"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="CY"/>
+        <g:Value id="country" value="Cyprus"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.9"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EA18"/>
+        <g:Value id="country" value="Euro area - 18 countries (2014)"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.6"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EA19"/>
+        <g:Value id="country" value="Euro area - 19 countries (from 2015)"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="LU"/>
+        <g:Value id="country" value="Luxembourg"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.1"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="MT"/>
+        <g:Value id="country" value="Malta"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="FI"/>
+        <g:Value id="country" value="Finland"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.1"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="IS"/>
+        <g:Value id="country" value="Iceland"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="81.3"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="NO"/>
+        <g:Value id="country" value="Norway"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="81.1"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="PT"/>
+        <g:Value id="country" value="Portugal"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.3"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EL"/>
+        <g:Value id="country" value="Greece"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.4"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.3"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="SI"/>
+        <g:Value id="country" value="Slovenia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.4"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="SE"/>
+        <g:Value id="country" value="Sweden"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.3"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.9"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="AT"/>
+        <g:Value id="country" value="Austria"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.1"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="IE"/>
+        <g:Value id="country" value="Ireland"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="84.1"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="BE"/>
+        <g:Value id="country" value="Belgium"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EEA30_2007"/>
+        <g:Value id="country" value="EEA (2007-2013)"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EU27_2007"/>
+        <g:Value id="country" value="EU 27 countries (2007-2013)"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EU27_2020"/>
+        <g:Value id="country" value="EU 27 countries (from 2020)"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.2"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EEA31"/>
+        <g:Value id="country" value="EEA (2013-2020)"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EU28"/>
+        <g:Value id="country" value="EU 28 countries (2013-2020)"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.3"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="NL"/>
+        <g:Value id="country" value="Netherlands"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.4"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="80.3"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="DE"/>
+        <g:Value id="country" value="Germany"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.3"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.6"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="DE_TOT"/>
+        <g:Value id="country" value="Germany including former GDR"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.3"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="78.6"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="UK"/>
+        <g:Value id="country" value="United Kingdom"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="83.1"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="DK"/>
+        <g:Value id="country" value="Denmark"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="82.9"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="79.1"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="EE"/>
+        <g:Value id="country" value="Estonia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="82.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="74.0"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="CZ"/>
+        <g:Value id="country" value="Czech Republic"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="82.0"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="76.2"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="PL"/>
+        <g:Value id="country" value="Poland"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="81.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="73.7"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="TR"/>
+        <g:Value id="country" value="Turkey"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="81.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="76.2"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="HR"/>
+        <g:Value id="country" value="Croatia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="81.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="74.9"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="SK"/>
+        <g:Value id="country" value="Slovakia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="80.8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="73.9"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="LT"/>
+        <g:Value id="country" value="Lithuania"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="80.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="70.9"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="AL"/>
+        <g:Value id="country" value="Albania"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="80.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="77.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="AM"/>
+        <g:Value id="country" value="Armenia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="79.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="73.4"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="LV"/>
+        <g:Value id="country" value="Latvia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="79.7"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="70.1"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="HU"/>
+        <g:Value id="country" value="Hungary"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="79.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="72.7"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="BY"/>
+        <g:Value id="country" value="Belarus"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="79.5"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="69.3"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="ME"/>
+        <g:Value id="country" value="Montenegro"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="79.3"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="74.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="RO"/>
+        <g:Value id="country" value="Romania"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="79.2"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="71.7"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="MK"/>
+        <g:Value id="country" value="Macedonia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="78.8"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="74.6"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="BG"/>
+        <g:Value id="country" value="Bulgaria"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="78.6"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="71.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="RS"/>
+        <g:Value id="country" value="Serbia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="78.4"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="73.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="AZ"/>
+        <g:Value id="country" value="Azerbaijan"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="78.3"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="73.5"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="GE"/>
+        <g:Value id="country" value="Georgia"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="78.2"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="69.7"/>
+      </g:Obs>
+    </g:Series>
+    <g:Series xmlns:g="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic">
+      <g:SeriesKey>
+        <g:Value id="country_code" value="UA"/>
+        <g:Value id="country" value="Ukraine"/>
+      </g:SeriesKey>
+      <g:Obs>
+        <g:ObsDimension value="F"/>
+        <g:ObsValue value="78.0"/>
+      </g:Obs>
+      <g:Obs>
+        <g:ObsDimension value="M"/>
+        <g:ObsValue value="68.1"/>
+      </g:Obs>
+    </g:Series>
+  </m:DataSet>
+</m:GenericData>
