@@ -85,3 +85,146 @@
 **URI**: [Gender gap in upper secondary education (2011-2017)](https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019)
 
 **Provenance**: [Gender gap in upper secondary education (2011-2017)](https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019)
+* * *
+
+### Mashup and output datasets
+
+In order to manage the mash-up of different datasets we followed the _[Guidelines on FAIR Data Management in Horizon 2020](https://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-data-mgt_en.pdf)_. In accordance with these guidelines, we pursued the objective to make our research data findable, accessible, interoperable and re-usable (FAIR).
+
+**Findable**: the first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the FAIRification process.
+
+F1\. (Meta)data are assigned a unique identifier: both the data we retrieved in the original datasets, the mashed up data and the metadata we created according to the DCAT-AP are compliant with this point, presenting URI.
+
+F2\. Data are described with rich metadata: we associated a rich amount of metadata compliant with the DCAT-AP specification, including not only all the mandatory classes with their respective mandatory properties but also some recommended and optional properties that were useful for our data.
+
+F3\. Metadata clearly and explicitly include the identifier of the data they describe: for each dataset that is part of a catalogue and for our own dataset we associated to the metadata a unique identifier of the data described by means of the DCAT-AP optional property for datasets dct:identifier.
+
+**Accessible**: once the user finds the required data, she/he needs to know how can they be accessed.
+
+A1\. (Meta)data are retrievable by their identifier using a standardised communications protocol: all the data we collected and mashed up and the relative metadata are retrievable through the HTTP or its extension HTTPS. Moreover, we provided also an explicit and clear contact protocol in the metadata by means of the names and emails of the data and metadata providers.
+
+**Interoperable**: the data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
+
+I1\. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation: we used JSON, CSV and XML for the representation of the mashed up data and RDF with the Turtle syntax to describe and structure the metadata. As for the XML format, both well-formed and valid documents have been produced, using [SDMX 2.1](https://sdmx.org/?page_id=5008) as schema, which stands for Statistical Data and Metadata eXchange. It is an international initiative that aims at standardizing and modernizing (“industrialising”) the mechanisms and processes for the exchange of statistical data and metadata among international organizations and their member countries. It was released in May 2011 and was approved by ISO as International Standard (ISO 17369: 2013) in 2013\. SDMX is sponsored by seven international organizations including the Bank for International Settlements (BIS), the European Central Bank (ECB), Eurostat (Statistical Office of the European Union), the International Monetary Fund (IMF), the Organization for Economic Cooperation and Development (OECD), the United Nations Statistical Division (UNSD), and the World Bank.
+
+I2\. (Meta)data use vocabularies that follow FAIR principles. We used the ISO 3166-1 alpha-3 standard vocabulary to represent nations, the International Classification of Diseases for the health domain and the Linked Open Data vocabulary specification called DCAT-AP. These vocabularies are documented and resolvable using globally unique and persistent identifiers.
+
+**Reusable**: the goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
+
+R1\. Meta(data) is richly described with a plurality of accurate and relevant attributes: our data and metadata are described through a rich and vary series of labels including the date of collection and modification of the data, the licence, the publisher, the creator, their content.
+
+R1.1\. (Meta)data are released with a clear and accessible data usage license (Creative Common License CC BY 4.0).
+
+R1.2\. (Meta)data are associated with detailed provenance: our project includes information about the provenance of data in a machine-readable format in the metadata codification.
+
+R1.3\. (Meta)data meet domain-relevant community standards: we used the ISO 3166-1 alpha-3 standard for geographic information and the International Classification of Diseases for the health domain.
+
+The principles mentioned above include three types of entities: data, metadata and infrastructure. Given the analysis, we can state that our research data are 100% compliant with the FAIR principles.
+
+A summary table of the produced mashup datasets is shown below.
+
+<table border="1">
+
+<tbody>
+
+<tr>
+
+<th>Domain</th>
+
+<th>XML/SDMX-ML</th>
+
+<th>JSON</th>
+
+<th>CSV</th>
+
+</tr>
+
+<tr>
+
+<td>Labour force</td>
+
+<td>[labour.xml](data/xml/labour.xml)</td>
+
+<td>[labour.json](data/json/labour.json)</td>
+
+<td>[labour.csv](data/csv/labour.csv)</td>
+
+</tr>
+
+<tr>
+
+<td>Life expectancy</td>
+
+<td>[health_life_expectancy.xml](data/xml/health_life_expectancy.xml)</td>
+
+<td>[health_life_expectancy.json](data/json/health_life_expectancy.json)</td>
+
+<td>[health_life_expectancy.csv](data/csv/health_life_expectancy.csv)</td>
+
+</tr>
+
+<tr>
+
+<td>Causes of mortality</td>
+
+<td>[health_death_causes.xml](data/xml/health_death_causes.xml)</td>
+
+<td>[health_death_causes.json](data/json/health_death_causes.json)</td>
+
+<td>[health_death_causes.csv](data/csv/health_death_causes.csv)</td>
+
+</tr>
+
+<tr>
+
+<td>Gender paygap</td>
+
+<td>[paygap.xml](data/xml/paygap.xml)</td>
+
+<td>[paygap.json](data/json/paygap.json)</td>
+
+<td>[paygap.csv](data/csv/paygap.csv)</td>
+
+</tr>
+
+<tr>
+
+<td>Childcare</td>
+
+<td>[chilcare.xml](data/xml/chilcare.xml)</td>
+
+<td>[chilcare.json](data/json/chilcare.json)</td>
+
+<td>[chilcare.csv](data/csv/chilcare.csv)</td>
+
+</tr>
+
+<tr>
+
+<td>Digital economy</td>
+
+<td>[digital.xml](data/xml/digital.xml)</td>
+
+<td>[digital.json](data/json/digital.json)</td>
+
+<td>[digital.csv](data/csv/digital.csv)</td>
+
+</tr>
+
+<tr>
+
+<td>Education</td>
+
+<td>[education.xml](data/xml/education.xml)</td>
+
+<td>[education.json](data/json/education.json)</td>
+
+<td>[education.csv](data/csv/education.csv)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+* * *
