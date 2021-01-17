@@ -142,11 +142,11 @@
     <!-- Tab links -->
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'labour')">Labour</button>
-        <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
+        <button class="tablinks" onclick="openTab(event, 'health')" id="defaultOpen">Health</button>
         <button class="tablinks" onclick="openTab(event, 'paygap')">Gender pay gap</button>
         <button class="tablinks" onclick="openTab(event, 'childcare')">Childcare</button>
         <button class="tablinks" onclick="openTab(event, 'digital')">Digital economy</button>
-        <button class="tablinks" onclick="openTab(event, 'education')" id="defaultOpen">Education</button>
+        <button class="tablinks" onclick="openTab(event, 'education')">Education</button>
     </div>
 
     <!-- Tab content -->
@@ -212,6 +212,7 @@
     <div id="digital" class="tabcontent">
         <h1>Individuals with above basic level of digital skills, by Gender</h1>
         <h2>Year: 2019</h2>
+        <div id="digitalOrderSelector"></div>
         <div id="digital_hysthogram"></div>
     </div>
 
