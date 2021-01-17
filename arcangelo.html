@@ -136,13 +136,16 @@
             width: 100px;
             z-Index: 998;
         }
+        #leOrderSelector{
+            margin-top: 1rem;
+        }
     </style>
 </head>
 <body>
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'labour')">Labour</button>
-        <button class="tablinks" onclick="openTab(event, 'health')" id="defaultOpen">Health</button>
+        <button class="tablinks" onclick="openTab(event, 'labour')" id="defaultOpen">Labour</button>
+        <button class="tablinks" onclick="openTab(event, 'health')">Health</button>
         <button class="tablinks" onclick="openTab(event, 'paygap')">Gender pay gap</button>
         <button class="tablinks" onclick="openTab(event, 'childcare')">Childcare</button>
         <button class="tablinks" onclick="openTab(event, 'digital')">Digital economy</button>
@@ -175,6 +178,7 @@
             </div>
         </div>
         <svg id="healthDeathCauses" width="0" height="0"></svg>
+        <div id="leOrderSelector"></div>
         <div id="healthLifeExpectancy"></div>
     </div>
 

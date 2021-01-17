@@ -251,6 +251,7 @@ function ready(world) {
 }
 
 $(document).ready(function(){
+    labourMap.invalidateSize();
     $(document).on("change", option_select, function() {
         selectedTopic = $("#selectors").find(".option-select").val()
         update(selectedYear, mapLabourForce);
