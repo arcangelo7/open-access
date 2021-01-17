@@ -126,6 +126,18 @@ function updatePay(){
         })
         .style("fill", "none")
         .style("stroke-width", "2px");
+    // Add dots
+    var circlePayArea = countryPayLines.append("g");
+    circlePayArea.selectAll('circle').remove(); // this makes sure your out of box dots will be remove.
+    circlePayArea.selectAll('circle')
+      .data(dataPayTimeFiltered)
+      .enter()
+           .append('circle')
+           .attr('r',3)  // radius of dots 
+           .attr('fill', function(d, i){ return colorPay(d.country)}) // color of dots
+           .attr('transform',function(d,i){ 
+               return 'translate('+xPay(d.year)+','+yPay(d.value)+')';
+            }); 
     // Legend
     d3.selectAll(".legendPay").remove();
     var legendPay = svgPay.selectAll(".legendPay")
