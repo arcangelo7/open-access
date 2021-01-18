@@ -228,3 +228,16 @@ A summary table of the produced mashup datasets is shown below.
 </table>
 
 * * *
+### Visualization
+
+To improve the data's understanding and make it more accessible to the public, we have produced seven interactive visualizations, distributed as follows:
+
+*   A choropleth map for labour, that is an interactive thematic map, which shows the percentage of the female workforce through a color scale and allows you to compare it with the marital status of the same female population. Through a slider, it is possible to view the data from 1990 to 2020.
+*   A bubble map to visualize the number of deaths for 53 different causes divided by gender from 2000 to 2017.
+*   A horizontal histogram for life expectancy by gender recorded in 2018\. It is possible to reorder the graph alphabetically and by female or male gender, descending or ascending.
+*   To view the gender paygap, a multi-line chart was used, which allows you to select the countries to be shown and the time span of interest, from 1994 to 2006.
+*   As for the enrollment rate of children in childcare, a choropleth map centered on Europe was used, showing the data through a slider from 2005 to 2017.
+*   Individuals with above basic level of digital skills were shown through a vertical histogram. It is possible to reorder the graph alphabetically and by female or male gender, descending or ascending.
+*   Finally, as far as education is concerned, it is possible to compare the data relating to primary school, secondary school, and the ratio of school years between men and women through a multi-line chart, with a time span ranging from 1970 to 2016\. Also, in this case, a modal window allows you to select which countries to consider in the graph, to avoid information overload.
+
+All graphics were created in Javascript using the open source [d3.js](https://d3js.org/) library. In addition, the open source [Leaflet.js](https://leafletjs.com/) library was used for the maps.
