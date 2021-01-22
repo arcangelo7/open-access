@@ -20,12 +20,12 @@ b {
 }
 
 a {
-	color: #333;
+	text-decoration: underline;
 }
 
 a:hover, a:focus {
 	text-decoration: none;
-	color: #000;
+	color: #ffe88c;
 }
 
 ::selection {
@@ -99,7 +99,7 @@ figure {
 
 .back-to-top:hover {
   color: #fff;
-  background: #b3ffb3;
+  background: #acefc8;
   transition: background 0.2s ease-in-out;
 }
 
@@ -364,7 +364,8 @@ div.tipLineChart {
 /* Style the tab */
 .tab {
 		overflow: hidden;
-		border: 1px solid #ccc;
+		border-radius: 10%;
+		border-collapse: collapse;
 		background-color: #ccffcc;
 }
 
@@ -381,20 +382,24 @@ div.tipLineChart {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-		background-color: #ddd;
+		background-color: #acefc8;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-		background-color: #ccc;
+		background-color: #ffbf91;
 }
 
 /* Style the tab content */
 .tabcontent {
+		font-family: 'Ubuntu', sans-serif;
+		word-spacing: 1px;
+		letter-spacing: 0.01em;
+		font-size: 16px;
+		line-height: 25px;
 		display: none;
 		padding: 6px 12px;
-		border: 1px solid #ccc;
-		border-top: none;
+		border-collapse: collapse;
 }
 .line {
 		fill: none;
@@ -416,13 +421,18 @@ div.tipLineChart {
 }
 /* The Modal (background) */
 .modal {
+		font-family: 'Ubuntu', sans-serif;
+		word-spacing: 1px;
+		letter-spacing: 0.01em;
+		font-size: 16px;
+		line-height: 25px;
 		display: none; /* Hidden by default */
 		position: fixed; /* Stay in place */
 		z-index: 1000; /* Sit on top */
 		left: 0;
 		top: 0;
-		width: 100%; /* Full width */
-		height: 100%; /* Full height */
+		width: 80%; /* Full width */
+		height: 80%; /* Full height */
 		overflow: auto; /* Enable scroll if needed */
 		background-color: rgb(0,0,0); /* Fallback color */
 		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -439,7 +449,7 @@ div.tipLineChart {
 
 /* The Close Button */
 .close {
-		color: #aaa;
+		color: #000;
 		float: right;
 		font-size: 28px;
 		font-weight: bold;
@@ -447,7 +457,7 @@ div.tipLineChart {
 
 .close:hover,
 .close:focus {
-		color: black;
+		color: #acefc8;
 		text-decoration: none;
 		cursor: pointer;
 }
