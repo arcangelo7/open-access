@@ -1,49 +1,9 @@
-/*
-Theme Name: Black & White
-Theme URI: http://themewagon.com/demo/Black-And-White/
-Author: ThemeWagon
-Author URI: http://themewagon.com/
-Description: Minimal Blogging Theme
-Version: 1.0
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: black, white, two-columns, right-sidebar, responsive-layout, accessibility-ready
-Text Domain: blackandwhite
-*/
-
-
-/**
- * Table of Contents
- *
- * 1.0 - Google Font
- * 2.0 - General Elements
- * 3.0 - Site Header
- *   3.1 - Logo
- *   3.2 - Main Navigation
- *     3.2.1 - Main Nav CSS 3 Hover Effect
- * 4.0 - Home/Blog
- *   4.1 - Read More Button CSS 3 style
- * 5.0 - Widget
- * 6.0 - Footer
- * 7.0 - Header Search Bar
- * 8.0 - Mobile Menu
- * 9.0 - Contact Page Social
- * 10.0 - Contact Form
- * 11.0 - Media Query
- */
-
-/**
- * 1.0 - Google Font
- */
-
-
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400);
 
-/**
- * 2.0 - General Elements
- */
-
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
 * {outline: none;}
 
 h1,
@@ -150,10 +110,9 @@ figure {
   bottom: 25px;
 }
 
-/**
- * 3.0 - Site Header
- */
-
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 #site-header {
 	background-color: #FFF;
 	padding: 25px 20px;
@@ -161,10 +120,9 @@ figure {
 	border-bottom: 1px solid #e7e7e7;
 }
 
-/**
- * 3.1 - Logo
- */
-
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
 .logo h1 a {
     color: #000;
 }
@@ -180,10 +138,9 @@ figure {
 	font-weight: 300;
 }
 
-/**
- * 3.2 - Main Navigation
- */
-
+/*--------------------------------------------------------------
+# Main navigation
+--------------------------------------------------------------*/
 .main-nav {
 	margin-top: 11px;
 	max-width: 95%;
@@ -217,10 +174,9 @@ figure {
     color: #000;
 }
 
-/**
- * 3.2.1 - Main Nav CSS 3 Hover Effect
- */
-
+/*--------------------------------------------------------------
+# Main Nav CSS 3 Hover Effect
+--------------------------------------------------------------*/
 .cl-effect-11 a {
 	padding: 10px 0;
 	color: #0972b4;
@@ -247,10 +203,9 @@ figure {
 	max-width: 100%;
 }
 
-/**
- * 4.0 - Home/Blog
- */
-
+/*--------------------------------------------------------------
+# Home/blog
+--------------------------------------------------------------*/
 .content-body {
 	padding-bottom: 4em;
 }
@@ -301,10 +256,9 @@ figure {
 	right: 1px;
 }
 
-/**
- * 4.1 - Read More Button CSS 3 style
- */
-
+/*--------------------------------------------------------------
+# Read More button CSS style
+--------------------------------------------------------------*/
 .read-more {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;
@@ -384,11 +338,9 @@ figure {
 	transform: rotate(0deg) translateX(50%);
 }
 
-
-/**
- * 5.0 - Widget
- */
-
+/*--------------------------------------------------------------
+# Widget
+--------------------------------------------------------------*/
 .widget {
     background: #fff;
     padding: 30px 0 0;
@@ -471,10 +423,9 @@ figure {
     color: #000;
 }
 
-/**
- * 6.0 - Footer
- */
-
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 #site-footer {
 	padding-top: 10px;
 	padding: 0 0 1.5em 0;
@@ -488,10 +439,9 @@ figure {
 	color: #666;
 }
 
-/**
- * 7.0 - Header Search Bar
- */
-
+/*--------------------------------------------------------------
+# Header and search bar
+--------------------------------------------------------------*/
 #header-search-box {
 	position: absolute;
 	right: 38px;
@@ -547,10 +497,9 @@ figure {
     top: -6px;
 }
 
-/**
- * 8.0 - Mobile Menu
- */
-
+/*--------------------------------------------------------------
+# Mobile Menu
+--------------------------------------------------------------*/
 .overlay {
 	position: fixed;
 	width: 100%;
@@ -653,9 +602,8 @@ figure {
 	transform: translateY(25%) rotateX(-35deg);
 }
 
-/**
- * 9.0 - Contact Page Social
- */
+/*--------------------------------------------------------------
+# Contact page Social
 
 .social {
     list-style-type: none;
@@ -697,10 +645,9 @@ figure {
 .tumblr a {
 	padding: 12px 20px;
 }
-
-/**
- * 10.0 - Contact Form
- */
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Contact form
 
 .contact-form input {
 	border: 1px solid #aaa;
@@ -793,10 +740,10 @@ figure {
 .btn-5b:hover:before {
 	left: 0;
 }
-
-/**
- * 11.0 - Media Query
- */
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
 
 @media (max-width: 991px) {
 	.main-nav a {
