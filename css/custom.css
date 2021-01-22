@@ -84,7 +84,7 @@ figure {
   border-radius: 50px;
   right: 30px;
   bottom: 25px;
-  background: #ccffcc;
+  background: #def7e5;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -99,7 +99,7 @@ figure {
 
 .back-to-top:hover {
   color: #fff;
-  background: #acefc8;
+  background: #92e3a9;
   transition: background 0.2s ease-in-out;
 }
 
@@ -365,7 +365,7 @@ div.tipLineChart {
 .tab {
 		overflow: hidden;
 		border-collapse: collapse;
-		background-color: #ccffcc;
+		background-color: #def7e5;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -381,12 +381,12 @@ div.tipLineChart {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-		background-color: #acefc8;
+		background-color: #92e3a9;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-		background-color: #acefc8;
+		background-color: #92e3a9;
 }
 
 /* Style the tab content */
@@ -417,6 +417,12 @@ div.tipLineChart {
 		stroke: #777;
 		stroke-width: 2px;
 		stroke-dasharray: 3,3;
+}
+
+/* Slider */
+.slider {
+	width: 50%;
+	background: linear-gradient(to right, #def7e5 0%, #92e3a9 100%);
 }
 /* The Modal (background) */
 .modal {
