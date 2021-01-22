@@ -421,9 +421,39 @@ div.tipLineChart {
 
 /* Slider */
 .slider {
-	width: 50%;
-	background: linear-gradient(to right, #def7e5 0%, #92e3a9 100%);
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 50px;
+  background: #e5e6e6;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #85e09f;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #85e09f;
+  cursor: pointer;
+}
+
 /* The Modal (background) */
 .modal {
 		font-family: 'Ubuntu', sans-serif;
