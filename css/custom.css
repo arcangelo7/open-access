@@ -356,8 +356,24 @@ figure {
 /*--------------------------------------------------------------
 # Visualization page
 --------------------------------------------------------------*/
-.vizTitle, .vizYear, .vizSlider, .vizSelector, .viz, .vizModal {
+.vizTitle, .vizYear, .vizSelector, .viz, .vizModal {
 	margin-top: 2rem;
+}
+
+.vizYear {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.vizSliderJ {
+	flex: 0 1 74%;
+}
+
+.vizSlider {
+	flex: 0 1 80%;
 }
 
 div.tooltip {
