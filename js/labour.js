@@ -179,6 +179,7 @@ function update(year, map){
 
 var slider = d3.select(".slider")
     .append("input")
+        .attr("class", "vizSliderInput")
         .attr("type", "range")
         .attr("min", 1990)
         .attr("max", 2020)

@@ -251,6 +251,7 @@ var cur_death_sex = "value_f"
 
 var sliderHealth = d3.select(".sliderHealth")
     .append("input")
+    .attr("class", "vizSliderInput")
     .attr("type", "range")
     .attr("min", 2000)
     .attr("max", 2017)

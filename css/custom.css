@@ -376,6 +376,57 @@ figure {
 	flex: 0 1 80%;
 }
 
+.vizSliderInput {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 1rem; /* Specified height */  
+	border-radius: .4rem;
+	background: #f5f5f5; /* Grey background */
+	outline: none; /* Remove outline */
+	box-shadow: 0 0 2px #000;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.vizSliderInput::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 2rem; /* Set a specific slider handle width */
+	height: 2rem; /* Slider handle height */
+	border-radius: 50%;  
+	background: #92e3a9; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.vizSliderInput::-moz-range-thumb {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background: #92e3a9; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.ui-slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 1rem; /* Specified height */  
+	border-radius: .4rem;
+	background: #f5f5f5; /* Grey background */
+	outline: none; /* Remove outline */
+	box-shadow: 0 0 2px #000;}
+
+.ui-slider-horizontal .ui-slider-handle {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 2rem; /* Set a specific slider handle width */
+	height: 2rem; /* Slider handle height */
+	border-radius: 50%;  
+	background: #92e3a9; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+	top: -.55rem;
+}
+
 div.tooltip {
 		position: absolute;
 		text-align: center;

@@ -65,6 +65,7 @@ let mouseLeaveChildcare = function(d) {
 
 var sliderChildcare = d3.select(".sliderChildcare")
     .append("input")
+        .attr("class", "vizSliderInput")
         .attr("type", "range")
         .attr("min", 2005)
         .attr("max", 2017)
