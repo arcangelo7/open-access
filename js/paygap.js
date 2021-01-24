@@ -1,11 +1,11 @@
 // set the dimensions and margins of the graph
 var marginPay = { left:80, right:250, top:50, bottom:100 },
-    widthPay = 1000 - marginPay.left - marginPay.right,
+    widthPay = $(".tab").width() - marginPay.left - marginPay.right,
     heightPay = 500 - marginPay.top - marginPay.bottom;
 // Define svg canvas
 var svgPay = d3.select("#payChart")
-  .attr("width", widthPay + marginPay.left + marginPay.right)
-  .attr("height", heightPay + marginPay.top + marginPay.bottom)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", `0 0 ${widthPay + marginPay.left + marginPay.right} ${heightPay + marginPay.top + marginPay.bottom}`);
 var gPay = svgPay.append("g")
   .attr("transform", "translate(" + marginPay.left + "," + marginPay.top + ")");
 // parse the date / time

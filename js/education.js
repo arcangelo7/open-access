@@ -1,12 +1,12 @@
 // set the dimensions and margins of the graph
 var marginEdu = { left:80, right:250, top:50, bottom:100 },
-    widthEdu = 1000 - marginEdu.left - marginEdu.right,
+    widthEdu = $(".tab").width() - marginEdu.left - marginEdu.right,
     heightEdu = 500 - marginEdu.top - marginEdu.bottom;
 
 // Define svg canvas
 var svgEdu = d3.select("#eduChart")
-  .attr("width", widthEdu + marginEdu.left + marginEdu.right)
-  .attr("height", heightEdu + marginEdu.top + marginEdu.bottom)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", `0 0 ${widthEdu + marginEdu.left + marginEdu.right} ${heightEdu + marginEdu.top + marginEdu.bottom}`);
 var gEdu = svgEdu.append("g")
   .attr("transform", "translate(" + marginEdu.left + "," + marginEdu.top + ")");
 

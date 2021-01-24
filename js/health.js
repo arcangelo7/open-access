@@ -1,6 +1,6 @@
 ///////////////////////////////////////////// Life expectancy 
-var margin_le = { left: 250, right: 250, top: 100, bottom: 50 }
-var width_le = $(window).width() - margin_le.left - margin_le.right
+var margin_le = { left: 250, right: 50, top: 100, bottom: 50 }
+var width_le = $(".tab").width() - margin_le.left - margin_le.right
 var height_le = 3000 - margin_le.top - margin_le.bottom
 
 // Create a select dropdown
@@ -68,8 +68,8 @@ d3.json("data/health_life_expectancy.json").then(data => {
 
         var g_le = d3.select(leChartDIV)
             .append("svg")
-            .attr("height", height_le + margin_le.top + margin_le.bottom)
-            .attr("width", width_le + margin_le.left + margin_le.right)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", `0 0 ${width_le + margin_le.left + margin_le.right} ${height_le + margin_le.top + margin_le.bottom}`)
             .append("g")
             .attr("transform", "translate(" + margin_le.left + ", " + margin_le.top + ")");
 

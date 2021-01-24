@@ -1,5 +1,5 @@
 var margin = { left: 80, right: 20, top: 50, bottom: 100 }
-var width = 1000 - margin.left - margin.right
+var width = $(".tab").width() - margin.left - margin.right
 var height = 700 - margin.top - margin.bottom
 
 // Create a select dropdown
@@ -65,8 +65,8 @@ d3.json("data/digital.json").then(data => {
 
         var g = d3.select(digitalChartDIV)
             .append("svg")
-            .attr("height", height + margin.top + margin.bottom)
-            .attr("width", width + margin.left + margin.right)
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
             .append("g")
             .attr("transform", "translate(" + margin.left + ", " + margin.top + ")");
 
