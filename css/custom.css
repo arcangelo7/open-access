@@ -356,6 +356,10 @@ figure {
 /*--------------------------------------------------------------
 # Visualization page
 --------------------------------------------------------------*/
+.vizTitle, .vizYear, .vizSlider, .vizSelector, .viz, .vizModal {
+	margin-top: 2rem;
+}
+
 div.tooltip {
 		position: absolute;
 		text-align: center;
@@ -486,7 +490,6 @@ div.tipLineChart {
 }
 #eduMeasure, #btnModalEduCountries {
 		display: block;
-		margin-top: 10px;
 }
 .leaflet-overlay-pane svg path{
 		pointer-events: auto;

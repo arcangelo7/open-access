@@ -102,11 +102,11 @@
 
 							<!-- Tab content -->
 							<div id="labour" class="tabcontent">
-								<h1>Female labour force vs. Marital status</h1>
-								<h2 class="year"></h2>
-								<div class="slider"></div>
-								<div id="selectors"></div>
-								<div id="labourMap" style="width: 100%; height: 60rem">
+								<h1 class="vizTitle">Female labour force vs. Marital status</h1>
+								<h2 class="year vizYear"></h2>
+								<div class="slider vizSlider"></div>
+								<div id="selectors" class="vizSelector"></div>
+								<div class="viz" id="labourMap" style="width: 100%; height: 60rem">
 									<div class="legendContainer">
 										<svg id="labourMapLegend"></svg>
 									</div>
@@ -115,12 +115,12 @@
 							</div>
 
 							<div id="health" class="tabcontent">
-								<h1>Life expectancy (2018) vs. Causes of mortality</h1>
-								<h2 class="yearHealth"></h2>
-								<div class="sliderHealth"></div>
-								<div id="selectorsDeath"></div>
-								<div id="selectorsSex"></div>
-								<div id="deathMap" style="width: 100%; height: 60rem">
+								<h1 class="vizTitle">Causes of mortality vs. Life expectancy (2018)</h1>
+								<h2 class="yearHealth vizYear"></h2>
+								<div class="sliderHealth vizSlider"></div>
+								<div id="selectorsDeath" class="vizSelector"></div>
+								<div id="selectorsSex" class="vizSelector"></div>
+								<div class="viz" id="deathMap" style="width: 100%; height: 60rem">
 									<div class="legendContainer">
 										<svg id="deathMapLegend"></svg>
 									</div>
@@ -131,14 +131,14 @@
 							</div>
 
 							<div id="paygap" class="tabcontent">
-								<h1>Paygap</h1>
-								<div id="sliderPay-div">
-									<label>Date: <span id="dateLabel1Pay">1994</span> - <span
+								<h1 class="vizTitle">Paygap</h1>
+								<div id="sliderPay-div" class="vizSlider">
+									<label>Interval of years: <span id="dateLabel1Pay">1994</span> - <span
 											id="dateLabel2Pay">2006</span></label>
 									<div id="sliderPay"></div>
 								</div>
 								<!-- Trigger/Open The Modal -->
-								<button id="btnModalPayCountries">Choose countries</button>
+								<button class="vizModal" id="btnModalPayCountries">Choose countries</button>
 
 								<!-- The Modal -->
 								<div id="modalPayCountries" class="modal">
@@ -151,10 +151,10 @@
 							</div>
 
 							<div id="childcare" class="tabcontent">
-								<h1>Enrolment rate of children in child care</h1>
-								<h2 class="yearChildcare"></h2>
-								<div class="sliderChildcare"></div>
-								<div id="childcareMap" style="width: 100%; height: 60rem">
+								<h1 class="vizTitle">Enrolment rate of children in child care</h1>
+								<h2 class="yearChildcare vizYear"></h2>
+								<div class="sliderChildcare vizSlider"></div>
+								<div class="viz" id="childcareMap" style="width: 100%; height: 60rem">
 									<div class="legendContainer">
 										<svg id="childcareMapLegend"></svg>
 									</div>
@@ -163,26 +163,26 @@
 							</div>
 
 							<div id="digital" class="tabcontent">
-								<h1>Individuals with above basic level of digital skills, by Gender</h1>
-								<h2>Year: 2019</h2>
-								<div id="digitalOrderSelector"></div>
+								<h1 class="vizTitle">Individuals with above basic level of digital skills, by Gender</h1>
+								<h2 class="vizYear">Year: 2019</h2>
+								<div id="digitalOrderSelector" class="vizSelector"></div>
 								<div id="digital_hysthogram"></div>
 							</div>
 
 							<div id="education" class="tabcontent">
-								<h1>Education</h1>
-								<div id="slider-div">
+								<h1 class="vizTitle">Education</h1>
+								<div id="slider-div" class="vizSlider">
 									<label>Date: <span id="dateLabel1">1970</span> - <span
 											id="dateLabel2">2016</span></label>
 									<div id="sliderEdu"></div>
 								</div>
-								<select name="" id="eduMeasure">
+								<select name="" id="eduMeasure" class="vizSelector">
 									<option selected value="primary">Primary school</option>
 									<option value="secondary">Secondary school</option>
 									<option value="ratio">Ratio</option>
 								</select>
 								<!-- Trigger/Open The Modal -->
-								<button id="btnModalEduCountries">Choose countries</button>
+								<button class="vizModal" id="btnModalEduCountries">Choose countries</button>
 
 								<!-- The Modal -->
 								<div id="modalEduCountries" class="modal">

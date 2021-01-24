@@ -76,7 +76,7 @@ var sliderChildcare = d3.select(".sliderChildcare")
 
 function updateChildcare(year){
     sliderChildcare.property("value", year);
-    d3.select(".yearChildcare").text(year);
+    d3.select(".yearChildcare").text("Year: " + year);
     d3.selectAll(".CountryChildcare")
         .style("fill", function(d) {
             return colorScaleChildcare(d[year])

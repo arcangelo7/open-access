@@ -127,7 +127,7 @@ function update(year, map){
         .range(d3.schemeBlues[5]);
     // Slider
     slider.property("value", year);
-    d3.select(".year").text(year);
+    d3.select(".year").text("Year: " + year);
     d3.selectAll(".Country")
         .style("fill", function(d) {
             if (d[year]) {

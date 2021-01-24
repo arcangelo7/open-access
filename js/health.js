@@ -282,7 +282,7 @@ Promise.all(promises_health).then(function (data) {
 function update_death(year, cause, sex, data) {
     // Slider
     sliderHealth.property("value", year);
-    d3.select(".yearHealth").text(year);
+    d3.select(".yearHealth").text("Year: " + year);
     // the radius of the circle is proportional to the square root of the deaths' number
     var radius = d3.scaleSqrt()
         .domain(d3.extent(data, function (d) {
