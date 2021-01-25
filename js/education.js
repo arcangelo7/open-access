@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var marginEdu = { left:80, right:250, top:50, bottom:100 },
+var marginEdu = { left:80, right:250, top:50, bottom:30 },
     widthEdu = $(".tab").width() - marginEdu.left - marginEdu.right,
     heightEdu = 500 - marginEdu.top - marginEdu.bottom;
 

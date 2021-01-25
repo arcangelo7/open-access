@@ -356,12 +356,24 @@ figure {
 /*--------------------------------------------------------------
 # Visualization page
 --------------------------------------------------------------*/
-.vizTitle, .vizYear, .vizSelector, .viz, .vizModal {
+.vizTitle, .vizYear, .vizSelector, .viz, .vizModal, .downloadDropdown {
 	margin-top: 2rem;
+}
+
+.vizTitle2 {
+	margin-top: 4rem;
 }
 
 .form-control {
 	width: auto;
+}
+
+.downloadDropdown {
+	display: block;
+}
+
+#dropdownMenuButton{
+	float: none;
 }
 
 .vizYear {
@@ -573,9 +585,6 @@ div.tipLineChart {
 		height: 100px;
 		width: 100px;
 		z-Index: 998;
-}
-#leOrderSelector{
-		margin-top: 1rem;
 }
 
 /*--------------------------------------------------------------

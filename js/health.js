@@ -1,5 +1,5 @@
 ///////////////////////////////////////////// Life expectancy 
-var margin_le = { left: 250, right: 50, top: 100, bottom: 50 }
+var margin_le = { left: 250, right: 50, top: 100, bottom: 0 }
 var width_le = $(".tab").width() - margin_le.left - margin_le.right
 var height_le = 3000 - margin_le.top - margin_le.bottom
 

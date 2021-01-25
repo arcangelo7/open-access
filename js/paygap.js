@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var marginPay = { left:80, right:250, top:50, bottom:100 },
+var marginPay = { left:80, right:250, top:50, bottom:30 },
     widthPay = $(".tab").width() - marginPay.left - marginPay.right,
     heightPay = 500 - marginPay.top - marginPay.bottom;
 // Define svg canvas
