@@ -263,7 +263,6 @@ function updatePay(){
 function addCheckboxesPay(){
     // Add checkboxes to modal
     $("#modalPayCountriesContent").html("");
-    $("#modalPayCountriesContent").html('<span class="close" id="closePay">&times;</span>');
     var relevantCountriesPay = []
     $(dataPay["paygap"]).each(function(i, d){
         if (!relevantCountriesPay.includes(d["country"])){
@@ -283,24 +282,6 @@ function addCheckboxesPay(){
 $(document).ready(function() {
     countriesPaySelected = ["Italy", "Finland"]
     countriesPaySelectedDefault = ["Italy", "Finland"]
-    // Get the modal
-    var modalPayCountries = document.getElementById("modalPayCountries");
-    // Get the button that opens the modal
-    var btnModalPayCountries = document.getElementById("btnModalPayCountries");
-    // When the user clicks on the button, open the modal
-    btnModalPayCountries.onclick = function() {
-        modalPayCountries.style.display = "block";
-    }
-    // When the user clicks anywhere outside of the modal, close it
-    $('body').click(function (event){
-       if($(event.target).is('#modalPayCountries') && !$(event.target).is('#btnModalPayCountries')) {
-            $("#modalPayCountries").hide();
-       }     
-    });
-    // When the user clicks on <span> (x), close the modal
-    $(document).on("click", "#closePay", function(){
-        modalPayCountries.style.display = "none";
-    });
     // Update chart when checkbox selected
     $(document).on("change", ".countryPayCheckbox", function() {
         if ($(this).is(":checked")){

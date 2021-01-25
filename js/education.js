@@ -293,7 +293,6 @@ function updateEdu(){
 function addCheckboxes(){
     // Add checkboxes to modal
     $("#modalEduCountriesContent").html("");
-    $("#modalEduCountriesContent").html('<span class="close" id="closeEdu">&times;</span>');
     var relevantCountries = []
     $(dataEdu[curEduMeasure]).each(function(i, d){
         if (!relevantCountries.includes(d["country"])){
@@ -314,38 +313,19 @@ function addCheckboxes(){
 $(document).ready(function() {
     countriesSelected = ["European Union", "Advanced Economies", "Sub-Saharan Africa", "Italy", "Finland"]
     countriesSelectedDefault = ["European Union", "Advanced Economies", "Sub-Saharan Africa", "Italy", "Finland"]
-    // Get the modal
-    var modalEduCountries = document.getElementById("modalEduCountries");
-    // Get the button that opens the modal
-    var btnModalEduCountries = document.getElementById("btnModalEduCountries");
-    // When the user clicks on the button, open the modal
-    btnModalEduCountries.onclick = function() {
-        modalEduCountries.style.display = "block";
-    }
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == modalEduCountries) {
-        modalEduCountries.style.display = "none";
-    }
-    // Get the <span> element that closes the modal
-    var spanModalEduCountries = $("#closeEdu")[0];
-    // When the user clicks on <span> (x), close the modal
-    spanModalEduCountries.onclick = function() {
-        modalEduCountries.style.display = "none";
-    }
     // Update chart when checkbox selected
-    $(".eduCountryCheckbox").change(function() {
+    $(document).on("change", ".eduCountryCheckbox", function() {
         if ($(this).is(":checked")){
             countriesSelected.push($(this).val());
         } else {
             var eduCountryIndex = countriesSelected.indexOf($(this).val());
             if (eduCountryIndex > -1) {
                 countriesSelected.splice(eduCountryIndex, 1);
-              }
+            }
         }
         updateEdu();
     });
-}});
+});
 
 
 

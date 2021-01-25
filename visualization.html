@@ -105,7 +105,7 @@
 								<h1 class="vizTitle">Female labour force vs. Marital status</h1>
 								<div class="vizYear">
 									<h2 class="year"></h2>
-									<div class="slider vizSlider"></div>	
+									<div class="slider vizSlider"></div>
 								</div>
 								<div id="selectors" class="vizSelector"></div>
 								<div class="viz" id="labourMap" style="width: 100%; height: 60rem">
@@ -115,10 +115,13 @@
 								</div>
 								<svg id="labour_choropleth" width="0" height="0" style="display: none;"></svg>
 								<div class="btn-group downloadDropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
 										Download options <span class="caret"></span>
 									</button>
-									<ul id="labour-dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+									<ul id="labour-dropdown-menu" class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"></ul>
 								</div>
 							</div>
 
@@ -126,7 +129,7 @@
 								<h1 class="vizTitle">Causes of mortality vs. Life expectancy (2018)</h1>
 								<div class="vizYear">
 									<h2 class="yearHealth"></h2>
-									<div class="sliderHealth vizSlider"></div>	
+									<div class="sliderHealth vizSlider"></div>
 								</div>
 								<div id="selectorsDeath" class="vizSelector"></div>
 								<div id="selectorsSex" class="vizSelector"></div>
@@ -137,45 +140,64 @@
 								</div>
 								<svg id="healthDeathCauses" width="0" height="0" style="display: none;"></svg>
 								<div class="btn-group downloadDropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
 										Download options <span class="caret"></span>
 									</button>
-									<ul id="death-dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+									<ul id="death-dropdown-menu" class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"></ul>
 								</div>
 								<h2 class="vizTitle2">Life expectancy (2018)</h2>
 								<div class="vizSelector" id="leOrderSelector"></div>
 								<div class="viz" id="healthLifeExpectancy"></div>
 								<div class="btn-group downloadDropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
 										Download options <span class="caret"></span>
 									</button>
-									<ul id="le-dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+									<ul id="le-dropdown-menu" class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"></ul>
 								</div>
 							</div>
 
 							<div id="paygap" class="tabcontent">
 								<h1 class="vizTitle">Paygap</h1>
 								<div id="sliderPay-div" class="vizYear">
-									<label><h2>Years: <span id="dateLabel1Pay">1994</span> - <span
-											id="dateLabel2Pay">2006</span></h2></label>
+									<label>
+										<h2>Years: <span id="dateLabel1Pay">1994</span> - <span
+												id="dateLabel2Pay">2006</span></h2>
+									</label>
 									<div id="sliderPay" class="vizSliderJ"></div>
 								</div>
 								<!-- Trigger/Open The Modal -->
-								<button class="vizModal" id="btnModalPayCountries">Choose countries</button>
+								<button type="button" class="btn btn-primary vizModal" id="btnModalPayCountries"
+									data-toggle="modal" data-target="#modalPayCountries">Choose countries</button>
 
 								<!-- The Modal -->
-								<div id="modalPayCountries" class="modal">
+								<div id="modalPayCountries" class="modal fade" tabindex="-1" role="dialog"
+									aria-labelledby="modalLabelSmall" aria-hidden="true">
 									<!-- Modal content -->
-									<div class="modal-content" id="modalPayCountriesContent">
-										<span class="close" id="closePay">&times;</span>
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title" id="modalLabelSmall">Choose countries</h4>
+										</div>
+										<div class="modal-body" id="modalPayCountriesContent"></div>
 									</div>
 								</div>
 								<svg class="viz" id="payChart"></svg>
 								<div class="btn-group downloadDropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
 										Download options <span class="caret"></span>
 									</button>
-									<ul id="paygap-dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+									<ul id="paygap-dropdown-menu" class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"></ul>
 								</div>
 							</div>
 
@@ -183,7 +205,7 @@
 								<h1 class="vizTitle">Enrolment rate of children in child care</h1>
 								<div class="vizYear">
 									<h2 class="yearChildcare"></h2>
-									<div class="sliderChildcare vizSlider"></div>	
+									<div class="sliderChildcare vizSlider"></div>
 								</div>
 								<div class="viz" id="childcareMap" style="width: 100%; height: 60rem">
 									<div class="legendContainer">
@@ -192,31 +214,40 @@
 								</div>
 								<svg id="childcare" width="0" height="0" style="display: none;"></svg>
 								<div class="btn-group downloadDropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
 										Download options <span class="caret"></span>
 									</button>
-									<ul id="childcare-dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+									<ul id="childcare-dropdown-menu" class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"></ul>
 								</div>
 							</div>
 
 							<div id="digital" class="tabcontent">
-								<h1 class="vizTitle">Individuals with above basic level of digital skills, by Gender</h1>
+								<h1 class="vizTitle">Individuals with above basic level of digital skills, by Gender
+								</h1>
 								<h2 class="vizYear">Year: 2019</h2>
 								<div id="digitalOrderSelector" class="vizSelector"></div>
 								<div class="viz" id="digital_hysthogram"></div>
 								<div class="btn-group downloadDropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
 										Download options <span class="caret"></span>
 									</button>
-									<ul id="digital-dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+									<ul id="digital-dropdown-menu" class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"></ul>
 								</div>
 							</div>
 
 							<div id="education" class="tabcontent">
 								<h1 class="vizTitle">Education</h1>
 								<div id="slider-div" class="vizYear">
-									<label><h2>Years: <span id="dateLabel1">1970</span> - <span
-											id="dateLabel2">2016</span></h2></label>
+									<label>
+										<h2>Years: <span id="dateLabel1">1970</span> - <span id="dateLabel2">2016</span>
+										</h2>
+									</label>
 									<div id="sliderEdu" class="vizSliderJ"></div>
 								</div>
 								<select name="" id="eduMeasure" class="vizSelector form-control">
@@ -225,21 +256,32 @@
 									<option value="ratio">Ratio</option>
 								</select>
 								<!-- Trigger/Open The Modal -->
-								<button class="vizModal" id="btnModalEduCountries">Choose countries</button>
+								<button type="button" class="vizModal btn btn-primary" id="btnModalEduCountries"
+									data-toggle="modal" data-target="#modalEduCountries">Choose countries</button>
 
 								<!-- The Modal -->
-								<div id="modalEduCountries" class="modal">
+								<div id="modalEduCountries" class="modal fade" tabindex="-1" role="dialog"
+									aria-labelledby="modalLabelSmall" aria-hidden="true">
 									<!-- Modal content -->
-									<div class="modal-content" id="modalEduCountriesContent">
-										<span class="close" id="closeEdu">&times;</span>
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											<h4 class="modal-title" id="modalLabelSmall">Choose countries</h4>
+										</div>
+										<div class="modal-body" id="modalEduCountriesContent"></div>
 									</div>
 								</div>
 								<svg class="viz" id="eduChart"></svg>
 								<div class="btn-group downloadDropdown">
-									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="btn btn-default dropdown-toggle" type="button"
+										id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
 										Download options <span class="caret"></span>
 									</button>
-									<ul id="education-dropdown-menu" class="dropdown-menu" aria-labelledby="dropdownMenuButton"></ul>
+									<ul id="education-dropdown-menu" class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"></ul>
 								</div>
 							</div>
 
@@ -318,7 +360,7 @@
 				var id = $(this).attr("id")
 				for (i = 0; i < formats.length; i++) {
 					if ($(this).attr("id") != "health") {
-						$("#"+id+"-dropdown-menu").append(`
+						$("#" + id + "-dropdown-menu").append(`
 							<li><a class="dropdown-item" href="data/${formats[i]}/${id}.${formats[i]}" download="${id}.${formats[i]}">Download ${formats[i]}</a></li>
 						`)
 					} else if ($(this).attr("id") == "health") {
