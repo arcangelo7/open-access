@@ -98,7 +98,7 @@ tip.transition()
 // Create selector
 fields = ["female_labour_force", "total", "single", "married", "union_cohabiting", "widowed", "divorced", "single_widowed_divorced", "married_union_cohabiting", "not_elsewhere_classified"]
 var option_select = d3.select('#selectors').append("select")
-    .attr("class", "option-select");
+    .attr("class", "form-control");
 for (var i = 0; i < fields.length; i++) {
     option_select.append("option")
     .attr("value", fields[i])
@@ -254,7 +254,7 @@ function ready(world) {
 $(document).ready(function(){
     labourMap.invalidateSize();
     $(document).on("change", option_select, function() {
-        selectedTopic = $("#selectors").find(".option-select").val()
+        selectedTopic = $("#selectors").find(".form-control").val()
         update(selectedYear, mapLabourForce);
     });
     $(document).on("click", ".tablinks:contains('Labour')", function(e) {

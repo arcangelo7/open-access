@@ -360,6 +360,10 @@ figure {
 	margin-top: 2rem;
 }
 
+.form-control {
+	width: auto;
+}
+
 .vizYear {
 	display: flex;
 	flex-direction: row;
@@ -438,6 +442,7 @@ div.tooltip {
 		pointer-events: none;
 		z-index: 1000;
 }
+
 div.tipLineChart {
 		position: absolute;
 		text-align: center;

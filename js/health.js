@@ -11,6 +11,7 @@ d3.select(leOrderSelector)
     .append("span")
     .append("select")
     .attr("id", "leSelection")
+    .attr("class", "form-control")
     .attr("name", "tasks")
     .selectAll("option")
     .data(leSelectItems)
@@ -257,8 +258,8 @@ var sliderHealth = d3.select(".sliderHealth")
     .attr("max", 2017)
     .attr("step", 1);
 
-var selectorsDeath = d3.select('#selectorsDeath').append("select").attr("class", "option-select");
-var selectorsSex = d3.select('#selectorsSex').append("select").attr("class", "option-select");
+var selectorsDeath = d3.select('#selectorsDeath').append("select").attr("class", "form-control");
+var selectorsSex = d3.select('#selectorsSex').append("select").attr("class", "form-control");
 
 var promises_health = [
     d3.json("data/world.geojson"),
@@ -403,12 +404,12 @@ function ready_health(world) {
         });
 
     selectorsDeath.on("change", function () {
-        cur_death_cause = $("#selectorsDeath").find(".option-select").val()
+        cur_death_cause = $("#selectorsDeath").find(".form-control").val()
         update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
     });
 
     selectorsSex.on("change", function () {
-        cur_death_sex = $("#selectorsSex").find(".option-select").val()
+        cur_death_sex = $("#selectorsSex").find(".form-control").val()
         update_death(cur_death_year, cur_death_cause, cur_death_sex, death_causes);
     });
 
