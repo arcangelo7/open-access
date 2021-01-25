@@ -558,20 +558,10 @@ div.tipLineChart {
 		width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
-.close {
-		color: #000;
-		float: right;
-		font-size: 28px;
-		font-weight: bold;
+.modal-body label{
+	font-weight: normal;
 }
 
-.close:hover,
-.close:focus {
-		color: #ffbf91;
-		text-decoration: none;
-		cursor: pointer;
-}
 #eduMeasure, #btnModalEduCountries {
 		display: block;
 }

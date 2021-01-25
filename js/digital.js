@@ -1,4 +1,4 @@
-var margin = { left: 80, right: 20, top: 50, bottom: 0 }
+var margin = { left: 80, right: 20, top: 50, bottom: 70 }
 var width = $(".tab").width() - margin.left - margin.right
 var height = 700 - margin.top - margin.bottom
 
