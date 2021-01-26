@@ -368,6 +368,16 @@ figure {
 	width: auto;
 }
 
+#selectorsDeath .form-control, #selectorsSex .form-control {
+	width: 50%;
+}
+
+@media (max-width: 767px) {
+	#selectorsDeath .form-control, #selectorsSex .form-control {
+		width: 100%;
+	}
+}
+
 .downloadDropdown {
 	display: block;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,18 @@
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
     <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        .map {
+            height: 100%;
+            width: 100vw;
+        }
+
         div.tooltip {
             position: absolute;
             text-align: center;
@@ -21,6 +34,7 @@
             pointer-events: none;
             z-index: 1000;
         }
+
         div.tipLineChart {
             position: absolute;
             text-align: center;
@@ -31,6 +45,7 @@
             border-radius: 8px;
             pointer-events: none;
         }
+
         /* Style the tab */
         .tab {
             overflow: hidden;
@@ -66,45 +81,60 @@
             border: 1px solid #ccc;
             border-top: none;
         }
+
         .line {
             fill: none;
             stroke-width: 2px;
         }
+
         .overlay {
             fill: none;
             pointer-events: all;
         }
+
         .focus circle {
             fill: #F1F3F3;
             stroke: #777;
             stroke-width: 3px;
         }
+
         .hover-line {
             stroke: #777;
             stroke-width: 2px;
-            stroke-dasharray: 3,3;
+            stroke-dasharray: 3, 3;
         }
+
         /* The Modal (background) */
         .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1000;
+            /* Sit on top */
             left: 0;
             top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
         }
 
         /* Modal Content/Box */
         .modal-content {
             background-color: #fefefe;
-            margin: 5% auto; /* 15% from the top and centered */
+            margin: 5% auto;
+            /* 15% from the top and centered */
             padding: 20px;
             border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
+            width: 80%;
+            /* Could be more or less, depending on screen size */
         }
 
         /* The Close Button */
@@ -121,14 +151,18 @@
             text-decoration: none;
             cursor: pointer;
         }
-        #eduMeasure, #btnModalEduCountries {
+
+        #eduMeasure,
+        #btnModalEduCountries {
             display: block;
             margin-top: 10px;
         }
-        .leaflet-overlay-pane svg path{
+
+        .leaflet-overlay-pane svg path {
             pointer-events: auto;
         }
-        .legendContainer{
+
+        .legendContainer {
             position: absolute;
             bottom: 7px;
             left: 7px;
@@ -136,11 +170,13 @@
             width: 100px;
             z-Index: 998;
         }
-        #leOrderSelector{
+
+        #leOrderSelector {
             margin-top: 1rem;
         }
     </style>
 </head>
+
 <body>
     <!-- Tab links -->
     <div class="tab">
@@ -158,7 +194,7 @@
         <h2 class="year"></h2>
         <div class="slider"></div>
         <div id="selectors"></div>
-        <div id="labourMap" style="width: 1000px; height: 700px">
+        <div class="map" id="labourMap">
             <div class="legendContainer">
                 <svg id="labourMapLegend"></svg>
             </div>
@@ -172,7 +208,7 @@
         <div class="sliderHealth"></div>
         <div id="selectorsDeath"></div>
         <div id="selectorsSex"></div>
-        <div id="deathMap" style="width: 1000px; height: 700px">
+        <div class="map" id="deathMap">
             <div class="legendContainer">
                 <svg id="deathMapLegend"></svg>
             </div>
@@ -187,7 +223,7 @@
         <div id="sliderPay-div">
             <label>Date: <span id="dateLabel1Pay">1994</span> - <span id="dateLabel2Pay">2006</span></label>
             <div id="sliderPay"></div>
-        </div>        
+        </div>
         <!-- Trigger/Open The Modal -->
         <button id="btnModalPayCountries">Choose countries</button>
 
@@ -205,14 +241,14 @@
         <h1>Enrolment rate of children in child care</h1>
         <h2 class="yearChildcare"></h2>
         <div class="sliderChildcare"></div>
-        <div id="childcareMap" style="width: 1000px; height: 700px">
+        <div class="map" id="childcareMap">
             <div class="legendContainer">
                 <svg id="childcareMapLegend"></svg>
             </div>
         </div>
         <svg id="childcare" width="0" height="0"></svg>
     </div>
-    
+
     <div id="digital" class="tabcontent">
         <h1>Individuals with above basic level of digital skills, by Gender</h1>
         <h2>Year: 2019</h2>
@@ -225,7 +261,7 @@
         <div id="slider-div">
             <label>Date: <span id="dateLabel1">1970</span> - <span id="dateLabel2">2016</span></label>
             <div id="sliderEdu"></div>
-        </div>        
+        </div>
         <select name="" id="eduMeasure">
             <option selected value="primary">Primary school</option>
             <option value="secondary">Secondary school</option>
@@ -280,14 +316,14 @@
         document.getElementById("defaultOpen").click();
 
         // Download buttons
-        $(document).ready(function(){
+        $(document).ready(function () {
             var formats = ["csv", "json", "xml"]
-            $(".tabcontent").each(function(){
+            $(".tabcontent").each(function () {
                 var id = $(this).attr("id")
-                for (i = 0; i < formats.length; i++){
-                    if ($(this).attr("id") != "health"){
-                            $(this).append(`<br/><a href="data/${formats[i]}/${id}.${formats[i]}" download="${id}.${formats[i]}">Download ${formats[i]}</a><br/>`)
-                    } else if ($(this).attr("id") == "health"){
+                for (i = 0; i < formats.length; i++) {
+                    if ($(this).attr("id") != "health") {
+                        $(this).append(`<br/><a href="data/${formats[i]}/${id}.${formats[i]}" download="${id}.${formats[i]}">Download ${formats[i]}</a><br/>`)
+                    } else if ($(this).attr("id") == "health") {
                         $("#healthDeathCauses").after(`<br/><a href="data/${formats[i]}/health_death_causes.${formats[i]}" download="health_death_causes.${formats[i]}">Download ${formats[i]}</a><br/>`)
                         $("#healthLifeExpectancy").after(`<br/><a href="data/${formats[i]}/health_life_expectancy.${formats[i]}" download="health_life_expectancy.${formats[i]}">Download ${formats[i]}</a><br/>`)
                     }
@@ -296,4 +332,5 @@
         });
     </script>
 </body>
+
 </html>
