@@ -360,6 +360,10 @@ figure {
 	margin-top: 2rem;
 }
 
+.viz {
+	border-radius: .8rem;
+}
+
 .vizTitle2 {
 	margin-top: 4rem;
 }
@@ -454,15 +458,16 @@ figure {
 }
 
 div.tooltip {
-		position: absolute;
-		text-align: center;
-		padding: 10px;
-		font: 12px sans-serif;
-		background: red;
-		border: 0px;
-		border-radius: 8px;
-		pointer-events: none;
-		z-index: 1000;
+	color: black;
+	position: absolute;
+	text-align: center;
+	padding: 10px;
+	font: 12px sans-serif;
+	background: whitesmoke;
+	border: 1px solid black;
+	border-radius: 8px;
+	pointer-events: none;
+	z-index: 1000;
 }
 
 div.tipLineChart {
@@ -470,8 +475,8 @@ div.tipLineChart {
 		text-align: center;
 		padding: 10px;
 		font: 12px sans-serif;
-		background: lightgrey;
-		border: 0px;
+		background: whitesmoke;
+		border: 1px solid black;
 		border-radius: 8px;
 		pointer-events: none;
 }
