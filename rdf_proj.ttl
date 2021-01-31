@@ -97,7 +97,7 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
 
 dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
                   dcat:accessURL    *url nostro sito*;
-                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
+                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; 
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
                   dcat:byteSize	    "xx,xx MB";
                   adms:status       <http://purl.org/adms/status/Completed>.
@@ -138,7 +138,7 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
 
 dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
                   dcat:accessURL    *url nostro sito*;
-                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
+                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; 
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
                   dcat:byteSize	    "xx,xx MB";
                   adms:status       <http://purl.org/adms/status/Completed>.
@@ -175,7 +175,7 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
 
 dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
                   dcat:accessURL    *url nostro sito*;
-                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
+                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; 
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
                   dcat:byteSize	    "xx,xx MB";
                   adms:status       <http://purl.org/adms/status/Completed>.
@@ -213,7 +213,7 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
 
 dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
                   dcat:accessURL    *url nostro sito*;
-                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; *da confermare*
+                  dct:license	    <https://creativecommons.org/licenses/by-sa/4.0/>; 
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
                   dcat:byteSize	    "xx,xx MB";
                   adms:status       <http://purl.org/adms/status/Completed>.

@@ -6,7 +6,7 @@
 
 **Format**: xlsx, csv, tabbed txt.
 
-**Metadata**: They are divided into two groups, metadata about the series and about the countries. Those on the series contain information about the type of license (CC BY-4.0) and its URL, the name of the indicator, its code and its long definition, the topic, the period, the aggregation method, the statistical method, and general comments. The country metadata contain information on country codes, their extended names, income group, region, currency, census year, and many other pertinent information about individual countries.
+**Metadata**: They are divided into two groups, metadata about the series and about the countries. Those on the series contain information about the type of license (CC-BY-SA 4.0) and its URL, the name of the indicator, its code and its long definition, the topic, the period, the aggregation method, the statistical method, and general comments. The country metadata contain information on country codes, their extended names, income group, region, currency, census year, and many other pertinent information about individual countries.
 
 **URI**: [Labor force, female (2000-2020)](https://databank.worldbank.org/reports.aspx?source=2&series=SL.TLF.TOTL.FE.ZS&country=#)
 
