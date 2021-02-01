@@ -56,7 +56,9 @@ dcat:Catalog  dct:title       	"GenO catalogue";
               dct:temporal    	dct:PeriodOfTime;
               dct:spatial	      <http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/JSON>;
                   dcat:accessURL    *url nostro sito*;
                   dct:license	      <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
@@ -67,12 +69,11 @@ dct:PeriodOfTime	dcat:startDate	"1983";
                   	dcat:endDate	"2020".
 
 dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
-              dct:title       	"GenO - Health";
-              dct:description 	"This dataset contains data from two different organization: OECD.Stat and Eurostat. The dataset is focused on life expectancy and causes of mortality, trying to focus on the difference between male and female. For both datasets, data are divided by country and they cover almost all the existing states. The temporal coverages of the datasets are different: the data collected in the first dataset goes from 2000 to 2018, the data collected in the second dataset goes from 2014 to 2018.";
+              dct:title       	"GenO - Life Expectancy";
+              dct:description 	"This dataset contains data from Eurostat. The dataset is focused on life expectancy, trying to focus on the difference between male and female. In the dataset, data are divided by country and they cover almost all the existing states. The temporal coverage of the dataset focus on the year 2018.";
               dct:modified    	"2012/02/01";
               dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/HEAL>;
               dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
-              dct:rightsHolder  <http://www.oecd.org/>; *non sono sicura vada indicato così*
               dct:rightsHolder  <https://ec.europa.eu/eurostat/>; *non sono sicura vada indicato così*
               dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
               dcat:distribution	dcat:Distribution;
@@ -89,13 +90,53 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
               dcat:keyword	    "health";
               dcat:keyword	    "population";
               dcat:keyword	    "life expectancy";
+              dct:source      	<https://stats.oecd.org/Index.aspx?QueryId=30115>;
+              dct:source      	<https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec$DV_291/default/table?lang=en>;
+              dct:temporal    	dct:PeriodOfTime;
+              dct:spatial	      <http://dbpedia.org/ontology/world>.
+
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/JSON>;
+                  dcat:accessURL    *url nostro sito*;
+                  dct:license	      <https://creativecommons.org/licenses/by-sa/4.0/>;
+                  dcat:downloadURL  *iserire stessa stringa di identifier*;
+                  dcat:byteSize	    "xx,xx MB";
+                  adms:status       <http://purl.org/adms/status/Completed>.
+
+dct:PeriodOfTime	dcat:startDate	"2018";
+                  	dcat:endDate	"2018".
+
+dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - https://learreDHDK.github.io/ccode/xml/natural_events.xml *;
+              dct:title       	"GenO - Morality Causes";
+              dct:description 	"This dataset contains data from OECD.Stat. The dataset is focused on causes of mortality, trying to focus on the difference between male and female. In the dataset, data are divided by country and they cover almost all the existing states. The temporal coverages of the dataset goes from 2000 to 2018.";
+              dct:modified    	"2012/02/01";
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+              dcat:theme      	<http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+              dct:rightsHolder  <http://www.oecd.org/>; *non sono sicura vada indicato così*
+              dct:accrualPeriodicity	<http://publications.europa.eu/resource/authority/frequency/ANNUAL>;
+              dcat:distribution	dcat:Distribution;
+              dct:subject     	<http://eurovoc.europa.eu/100210> , <http://eurovoc.europa.eu/100215> , <http://eurovoc.europa.eu/1991> , <http://eurovoc.europa.eu/589>;
+              dcat:contactPoint	vcard:Group;
+              dct:publisher	    foaf:Person;
+              dct:publisher	    foaf:Person;
+              dct:publisher	    foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:creator     	foaf:Person;
+              dct:issued      	"2012/02/01";
+              dct:language	    <http://publications.europa.eu/resource/authority/language/ENG>;
+              dcat:keyword	    "health";
+              dcat:keyword	    "population";
               dcat:keyword    	"mortality";
               dct:source      	<https://stats.oecd.org/Index.aspx?QueryId=30115>;
               dct:source      	<https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec$DV_291/default/table?lang=en>;
               dct:temporal    	dct:PeriodOfTime;
               dct:spatial	      <http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/JSON>;
                   dcat:accessURL    *url nostro sito*;
                   dct:license	      <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
@@ -136,7 +177,9 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
               dct:temporal    	dct:PeriodOfTime;
               dct:spatial	      <http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/JSON>;
                   dcat:accessURL    *url nostro sito*;
                   dct:license	      <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
@@ -173,7 +216,9 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
               dct:temporal    	dct:PeriodOfTime;
               dct:spatial	      <http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/JSON>;
                   dcat:accessURL    *url nostro sito*;
                   dct:license	      <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
@@ -211,7 +256,9 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
               dct:temporal    	dct:PeriodOfTime;
               dct:spatial	      <http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/JSON>;
                   dcat:accessURL    *url nostro sito*;
                   dct:license	      <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
@@ -254,7 +301,9 @@ dcat:Dataset  dct:identifier  	*da capire cosa va inserito, esempio CCODe - http
               dct:temporal    	dct:PeriodOfTime;
               dct:spatial	      <http://dbpedia.org/ontology/world>.
 
-dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML> o <http://publications.europa.eu/resource/authority/file-type/CSV>;
+dcat:Distribution dct:format        <http://publications.europa.eu/resource/authority/file-type/XML>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/CSV>;
+                  dct:format        <http://publications.europa.eu/resource/authority/file-type/JSON>;
                   dcat:accessURL    *url nostro sito*;
                   dct:license	      <https://creativecommons.org/licenses/by-sa/4.0/>;
                   dcat:downloadURL  *iserire stessa stringa di identifier*;
