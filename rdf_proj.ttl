@@ -204,7 +204,7 @@
     dct:source <https://w3.unece.org/PXWeb/en/Table?IndicatorCode=304>;
     dcat:startDate "2005"^^xsd:year;
     dcat:endDate "2017"^^xsd:year;
-    dct:spatial	<http://dbpedia.org/ontology/world>;
+    dct:spatial	<https://dbpedia.org/page/Europe>;
     dcat:distribution <data/csv/childcare.csv>;
     dcat:distribution <data/json/childcare.json>;
     dcat:distribution <data/xml/childcare.xml>;
@@ -240,7 +240,7 @@
     dct:source <https://ec.europa.eu/eurostat/databrowser/view/isoc_sk_dskl_i/default/bar?lang=en>;
     dcat:startDate "2015"^^xsd:year;
     dcat:endDate "2019"^^xsd:year;
-    dct:spatial	<http://dbpedia.org/ontology/world>;
+    dct:spatial	<https://dbpedia.org/page/Europe>;
     dcat:distribution <data/csv/digital_economy.csv>;
     dcat:distribution <data/json/digital_economy.json>;
     dcat:distribution <data/xml/digital_economy.xml>;
