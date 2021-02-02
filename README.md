@@ -1,4 +1,115 @@
-# open-access
+# Documentation of **Gen**O
+
+**Gen**O project has been carried out for the exam Open Access and Digital Ethics of Digital Humanities and Digital Knowledge course at the University of Bologna. The aim of the project is the analysis and the further re-use of open access datasets, in order to find some kind of new knowledge reachable through the mashup of the original data.
+
+You can directly consult our GitHub repository [**here**](https://github.com/gen-0/gen-0.github.io).
+
+* * *
+
+### Introduction
+
+This page contains a detailed analysis about GenO, that aims to explore the status of gender equality both in Europe and all over the world.
+
+* * *
+
+### Scenario
+
+Gender equality is a broad term that involves a lot of factors: in order to better understand the complex situation about this fundamental human right, we collect datasets about different issues such as labour force, health, education and others more. The research about the datasets has been very challenging, due to the detailed aspects we needed to let the analysis be complete and clear. The result aims to give a heterogeneous perspective on the fundamental human right that is gender equality and how it is (or it is not) guaranteed in different countries.
+
+* * *
+
+### General Analysis
+
+To see the entire explanatory table about the general analysis click [here](https://github.com/gen-0/gen-0.github.io/blob/main/GenO%20-%20General%20Analysis.pdf).
+
+* * *
+
+### Quality analysis of the datasets
+
+These standards come from an accurate study of two different sources - Project Open Data document (provided by the World Bank and owned by Project Open Data) and Open Data Goldbook for Data Managers and Data Holders (provided by European Data Portal). We chose to rely on these sources because of the different nature of our datasets: as a matter of fact, they are provided both from european and worldwide organizations.
+
+The standards for quality we decided to take in consideration are:
+
+*   Accuracy and Reliability: how much are datasets error-free so as to be a reliable source?
+*   Timeliness: how much time will the datasets be accessible and available?
+*   Accessibility: are datasets accessible and open, in order to be consulted and studied?
+*   Description: are data fully described in order to be recognized and totally understood in their qualities?
+*   Reusability: are datasets made available under an open license in order to be reusable?
+*   Complete: do the datasets have a high level of indicators in order to be as much complete as possible?
+
+#### World Bank Group
+
+The data are accurate and reliable because they came from recognized international sources and present the most accurate global development data; furthermore, the dataset includes regional, national and global estimates. The datasets are accessible and open, and they can be downloaded and visualized in different formats. There is the description for data provided by every single country; for what concerns the overview of the dataset, the data are fully described and there are enough indicators to choose among. About reusability, the data can be downloaded, but there are some features allowed only for the ones who log in.
+
+#### ILOSTAT - International Labour Organization
+
+The dataset provides the description of the subject and the variable taken in consideration. It comes from a reliable source: the data, indeed, are taken from administrative sources, official estimates, household surveys, establishment surveys and national accounts. Then, there is also the description of the methods used for collection and compilation of data. Timeliness is not specified, but data are updated constantly. Data are accessible and reusable and there is the possibility to download them. There is a high number of indicators and the possibility to choose among them and mash up them together.
+
+#### Eurostat - Statistical Office of the European Union
+
+Datasets coming from Eurostat are fully described with an explanatory test; nevertheless, there are not available information about accuracy and punctuality. The completeness of the data depends on the availability of data from the national statistical institutes: when data are not available, estimated or provisional, it is possible to see it on the table thanks to the notes given by the description. The datasets are reusable and they can be downloaded only in some formats. There are enough indicators both for the selection and the format.
+
+#### OECD: Organisation for Economic Co-operation and Development
+
+This dataset presents a brief description of the main broad topics: details of the dataset are given in the title of the dataset, that is also a variable. The reliability of the dataset and more detailed information on coverage and accuracy are published in World Health Statistics Annuals. For what concerns the causes of mortality, they are reported with ICD code (International Classification of Diseases) in the documentation and as a variable in the database; the number of deaths and the selected causes are extracted from World Health Organisation Mortality Database available at a link that doesn’t work. Layout and indicators are customizable, are as complete as possible because they come from a reliable source; the whole dataset is also made available for reuse.
+
+#### UNECE - United Nation Economic Commission for Europe
+
+The variable of the dataset we are interested in is briefly described; then, there is the possibility to set all the variables thanks to a path that allows you to create your queries. The source’s data are reliable because they come from official sources (compiled from national and international (UNICEF TransMONEE) official sources); footnotes are provided to understand better when there is a lack of data, availability of places and range of years for every country. There are no information about timeliness. The dataset is accessible and reusable and enough complete: as a matter of fact, missed data depend on the States involved.
+
+#### Our World in Data
+
+Datasets provided come from reliable sources and there are a lot of ways to visualize data. They are accessible and accurate as much as possible concerning the value used; furthermore, there is a full documentation that gives information about the data. The data are made available under a CC-By license and so they can be reused, downloaded and cited. The level of indicators is enough to let the dataset be complete, even because all the topics are divided into subtopics that have precise and accurate graphs referred to a specific variable.
+
+#### UNICEF’s Data & Analytics
+
+The dataset provides only the description of the indicator, and then there is the possibility to build your own dataset, customizing the data and the visualization through a series of indicators and visualization models. The dataset is free to reuse and download. The source is high reliable and high importance is given to data itself. Indeed, they state: “When the right data are in the right hands at the right time, decisions can be better informed, more equitable and more likely to protect children’s rights”.
+
+* * *
+
+### Legal analysis
+
+To see the complete table about the legal checklist click [here](https://github.com/gen-0/gen-0.github.io/blob/main/GenO%20-%20Legal%20Checklist.pdf)
+
+The data we collected derive from different sources that use different licences. Therefore, we looked for the licence used by every source. Moreover, there are other aspects to be considered in order to do a proper legal analysis of the dataset: transparency, mention of the specific legal regulation, privacy, liability, point of contact. Leading with these aspect is important to improve the reliability of the publisher to the eyes of any stakeholder.
+
+**World Bank Group**: The license used is Creative Commons Attribution 4.0 International License (CC BY 4.0). There is a section that includes all the information concerning legal regulation and privacy. There is a mail contact to use as a point of contact.
+
+**ILOSTAT - International Labour Organization**: There is a lack of information concerning legal aspects, due to the broken links that should refer to. The explicitly mentioned license is related to audio and video published by ILOSTAT; even if for the datasets the license is not explicitly mentioned, it is stated that for non-commercial purposes, any required permission is granted and no further permission must be obtained from the ILO, but acknowledgement to the ILO as the original source must be made.
+
+**Eurostat - Statistical Office of the European Union**: The license used is Creative Commons Attribution 4.0 International (CC BY 4.0) licence. In the section regarding legal aspects and regulation, there is also mentioned the regulation about personal data protection (Regulation (EU) 2018/1725). The point of contact mentioned is Europa Web Communication unit in DG Communication, that can be contacted with the specific form in the section.
+
+**OECD: Organisation for Economic Co-operation and Development**:The sections regarding Terms of Use provides information about the reuse of data, availability and APIs. The license is not explicitly mentioned, but it is stated that you can extract from, download, copy, adapt, print, distribute, share and embed Data for any purpose, even for commercial use. Appropriate credits must be given to OECD.
+
+**UNECE - United Nation Economic Commission for Europe**: There is a page concerning the terms of use of the data, that are available free of charge. There is not explicit information about the license used, even if it is written that users are free to copy, reproduce and redistribute the data for both commercial and non-commercial purposes providing UNECE as the source of data. There isn’t the possibility to go on the Terms of Use and Privacy Policy pages.
+
+**Our World in Data**: The license used by Our World in Data is CC BY 4.0 and it is made explicit in the footer. In the Privacy Policy page it is fully described the way in which Our World in Data collects and use the personal data, in accordance with the GDPR and related UK data protection legislation.
+
+**UNICEF’s Data & Analytics**: The license used is not explicitly mentioned, but it is stated that reusing information and data is permitted only after submitting and obtaining a written request. There is a page dedicated to Open Data, but the legal aspects related to UNICEF’S Data&Analytics are linked to the external Unicef site and so there are not specific legal information about UNICEF’s Data & Analytics.
+
+* * *
+
+### Ethical analysis
+
+![Principles of Data Ethics](https://github.com/gen-0/gen-0.github.io/blob/main/Principles%20of%20Data%20Ethics.png)  
+
+For our ethical analysis, we took in consideration the main aspects and principles of data ethics: the importance of the human being, transparency, accountability, equality. In addition, we analyzed also if our dataset were free from cognitive bias. We relied on two documents: [Data Ethics: Principles and Guidelines for Companies, Authorities & Organisations](https://dataethics.eu/data-ethics-principles/) and [Data Ethics Framework by UK Government.](https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-legislation-and-codes-of-practice-for-use-of-data)
+
+**World Bank Group**: Ethical behaviour and integrity are the core of World Bank Group. This is promoted by The Bank Group's Ethics and Business Conduct Department (EBC), that promotes the development and application of the highest ethical standards by staff members. Data are human-centered, especially because of the topic of the dataset (labour force), transparency and equality are guaranteed. The dataset is bias free.
+
+**ILOSTAT - International Labour Organization**: ILOSTAT follows the ethical principles for statistics as stated here: Fundamental principles of Official statistics. Data are strictly confidential and used only for statistical purpose. One of the fundamental element for ILOSTAT is the accessibility of data and the impartiality of the production of data. Dataset from ILOSTAT are bias free and transparent.
+
+**Eurostat - Statistical Office of the European Union**: Eurostat works in order to offer the most proficient statistical analysis to the user. There are no cognitive bias or prejudices in the data managed and there is also a particular attention to the methodological aspects, in order to facilitate the understanding of the data. The transparency of the methodologies is guaranteed through a particular document that provides all the information about the policies of Eurostat.
+
+**OECD: Organisation for Economic Co-operation and Development**: Integrity, transparency and accountability are the values on which OECD bases its work. The OECD also supports governments in designing and implementing policies by providing policy advice and recommendations on how to integrate these core principles into public sector reforms.
+
+**UNECE - United Nation Economic Commission for Europe**: UNECE bases its work on the principles of confidentiality, data security, transparency - the access, use and sharing of data is transparent, and is communicated clearly and accessibly to the public. There is a greater transparency around how data is shared, linked, and used. Dataset are bias free.
+
+**Our World in Data**: Ethical perspective is at the basis of OWID work, especially for the topic the dataset covers. All the information are bias free and transparent. The purpose of the data collection is clear.
+
+**UNICEF’s Data & Analytics**: UNICEF standards for research and data collection are respect, confidentiality and integrity and this relates especially to the managing of the data from countries all over the world. The dataset is in accordance with the highest standards of integrity, including honesty, truthfulness and fairness.
+
+* * *
 
 ### Technical analysis
 
@@ -85,6 +196,7 @@
 **URI**: [Gender gap in upper secondary education (2011-2017)](https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019)
 
 **Provenance**: [Gender gap in upper secondary education (2011-2017)](https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019)
+
 * * *
 
 ### Mashup and output datasets
@@ -123,111 +235,65 @@ The principles mentioned above include three types of entities: data, metadata a
 
 A summary table of the produced mashup datasets is shown below.
 
-<table border="1">
-
-<tbody>
-
-<tr>
-
-<th>Domain</th>
-
-<th>XML/SDMX-ML</th>
-
-<th>JSON</th>
-
-<th>CSV</th>
-
-</tr>
-
-<tr>
-
-<td>Labour force</td>
-
-<td>[labour.xml](data/xml/labour.xml)</td>
-
-<td>[labour.json](data/json/labour.json)</td>
-
-<td>[labour.csv](data/csv/labour.csv)</td>
-
-</tr>
-
-<tr>
-
-<td>Life expectancy</td>
-
-<td>[health_life_expectancy.xml](data/xml/health_life_expectancy.xml)</td>
-
-<td>[health_life_expectancy.json](data/json/health_life_expectancy.json)</td>
-
-<td>[health_life_expectancy.csv](data/csv/health_life_expectancy.csv)</td>
-
-</tr>
-
-<tr>
-
-<td>Causes of mortality</td>
-
-<td>[health_death_causes.xml](data/xml/health_death_causes.xml)</td>
-
-<td>[health_death_causes.json](data/json/health_death_causes.json)</td>
-
-<td>[health_death_causes.csv](data/csv/health_death_causes.csv)</td>
-
-</tr>
-
-<tr>
-
-<td>Gender paygap</td>
-
-<td>[paygap.xml](data/xml/paygap.xml)</td>
-
-<td>[paygap.json](data/json/paygap.json)</td>
-
-<td>[paygap.csv](data/csv/paygap.csv)</td>
-
-</tr>
-
-<tr>
-
-<td>Childcare</td>
-
-<td>[chilcare.xml](data/xml/chilcare.xml)</td>
-
-<td>[chilcare.json](data/json/chilcare.json)</td>
-
-<td>[chilcare.csv](data/csv/chilcare.csv)</td>
-
-</tr>
-
-<tr>
-
-<td>Digital economy</td>
-
-<td>[digital.xml](data/xml/digital.xml)</td>
-
-<td>[digital.json](data/json/digital.json)</td>
-
-<td>[digital.csv](data/csv/digital.csv)</td>
-
-</tr>
-
-<tr>
-
-<td>Education</td>
-
-<td>[education.xml](data/xml/education.xml)</td>
-
-<td>[education.json](data/json/education.json)</td>
-
-<td>[education.csv](data/csv/education.csv)</td>
-
-</tr>
-
-</tbody>
-
+<table class="table table-striped">
+  <tr>
+    <th>Domain</th>
+    <th>XML/SDMX-ML</th>
+    <th>JSON</th>
+    <th>CSV</th>
+  </tr>
+  <tr>
+    <td>Labour force</td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/xml/labour.xml" target="_blank" alt="labour.xml file">labour.xml</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/json/labour.json" target="_blank" alt="labour.json file">labour.json</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/csv/labour.csv" target="_blank" alt="labour.csv file">labour.csv</a></td>
+  </tr>
+  <tr>
+    <td>Life expectancy</td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/xml/health_life_expectancy.xml" target="_blank" alt="health_life_expectancy.xml file">health_life_expectancy.xml</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/json/health_life_expectancy.json" target="_blank" alt="health_life_expectancy.json file">health_life_expectancy.json</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/csv/health_life_expectancy.csv" target="_blank" alt="health_life_expectancy.csv file">health_life_expectancy.csv</a></td>
+  </tr>
+  <tr>
+    <td>Causes of mortality</td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/xml/health_death_causes.xml" target="_blank" alt="health_death_causes.xml file">health_death_causes.xml</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/json/health_death_causes.json" target="_blank" alt="health_death_causes.json file">health_death_causes.json</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/csv/health_death_causes.csv" target="_blank" alt="health_death_causes.csv file">health_death_causes.csv</a></td>
+  </tr>
+  <tr>
+    <td>Gender paygap</td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/xml/paygap.xml" target="_blank" alt="paygap.xml file">paygap.xml</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/json/paygap.json" target="_blank" alt="paygap.json file">paygap.json</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/csv/paygap.csv" target="_blank" alt="paygap.csv file">paygap.csv</a></td>
+  </tr>
+  <tr>
+    <td>Childcare</td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/xml/childcare.xml" target="_blank" alt="childcare.xml file">childcare.xml</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/json/childcare.json" target="_blank" alt="childcare.json file">childcare.json</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/csv/childcare.csv" target="_blank" alt="childcare.csv file">childcare.csv</a></td>
+  </tr>
+  <tr>
+    <td>Digital economy</td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/xml/digital.xml" target="_blank" alt="digital.xml file">digital.xml</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/json/digital.json" target="_blank" alt="digital.json file">digital.json</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/csv/digital.csv" target="_blank" alt="digital.csv file">digital.csv</a></td>
+  </tr>
+  <tr>
+    <td>Education</td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/xml/education.xml" target="_blank" alt="education.xml file">education.xml</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/json/education.json" target="_blank" alt="education.json file">education.json</a></td>
+    <td><a href="https://github.com/gen-0/gen-0.github.io/blob/main/data/csv/education.csv" target="_blank" alt="education.csv file">education.csv</a></td>
+  </tr>
 </table>
 
 * * *
+
+### Sostenibility of the update the datasets over the time
+
+The GenO dataset contains datasets that derive from different sources, concerning all the factors involved in the grant of gender equality: labour force, health, education, gender pay gap. The dataset has been created as a project within the Open Access and Digital Ethics course of the Master Degree in Digital Humanities and Digital Knowledge at the University of Bologna: the dataset is not actively maintained, while the datasets used for this project are currently maintained by the relative institutions or organisations. GEO/GenOp is distributed under Creative Commons Attribution 4.0 International License (CC BY 4.0)
+
+* * *
+
 ### Visualization
 
 To improve the data's understanding and make it more accessible to the public, we have produced seven interactive visualizations, distributed as follows:
@@ -241,3 +307,15 @@ To improve the data's understanding and make it more accessible to the public, w
 *   Finally, as far as education is concerned, it is possible to compare the data relating to primary school, secondary school, and the ratio of school years between men and women through a multi-line chart, with a time span ranging from 1970 to 2016\. Also, in this case, a modal window allows you to select which countries to consider in the graph, to avoid information overload.
 
 All graphics were created in Javascript using the open source [d3.js](https://d3js.org/) library. In addition, the open source [Leaflet.js](https://leafletjs.com/) library was used for the maps.
+
+* * *
+
+### RDF assertion of the metadata
+
+In order to offer better reusable and interoperable data, we provided them with their metadata, following the DCAT_AP version 2.0.0 documentation. We have decided to provided metadata for the whole catalogue, but also for each dataset individually. The RDF assertion for the metadata, that follows the Turtle serialization, has been released and can be found in each metadata table (both for the catalogue and the datasets); but can also be consulted [here](rdf_proj.ttl).
+
+* * *
+
+### Conclusions
+
+GenO is the final outcome of a deep analysis: we started from thinking about a social issue that needed to be examined in depth and, step by step, we followed a process of analysis and study of all the different areas involved. The datasets we analyzed helped us to understand the phenomena both in European Union and worldwide. After this analysis, we can state that gender equality has increased in the last decades, but not all over the world. Furthermore, we observed that, for what concerns gender pay gap, there aren’t as many information as for the other instances and sectors. Some data proved our hypothesis and some other were slightly different when not unexpected, but all there reflections led to a crucial point: women have still less opportunities than men. Data can be the most proficient instrument to understand what are the next steps to take to reach equality and social justice.

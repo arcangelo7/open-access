@@ -78,8 +78,8 @@
 							<h1 class="entry-title">Visualization</h1>
 						</header>
 						<div class="entry-content clearfix" align="justify">
-							<p>To improve the data understanding and make it more accessible to the public, we have produced seven interactive visualizations, using different visualization techniques like a choropleth map, a bubble map, a horizontal and vertical histogram, and a multi-line char.
-								 All graphics were created in Javascript using the open-source d3.js library. In addition, the open-source Leaflet.js library was used for the maps.</p>
+							<p>In this section you can explore seven interactive visualizations, produced using different visualization techniques like a choropleth map, a bubble map, a horizontal and vertical histogram, and a multi-line chart.
+								 All graphics were created in Javascript using the open-source <a href="https://d3js.org/" alt="d3.js homepage">d3.js</a> library. In addition, the open-source <a href="https://leafletjs.com/" alt="Leaflet.js homepage">Leaflet.js</a> library was used for the maps.</p>
 							<br>
 						</div>
 						<div>
@@ -97,6 +97,7 @@
 							<!-- Tab content -->
 							<div id="labour" class="tabcontent">
 								<h1 class="vizTitle">Female labour force vs. Marital status</h1>
+								<p>This chart shows data from two different organizations: <a href="https://www.ilo.org/shinyapps/bulkexplorer19/?lang=en&segment=indicator&id=EAP_TEAP_SEX_AGE_MTS_NB_A" target="_blank">ILOSTAT</a> and <a href="https://databank.worldbank.org/reports.aspx?source=2&series=SL.TLF.TOTL.FE.ZS&country=#" target="_blank">The World Bank</a>. The dataset focuses on gender equality in the labor market, in particular on female employment, compared with the marital status of employed women in different countries, from 1990 to 2020.</p>
 								<div class="vizYear">
 									<h2 class="year"></h2>
 									<div class="slider vizSlider"></div>
@@ -124,6 +125,8 @@
 
 							<div id="health" class="tabcontent">
 								<h1 class="vizTitle">Causes of mortality vs. Life expectancy (2018)</h1>
+								<h2 class="vizTitle2">Causes of mortality</h2>
+								<p>This visualization shows data from <a href="https://stats.oecd.org/Index.aspx?QueryId=30115" target="_blank">OECD.Stat</a>. The dataset is focused on causes of mortality, in particular on the differences between males and females, from 2000 to 2018.</p>
 								<div class="vizYear">
 									<h2 class="yearHealth"></h2>
 									<div class="sliderHealth vizSlider"></div>
@@ -149,6 +152,7 @@
 									</form>
 								</div>
 								<h2 class="vizTitle2">Life expectancy (2018)</h2>
+								<p>This histogram shows data from <a href="https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec$DV_291/default/table?lang=en" target="_blank">Eurostat</a>. The dataset focuses on life expectancy, trying to highlight the differences between males and females in 2018.</p>
 								<div class="vizSelector" id="leOrderSelector"></div>
 								<div class="viz" id="healthLifeExpectancy"></div>
 								<div class="btn-group downloadDropdown">
@@ -167,6 +171,7 @@
 
 							<div id="paygap" class="tabcontent">
 								<h1 class="vizTitle">Gender paygap</h1>
+								<p>This multi-line chart contains data from <a href="https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=earn_gr_hgpg&lang=en" target="_blank">Eurostat</a>. The dataset focuses on the gender pay gap, the pay gap between men and women, from 1994 to 2005.</p>
 								<div id="sliderPay-div" class="vizYear">
 									<label>
 										<h2>Years: <span id="dateLabel1Pay">1994</span> - <span
@@ -209,6 +214,7 @@
 
 							<div id="childcare" class="tabcontent">
 								<h1 class="vizTitle">Enrolment rate of children in child care</h1>
+								<p>This choropleth map shows data from the <a href="https://w3.unece.org/PXWeb/en/Table?IndicatorCode=304" target="_blank">UNECE organization</a>. The dataset focuses on the enrollment rate of children in childcare centers. The data are divided by country and cover almost all the European states. The temporal coverage ranges from 2005 to 2017.</p>
 								<div class="vizYear">
 									<h2 class="yearChildcare"></h2>
 									<div class="sliderChildcare vizSlider"></div>
@@ -236,6 +242,7 @@
 							<div id="digital" class="tabcontent">
 								<h1 class="vizTitle">Individuals with above basic level of digital skills, by Gender
 								</h1>
+								<p>This histogram shows data coming from <a href="https://ec.europa.eu/eurostat/databrowser/view/isoc_sk_dskl_i/default/bar?lang=en" target="_blank">Eurostat</a>. The dataset focuses on the digital proficiency level of women and men aged 16 to 74. The data are divided by country and cover almost all European states. The temporal coverage of the dataset focus on the year 2019.</p>
 								<h2 class="vizYear">Year: 2019</h2>
 								<div id="digitalOrderSelector" class="vizSelector"></div>
 								<div class="viz" id="digital_hysthogram"></div>
@@ -255,6 +262,14 @@
 
 							<div id="education" class="tabcontent">
 								<h1 class="vizTitle">Education</h1>
+								<p>This multi-line chart shows data resulting from the aggregation of three different datasets, coming from <a href="https://ourworldindata.org/educational-mobility-inequality#in-primary-education" target="_blank">Our World in Data - Educational Mobility and Inequality</a>, <a href="https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019" target="_blank">UNICEF Data Warehouse</a> and <a href="https://ourworldindata.org/grapher/gender-ratios-for-mean-years-of-schooling" target="_blank">Our World in Data - Gender ratios for mean years of schooling</a>.</p>
+								<p>The three datasets focus, respectively, on:
+									<ul>
+										<li><strong>Primary school</strong>: the share of enrolled female primary education students between 1970 and 2016.</li>
+										<li><strong>Secondary school</strong>: the educational attainment of the female population aged on  25 years and older related to the upper secondary education between 2011 and 2017.</li>
+										<li><strong>Ratio</strong>: the gender ratios for mean years of schooling between 1970 to 2010.</li>
+									</ul>
+								</p>
 								<div id="slider-div" class="vizYear">
 									<label>
 										<h2>Years: <span id="dateLabel1">1970</span> - <span id="dateLabel2">2016</span>
@@ -312,9 +327,9 @@
 				<div class="col-md-12">
 					<div class="copyright">
 						<p>Authored by Arcangelo Massari, Elena Cavalli, Virginia Ciambriello</p>
-						<p>This work is licensed under a <a target ="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+						<p>This work is licensed under a <a target ="_blank" rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 						<br>
-						<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
+						<a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
 					</div>
 				</div>
 			</div>
@@ -346,7 +361,7 @@
 	<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
 	<script src="lib/jquery-ui.min.js"></script>
-	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="https://d3js.org/topojson.v1.min.js"></script>
 	<script src="js/labour.js"></script>
 	<script src="js/health.js"></script>
 	<script src="js/paygap.js"></script>

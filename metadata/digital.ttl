@@ -34,7 +34,7 @@
     a dcat:Dataset;
     dct:identifier <data/id/digital_economy.zip> ;
     dct:title "GenO - Digital Economy";
-    dct:description "This dataset contains data from Eurostat organization. The dataset is focused on Individuals' level of digital skills of female and male from 16 to 74 years old. Data are divided by country and they cover almost all the existing states. The temporal coverages goes rom 2015 to 2019, excluding 2018 data.";
+    dct:description "This dataset contains data from Eurostat organization. The dataset is focused on Individuals' level of digital skills of female and male from 16 to 74 years old. Data are divided by country and they cover almost all the existing states. The temporal coverage of the dataset focus on the year 2019.";
     dct:modified "2020/02/01"^^xsd:date;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/TECH>;
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>;

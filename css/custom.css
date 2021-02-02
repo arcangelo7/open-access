@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400);
 
 /*--------------------------------------------------------------
 # General Elements
@@ -122,6 +122,12 @@ figure {
   background: #92e3a9;
   transition: background 0.2s ease-in-out;
 }
+
+.back-to-top:focus {
+	color: #fff;
+	background: #92e3a9;
+	transition: background 0.2s ease-in-out;
+  }
 
 #backtotop span.ion-arrow-up-c {
 	position: fixed;
