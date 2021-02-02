@@ -116,6 +116,9 @@
 									</button>
 									<ul id="labour-dropdown-menu" class="dropdown-menu"
 										aria-labelledby="dropdownMenuButton"></ul>
+									<form method="get" action="" id="labour-metadata">
+										<button class="btn btn-default dowloadMetadata" type="submit">Download metadata</button>									
+									</form>
 								</div>
 							</div>
 
@@ -141,6 +144,9 @@
 									</button>
 									<ul id="death-dropdown-menu" class="dropdown-menu"
 										aria-labelledby="dropdownMenuButton"></ul>
+									<form method="get" action="" id="death-metadata">
+										<button class="btn btn-default dowloadMetadata" type="submit">Download metadata</button>									
+									</form>
 								</div>
 								<h2 class="vizTitle2">Life expectancy (2018)</h2>
 								<div class="vizSelector" id="leOrderSelector"></div>
@@ -153,11 +159,14 @@
 									</button>
 									<ul id="le-dropdown-menu" class="dropdown-menu"
 										aria-labelledby="dropdownMenuButton"></ul>
+									<form method="get" action="" id="le-metadata">
+										<button class="btn btn-default dowloadMetadata" type="submit">Download metadata</button>									
+									</form>
 								</div>
 							</div>
 
 							<div id="paygap" class="tabcontent">
-								<h1 class="vizTitle">Gende paygap</h1>
+								<h1 class="vizTitle">Gender paygap</h1>
 								<div id="sliderPay-div" class="vizYear">
 									<label>
 										<h2>Years: <span id="dateLabel1Pay">1994</span> - <span
@@ -192,6 +201,9 @@
 									</button>
 									<ul id="paygap-dropdown-menu" class="dropdown-menu"
 										aria-labelledby="dropdownMenuButton"></ul>
+									<form method="get" action="" id="paygap-metadata">
+										<button class="btn btn-default dowloadMetadata" type="submit">Download metadata</button>									
+									</form>
 								</div>
 							</div>
 
@@ -215,6 +227,9 @@
 									</button>
 									<ul id="childcare-dropdown-menu" class="dropdown-menu"
 										aria-labelledby="dropdownMenuButton"></ul>
+									<form method="get" action="" id="childcare-metadata">
+										<button class="btn btn-default dowloadMetadata" type="submit">Download metadata</button>									
+									</form>
 								</div>
 							</div>
 
@@ -232,6 +247,9 @@
 									</button>
 									<ul id="digital-dropdown-menu" class="dropdown-menu"
 										aria-labelledby="dropdownMenuButton"></ul>
+									<form method="get" action="" id="digital-metadata">
+										<button class="btn btn-default dowloadMetadata" type="submit">Download metadata</button>									
+									</form>
 								</div>
 							</div>
 
@@ -276,6 +294,9 @@
 									</button>
 									<ul id="education-dropdown-menu" class="dropdown-menu"
 										aria-labelledby="dropdownMenuButton"></ul>
+									<form method="get" action="" id="education-metadata">
+										<button class="btn btn-default dowloadMetadata" type="submit">Download metadata</button>									
+									</form>
 								</div>
 							</div>
 
@@ -364,9 +385,12 @@
 						$("#" + id + "-dropdown-menu").append(`
 							<li><a class="dropdown-item" href="data/${formats[i]}/${id}.${formats[i]}" download="${id}.${formats[i]}">Download ${formats[i]}</a></li>
 						`)
+						$("#" + id + "-metadata").attr("action", `https://gen-0.github.io/metadata/${id}.ttl`)
 					} else if ($(this).attr("id") == "health") {
 						$("#death-dropdown-menu").append(`<li><a href="data/${formats[i]}/health_death_causes.${formats[i]}" download="health_death_causes.${formats[i]}">Download ${formats[i]}</a></li>`)
 						$("#le-dropdown-menu").append(`<li><a href="data/${formats[i]}/health_life_expectancy.${formats[i]}" download="health_life_expectancy.${formats[i]}">Download ${formats[i]}</a></li>`)
+						$("#death-metadata").attr("action", `https://gen-0.github.io/metadata/health_death_causes.ttl`)
+						$("#le-metadata").attr("action", `https://gen-0.github.io/metadata/health_life_expectancy.ttl`)
 					}
 				}
 			});

@@ -6,6 +6,10 @@
 --------------------------------------------------------------*/
 * {outline: none;}
 
+html {
+	scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -383,7 +387,11 @@ figure {
 }
 
 .downloadDropdown {
-	display: block;
+	display: flex;
+}
+
+.dowloadMetadata {
+	margin-left: 1rem;
 }
 
 #dropdownMenuButton{
