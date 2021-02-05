@@ -7,6 +7,7 @@
 @prefix adms: <http://www.w3.org/ns/adms#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
 
 <data/id>
     a dcat:Catalog;    
@@ -65,6 +66,7 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom <https://www.ilo.org/shinyapps/bulkexplorer19/?lang=en&segment=indicator&id=EAP_TEAP_SEX_AGE_MTS_NB_A>, <https://databank.worldbank.org/reports.aspx?source=2&series=SL.TLF.TOTL.FE.ZS&country=#>;
     dcat:downloadURL <data/id/labour_market.zip>;
     dcat:byteSize "318 KB";
     adms:status <http://purl.org/adms/status/Completed>.
@@ -101,6 +103,7 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom <https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec$DV_291/default/table?lang=en>;
     dcat:downloadURL <data/id/life_expectancy.zip>;
     dcat:byteSize "5 KB";
     adms:status <http://purl.org/adms/status/Completed>.
@@ -137,6 +140,7 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom <https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=earn_gr_hgpg&lang=en>;
     dcat:downloadURL <data/id/mortality_causes.zip>;
     dcat:byteSize "1309 KB";
     adms:status <http://purl.org/adms/status/Completed>.
@@ -177,6 +181,7 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license <https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom <https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=earn_gr_hgpg&lang=en>;
     dcat:downloadURL <data/id/gender_paygap.zip>;
     dcat:byteSize "10 KB";
     adms:status <http://purl.org/adms/status/Completed>.
@@ -213,6 +218,7 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license	<https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom <https://w3.unece.org/PXWeb/en/Table?IndicatorCode=304>;
     dcat:downloadURL <data/id/childcare.zip>;
     dcat:byteSize "13 KB";
     adms:status <http://purl.org/adms/status/Completed>.
@@ -249,6 +255,7 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license	<https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom <https://ec.europa.eu/eurostat/databrowser/view/isoc_sk_dskl_i/default/bar?lang=en>;
     dcat:downloadURL <data/id/digital_economy.zip>;
     dcat:byteSize "4 KB";
     adms:status <http://purl.org/adms/status/Completed>.
@@ -291,5 +298,6 @@
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON>;
     dcat:accessURL <catalogue.html>;
     dct:license	<https://creativecommons.org/licenses/by-sa/4.0/>;
+    prov:wasDerivedFrom <https://ourworldindata.org/educational-mobility-inequality#in-primary-education>, <https://data.unicef.org/resources/data_explorer/unicef_f/?ag=UNICEF&df=GENDER&ver=1.0&dq=.GN_ED_ATTN.F+_T..&startPeriod=2011&endPeriod=2019>, <https://ourworldindata.org/grapher/gender-ratios-for-mean-years-of-schooling>;
     dcat:downloadURL <data/id/education.zip>;
     dcat:byteSize "325 KB".

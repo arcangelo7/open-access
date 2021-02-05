@@ -225,7 +225,7 @@ I2\. (Meta)data use vocabularies that follow FAIR principles. We used the ISO 31
 
 R1\. Meta(data) is richly described with a plurality of accurate and relevant attributes: our data and metadata are described through a rich and vary series of labels including the date of collection and modification of the data, the licence, the publisher, the creator, their content.
 
-R1.1\. (Meta)data are released with a clear and accessible data usage license (Creative Common License CC BY 4.0).
+R1.1\. (Meta)data are released with a clear and accessible data usage license (Creative Common License CC BY-SA 4.0).
 
 R1.2\. (Meta)data are associated with detailed provenance: our project includes information about the provenance of data in a machine-readable format in the metadata codification.
 
@@ -290,7 +290,7 @@ A summary table of the produced mashup datasets is shown below.
 
 ### Sostenibility of the update the datasets over the time
 
-The GenO dataset contains datasets that derive from different sources, concerning all the factors involved in the grant of gender equality: labour force, health, education, gender pay gap. The dataset has been created as a project within the Open Access and Digital Ethics course of the Master Degree in Digital Humanities and Digital Knowledge at the University of Bologna: the dataset is not actively maintained, while the datasets used for this project are currently maintained by the relative institutions or organisations. GEO/GenOp is distributed under Creative Commons Attribution 4.0 International License (CC BY 4.0)
+The GenO dataset contains datasets that derive from different sources, concerning all the factors involved in the grant of gender equality: labour force, health, education, gender pay gap. The dataset has been created as a project within the Open Access and Digital Ethics course of the Master Degree in Digital Humanities and Digital Knowledge at the University of Bologna: the dataset is not actively maintained, while the datasets used for this project are currently maintained by the relative institutions or organisations. GEO/GenOp is distributed under Creative Commons Attribution 4.0 International License (CC BY-SA 4.0)
 
 * * *
 
